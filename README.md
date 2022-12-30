@@ -16,3 +16,6 @@ Code for the Dungeon 23 project
 - https://elevation.fsdf.org.au/restore/5cd19bc5-5386-4831-b2c7-bd46e24389b5
 - The DEM is a quite small download under the order data option.
 - You can get a several gigabyte pointcloud if so inclined
+
+### Errors to deal
+InvalidArchiveError('Error with archive C:\\Users\\bloodyerrors\\anaconda3\\pkgs\\icu-70.1-h0e60522_0.tar.bz2.  You probably need to delete and re-download or re-create this file.  Message from libarchive was:\n\nCould not unlink')
