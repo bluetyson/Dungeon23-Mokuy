@@ -11,6 +11,9 @@ Code for the Dungeon 23 project
 - 3m.zip is a 3M merged DEM of all 18 tiles from the 3D Model elevation site
 - 10m is a DEM GeoTiff as above but broader scale again for quick looks/low resolution/low memory
 
+## Ruby Base
+- Level map graphics and illustrations
+
 ### 3D Model
 
 - https://elevation.fsdf.org.au/restore/5cd19bc5-5386-4831-b2c7-bd46e24389b5
