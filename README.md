@@ -20,5 +20,8 @@ Code for the Dungeon 23 project
 - The DEM is a quite small download under the order data option.
 - You can get a several gigabyte pointcloud if so inclined
 
+### Grid Mapper
+- low res outline https://campaignwiki.org/gridmapper.svg?load=Dungeon23RubyBase
+
 ### Errors to deal
 InvalidArchiveError('Error with archive C:\\Users\\bloodyerrors\\anaconda3\\pkgs\\icu-70.1-h0e60522_0.tar.bz2.  You probably need to delete and re-download or re-create this file.  Message from libarchive was:\n\nCould not unlink')
