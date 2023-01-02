@@ -1,0 +1,27 @@
+   fffffffffffffffffffffffffff
+  fffffffffffffffffffffffffff
+  ffffffffffffffffffffffffff
+  fffffffffffffffffffffffff
+ fffffffffffffffffffffffff
+ ffffffffffffffffffffffff
+ fffffffffffffffffffffff
+ ffffffffffffffffffffff
+ fffffffffffffffffffff
+fffffffffffffffffffff
+ffffffffffffffffffff
+fffffffffffffffffff
+ffffffffffffffffff
+fffffffffffffffff
+ffffffffffffffff
+ffffffffffffffff
+fffffffffffffff
+ffffffffffffff
+ fffffffffffff
+ ffffffffffff
+ fffffffffff
+ ffffffffff
+ fffffffff
+  fffffff
+   fffff
+   ffff
+    fff(0,24,0)
