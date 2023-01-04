@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="680" height="660" class="lightgrey"><defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="lightgrey" stroke-width="1"/>
+    </pattern>
+    <rect id="cursor" width="10" height="10" fill="forestgreen" opacity="0.2" transform="scale(2,2)"/>
+    <rect id="others" width="10" height="10" fill="blue" opacity="0.2" transform="scale(2,2)"/>
+    <rect id="empty" width="10" height="10" class="background" stroke="black" stroke-width="1" transform="scale(2,2)"/>
+    <rect id="void" width="10" height="10" fill="none" stroke="black" stroke-width="1" transform="scale(2,2)"/>
+    <g id="water" width="20">
+      <rect width="20" height="20" class="background" stroke="black" stroke-width="2"/>
+      <path id="waves" fill="none" stroke="black" stroke-width="1" d="M3,5 v-1 A1,1 0 0,1 5,4 A1,1 0 1,0 7,4 A1,1 0 0,1 9,4 A1,1 0 1,0 11,4 A1,1 0 0,1 13,4 A1,1 0 1,0 15,4 A1,1 0 0,1 17,4 v1"/>
+      <use xlink:href="#waves" transform="translate(0,6)"/>
+      <use xlink:href="#waves" transform="translate(0,12)"/>
+    </g>
+    <g id="wall" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="curtain" width="20">
+      <path fill="none" stroke="black" stroke-width="1" d="M5,3 h-1 A1,1 0 0,0 4,5 A1,1 0 0,1 4,7 A1,1 0 0,0 4,9 A1,1 0 0,1 4,11 A1,1 0 0,0 4,13 A1,1 0 0,1 4,15 A1,1 0 0,0 4,17 h1"/>
+    </g>
+    <g id="portcullis" width="10" transform="scale(2,2)">
+      <circle cx="2" cy="2" r="1" fill="black"/>
+      <circle cx="2" cy="5" r="1" fill="black"/>
+      <circle cx="2" cy="8" r="1" fill="black"/>
+    </g>
+    <g id="window" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="2" stroke="black" stroke-width="3"/>
+      <line x1="0" y1="8" x2="0" y2="10" stroke="black" stroke-width="3"/>
+      <rect x="-0.75" y="2" width="1.5" height="6" class="background" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="gap" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="2" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="8" x2="0" y2="10" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="2.5" cy="2" r="0.5" fill="black"/>
+      <circle cx="-3" cy="3" r="0.5" fill="black"/>
+      <circle cx="3" cy="4" r="0.6" fill="black"/>
+      <circle cx="1.5" cy="4.5" r="0.5" fill="black"/>
+      <circle cx="-1.5" cy="5" r="0.5" fill="black"/>
+      <circle cx="2" cy="6" r="0.5" fill="black"/>
+      <circle cx="5" cy="6" r="0.5" fill="black"/>
+      <circle cx="-2" cy="6.5" r="0.5" fill="black"/>
+      <circle cx="3" cy="8" r="0.5" fill="black"/>
+    </g>
+    <g id="corner-pillar" width="10" transform="scale(2,2)">
+      <circle cx="0" cy="0" r="2" fill="black"/>
+    </g>
+    <g id="arrow-slit" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="3"/>
+      <polygon points="-1.5,5 3,2 3,8" stroke="none" stroke-width="0" fill="white"/>
+    </g>
+    <g id="ledge" width="100" transform="scale(0.2,0.2)">
+      <path fill="none" stroke="black" stroke-width="15" d="         M 0 0 C 0 20 9 27 11 47 C 10 80 0 80 0 100 M 6 27 L 38 21 M 11 49 L 46 50 M 8 71 L 32 86         "/>
+    </g>
+    <g id="ledge-r" width="100" transform="scale(0.2,0.2)">
+      <path fill="none" stroke="black" stroke-width="15" d="         M 0 0 C 2 18 -8 34 6 48 C 19 70 -1 83 0 100 M -2 20 L -34 14 M 6 48 L -31 47 M -22 74 L 8 75         "/>
+    </g>
+    <g id="door" width="10" transform="scale(2,2)">
+      <rect x="-1.5" y="2" width="3" height="6" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="secret" width="10" transform="scale(2,2)">
+      <path fill="none" stroke="black" stroke-width="1" d="M 2,3 C -2,1 -3,5 0,5 S 2,9 -2,7"/>
+    </g>
+    <g id="secret-dm-shown" width="10" transform="scale(2,2)">
+      <path fill="none" stroke="black" stroke-width="1" d="M 2,3 C -2,1 -3,5 0,5 S 2,9 -2,7"/>
+    </g>
+    <g id="secret-p-hidden" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="concealed" width="10" transform="scale(2,2)">
+      <path fill="none" stroke="black" stroke-width="1" d="M 2,3 C -3,1 -3,9 2,7"/>
+    </g>
+    <g id="concealed-dm-shown" width="10" transform="scale(2,2)">
+      <path fill="none" stroke="black" stroke-width="1" d="M 2,3 C -3,1 -3,9 2,7"/>
+    </g>
+    <g id="concealed-p-hidden" width="10" transform="scale(2,2)">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="gate" width="10" transform="scale(2,2)">
+      <rect x="-2" y="4" width="4" height="12" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="archway" width="10" transform="scale(2,2)">
+      <path fill="black" stroke="black" stroke-width="1" d="M -1 0 A 1 1 0 0 0 1 0"/>
+      <path fill="black" stroke="black" stroke-width="1" d="M -1 10 A 1 1 0 0 1 1 10"/>
+      <line x1="0" y1="0" x2="0" y2="2.5" stroke="black" stroke-width="1.5"/>
+      <line x1="-1.5" y1="2.5" x2="1.5" y2="2.5" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="7.5" x2="0" y2="10" stroke="black" stroke-width="1.5"/>
+      <line x1="-1.5" y1="7.5" x2="1.5" y2="7.5" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="one-way-door" width="10" transform="scale(2,2)">
+      <rect x="0" y="2" width="2" height="6" class="background" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="5" x2="-3" y2="5" stroke="black" stroke-width="1"/>
+      <line x1="-3" y1="5" x2="-1.5" y2="3" stroke="black" stroke-width="1"/>
+      <line x1="-3" y1="5" x2="-1.5" y2="7" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="one-way-door-dm-shown" width="10" transform="scale(2,2)">
+      <rect x="0" y="2" width="2" height="6" class="background" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="5" x2="-3" y2="5" stroke="black" stroke-width="1"/>
+      <line x1="-3" y1="5" x2="-1.5" y2="3" stroke="black" stroke-width="1"/>
+      <line x1="-3" y1="5" x2="-1.5" y2="7" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="one-way-door-p-hidden" width="10" transform="scale(2,2)">
+      <rect x="0" y="2" width="2" height="6" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="pillar" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="2" fill="black"/>
+    </g>
+    <g id="altar" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="3" width="6" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="3.5" cy="5" r="0.5" fill="black"/>
+      <circle cx="6.5" cy="5" r="0.5" fill="black"/>
+    </g>
+    <g id="dais" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="none" stroke="black" stroke-width="0.5"/>
+      <rect x="3" y="3" width="4" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+      <rect x="4" y="4" width="2" height="2" fill="none" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="dais-round" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="5" cy="5" r="2" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="5" cy="5" r="1" fill="none" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="rubble" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="7" cy="2" r="0.5" fill="black"/>
+      <circle cx="2" cy="3" r="0.5" fill="black"/>
+      <circle cx="4" cy="3" r="0.7" fill="black"/>
+      <circle cx="8" cy="4" r="0.6" fill="black"/>
+      <circle cx="6" cy="4" r="0.5" fill="black"/>
+      <circle cx="3" cy="5" r="0.7" fill="black"/>
+      <circle cx="5" cy="6" r="0.5" fill="black"/>
+      <circle cx="7" cy="6" r="0.7" fill="black"/>
+      <circle cx="4" cy="7" r="0.5" fill="black"/>
+      <circle cx="8" cy="8" r="0.5" fill="black"/>
+    </g>
+    <g id="statue" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <path fill="black" d="M 2,4 H 8 L 3,7.5 5,2 7,7.5 Z"/>
+    </g>
+    <g id="well" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="2.25" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="5" cy="5" r="1" fill="black"/>
+    </g>
+    <g id="fountain" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="2.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="5" cy="4" r="1.5" fill="none" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="trap" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="none" stroke="black" stroke-width="1"/>
+      <line x1="2" y1="2" x2="8" y2="8" stroke="black" stroke-width="0.8"/>
+      <line x1="2" y1="8" x2="8" y2="2" stroke="black" stroke-width="0.8"/>
+    </g>
+    <g id="trap-dm-shown" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="none" stroke="black" stroke-width="1"/>
+      <line x1="2" y1="2" x2="8" y2="8" stroke="black" stroke-width="0.8"/>
+      <line x1="2" y1="8" x2="8" y2="2" stroke="black" stroke-width="0.8"/>
+    </g>
+    <g id="trap-p-hidden" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="pit" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="2" width="6" height="6" fill="none" stroke="black" stroke-width="1"/>
+      <line x1="2" y1="2" x2="8" y2="8" stroke="black" stroke-width="0.5"/>
+      <line x1="2" y1="8" x2="8" y2="2" stroke="black" stroke-width="0.5"/>
+      <rect x="3.5" y="3.5" width="3" height="3" fill="black"/>
+    </g>
+    <g id="trap-door-ceiling" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">C</text>
+    </g>
+    <g id="trap-door-floor" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">F</text>
+    </g>
+    <g id="trap-door-secret" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">S</text>
+    </g>
+    <g id="trap-door-secret-dm-shown" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">S</text>
+    </g>
+    <g id="trap-door-secret-p-hidden" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="generic-trap" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">T</text>
+    </g>
+    <g id="generic-trap-dm-shown" width="10" class="labels" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <text x="8.3" y="12" fill="black" transform="scale(0.6,0.6)">T</text>
+    </g>
+    <g id="generic-trap-p-hidden" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="chest" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="3" width="6" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+      <line x1="3.5" y1="2" x2="3.5" y2="8" stroke="black" stroke-width="0.5"/>
+      <line x1="6.5" y1="2" x2="6.5" y2="8" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="bed" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="3" width="6" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+      <line x1="4" y1="3" x2="4" y2="7" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="table" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="3" width="6" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+      <circle cx="3.5" cy="4" r="0.5" fill="black"/>
+      <circle cx="3.5" cy="6" r="0.5" fill="black"/>
+      <circle cx="6.5" cy="4" r="0.5" fill="black"/>
+      <circle cx="6.5" cy="6" r="0.5" fill="black"/>
+    </g>
+    <g id="chair" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2.5" y="3.5" width="5" height="3.5" fill="none" stroke="black" stroke-width="0.5"/>
+      <rect x="3.5" y="3.5" width="3" height="2.5" fill="none" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="screen" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <rect x="2" y="3" width="6" height="4" fill="none" stroke="black" stroke-width="0.5"/>
+    </g>
+    <g id="diagonal" width="10" transform="scale(2,2)">
+      <path class="background" stroke="black" stroke-width="1" stroke-linejoin="bevel" d="M0,10 H10 V0 Z"/>
+    </g>
+    <g id="walled-diagonal" width="10" transform="scale(2,2)">
+      <path class="background" stroke="black" stroke-width="1" stroke-linejoin="bevel" d="M0,10 H10 V0 Z"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="diagonal-wall" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="diagonal-line" width="10" transform="scale(2,2)">
+      <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="diagonal-door" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <rect x="-1.5" y="2" width="3" height="6" class="background" stroke="black" stroke-width="1" transform="translate(10,3) rotate(45) translate(-2.05,0)"/>
+    </g>
+    <g id="diagonal-ledge" width="100" transform="scale(0.2,0.2)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="10"/>
+      <path fill="none" stroke="black" stroke-width="15" d="         M 100 0 C 93 8 88 30 73 45 C 53 56 79 81 1 100 M 43 33 L 65 52 M 43 84 L 22 65 M 85 29 L 64 12         "/>
+    </g>
+    <g id="arc" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,10 A10,10 0 0,1 10,0 v10 Z" stroke="black" stroke-width="1"/>
+    </g>
+    <g id="arc2" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,20 A20,20 0 0,1 20,0 v20 Z" stroke="black" stroke-width="1"/>
+      <line x1="2.7" y1="10" x2="20" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="2.7" x2="10" y2="20" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="arc3" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,30 A30,30 0 0,1 30,0 v30 Z" stroke="black" stroke-width="1"/>
+      <line x1="7.6" y1="10" x2="30" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="1.7" y1="20" x2="30" y2="20" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="7.6" x2="10" y2="30" stroke="black" stroke-width="1"/>
+      <line x1="20" y1="1.7" x2="20" y2="30" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="arc4" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,40 A40,40 0 0,1 40,0 v40 Z" stroke="black" stroke-width="1"/>
+      <line x1="13.5" y1="10" x2="40" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="5" y1="20" x2="40" y2="20" stroke="black" stroke-width="1"/>
+      <line x1="1.7" y1="30" x2="40" y2="30" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="13.5" x2="10" y2="40" stroke="black" stroke-width="1"/>
+      <line x1="20" y1="5" x2="20" y2="40" stroke="black" stroke-width="1"/>
+      <line x1="30" y1="1.7" x2="30" y2="40" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="arcw" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,10 A10,10 0 0,1 10,0 v10 z" stroke="black" stroke-width="1"/>
+      <path class="background" d="M0,10 A10,10 0 0,1 10,0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="arcw2" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,20 A20,20 0 0,1 20,0 v20 Z" stroke="black" stroke-width="1"/>
+      <path class="background" d="M0,20 A20,20 0 0,1 20,0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <line x1="2.7" y1="10" x2="20" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="2.7" x2="10" y2="20" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="arcw3" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,30 A30,30 0 0,1 30,0 v30 Z" stroke="black" stroke-width="1"/>
+      <path class="background" d="M0,30 A30,30 0 0,1 30,0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <line x1="7.6" y1="10" x2="30" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="1.7" y1="20" x2="30" y2="20" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="7.6" x2="10" y2="30" stroke="black" stroke-width="1"/>
+      <line x1="20" y1="1.7" x2="20" y2="30" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="arcw4" class="center" width="10" transform="scale(2,2)">
+      <path class="background" d="M0,40 A40,40 0 0,1 40,0 v40 Z" stroke="black" stroke-width="1"/>
+      <path class="background" d="M0,40 A40,40 0 0,1 40,0" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      <line x1="13.5" y1="10" x2="40" y2="10" stroke="black" stroke-width="1"/>
+      <line x1="5" y1="20" x2="40" y2="20" stroke="black" stroke-width="1"/>
+      <line x1="1.7" y1="30" x2="40" y2="30" stroke="black" stroke-width="1"/>
+      <line x1="10" y1="13.5" x2="10" y2="40" stroke="black" stroke-width="1"/>
+      <line x1="20" y1="5" x2="20" y2="40" stroke="black" stroke-width="1"/>
+      <line x1="30" y1="1.7" x2="30" y2="40" stroke="black" stroke-width="1"/>
+      <circle class="dot" cx="5" cy="5" r="1" fill="red" opacity="0"/>
+    </g>
+    <g id="stair" width="10" transform="scale(2,2)">
+      <rect width="10" height="20" class="background" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="3" x2="10" y2="3" stroke="black" stroke-width="0.8"/>
+      <line x1="1" y1="6" x2="9" y2="6" stroke="black" stroke-width="0.8"/>
+      <line x1="2" y1="9" x2="8" y2="9" stroke="black" stroke-width="0.8"/>
+      <line x1="3" y1="12" x2="7" y2="12" stroke="black" stroke-width="0.8"/>
+      <line x1="4" y1="15" x2="6" y2="15" stroke="black" stroke-width="0.8"/>
+    </g>
+    <g id="stair-small" width="10" transform="scale(2,2)">
+      <rect width="10" height="10" class="background" stroke="black" stroke-width="1"/>
+      <line x1="1" y1="2" x2="9" y2="2" stroke="black" stroke-width="0.8"/>
+      <line x1="2" y1="4" x2="8" y2="4" stroke="black" stroke-width="0.8"/>
+      <line x1="3" y1="6" x2="7" y2="6" stroke="black" stroke-width="0.8"/>
+      <line x1="4" y1="8" x2="6" y2="8" stroke="black" stroke-width="0.8"/>
+    </g>
+    <g id="stair-big" width="10" transform="scale(2,2)">
+      <rect width="20" height="20" class="background" stroke="black" stroke-width="1"/>
+      <line x1="1" y1="3" x2="19" y2="3" stroke="black" stroke-width="0.8"/>
+      <line x1="2" y1="6" x2="18" y2="6" stroke="black" stroke-width="0.8"/>
+      <line x1="3" y1="9" x2="17" y2="9" stroke="black" stroke-width="0.8"/>
+      <line x1="4" y1="12" x2="16" y2="12" stroke="black" stroke-width="0.8"/>
+      <line x1="5" y1="15" x2="15" y2="15" stroke="black" stroke-width="0.8"/>
+      <line x1="6" y1="18" x2="14" y2="18" stroke="black" stroke-width="0.8"/>
+    </g>
+    <g id="stair-big-spiral" width="50" transform="scale(0.4,0.4)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="5"/>
+      <line x1="0" y1="50" x2="99" y2="50" stroke="black" stroke-width="5"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="30" x2="85" y2="70" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="70" x2="85" y2="30" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="15" x2="70" y2="85" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="85" x2="70" y2="15" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="5"/>
+    </g>
+    <g id="stair-spiral" width="100" transform="scale(0.2,0.2)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="10"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="7"/>
+      <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="7"/>
+      <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="22" x2="78" y2="78" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="78" x2="78" y2="22" stroke="black" stroke-width="7"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="7"/>
+    </g>
+    <g id="ladder" width="100" transform="scale(0.2,0.2)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="10"/>
+      <circle cx="30" cy="25" r="12" fill="black"/>
+      <line x1="30" y1="25" x2="30" y2="75" stroke="black" stroke-width="10"/>
+      <circle cx="30" cy="75" r="12" fill="black"/>
+    </g>
+    <g id="stair-spiral-down" width="100" class="labels" transform="scale(0.2,0.2)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="10"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="7"/>
+      <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="7"/>
+      <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="22" x2="78" y2="78" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="78" x2="78" y2="22" stroke="black" stroke-width="7"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="7"/>
+      <rect x="2" y="2" width="46" height="46" stroke="none" stroke-width="0" fill="white"/>
+      <text x="6" y="10" fill="black" transform="scale(4,4)">D</text>
+    </g>
+    <g id="stair-spiral-up" width="100" class="labels" transform="scale(0.2,0.2)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="10"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="7"/>
+      <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="7"/>
+      <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="22" x2="78" y2="78" stroke="black" stroke-width="7"/>
+      <line x1="22" y1="78" x2="78" y2="22" stroke="black" stroke-width="7"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="7"/>
+      <rect x="2" y="2" width="46" height="46" stroke="none" stroke-width="0" fill="white"/>
+      <text x="6" y="10" fill="black" transform="scale(4,4)">U</text>
+    </g>
+    <g id="stair-big-spiral-down" width="50" class="labels" transform="scale(0.4,0.4)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="5"/>
+      <line x1="0" y1="50" x2="99" y2="50" stroke="black" stroke-width="5"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="30" x2="85" y2="70" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="70" x2="85" y2="30" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="15" x2="70" y2="85" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="85" x2="70" y2="15" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="5"/>
+      <rect x="2" y="2" width="46" height="46" stroke="none" stroke-width="0" fill="white"/>
+      <text x="6" y="10" fill="black" transform="scale(4,4)">D</text>
+    </g>
+    <g id="stair-big-spiral-up" width="50" class="labels" transform="scale(0.4,0.4)">
+      <rect width="100" height="100" class="background" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="40" fill="none" stroke="black" stroke-width="5"/>
+      <line x1="0" y1="50" x2="99" y2="50" stroke="black" stroke-width="5"/>
+      <line x1="50" y1="0" x2="50" y2="100" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="30" x2="85" y2="70" stroke="black" stroke-width="5"/>
+      <line x1="15" y1="70" x2="85" y2="30" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="15" x2="70" y2="85" stroke="black" stroke-width="5"/>
+      <line x1="30" y1="85" x2="70" y2="15" stroke="black" stroke-width="5"/>
+      <circle cx="50" cy="50" r="10" class="background" stroke="black" stroke-width="5"/>
+      <rect x="2" y="2" width="46" height="46" stroke="none" stroke-width="0" fill="white"/>
+      <text x="6" y="10" fill="black" transform="scale(4,4)">U</text>
+    </g>
+  <g id="rock1" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M0,10 v-1 L1,8 L0,6 v-1 L1,4 v-2 L0,1 L0,0 H10 V10 Z" stroke-miterlimit="1" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M 0 10 v -1 L 1 8 L 0 6 v -1 L 1 4 v -2 L 0 1 L 0 0" stroke-miterlimit="1" stroke="black" stroke-width="3"/>
+  </g>
+  <g id="rock2a" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M0,10 v-1 L1,8 L1,7 L2,5 L1,4 L2,2 L4,1 L5,2 L7,2 L10,0 V10 Z" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M 0 10 v -1 L 1 8 L 1 7 L 2 5 L 1 4 L 2 2 L 4 1 L 5 2 L 7 2 L 10 0" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="3"/>
+  </g>
+  <g id="rock2b" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M0,10 v-1 L1,8 L1,7 L2,5 v-1 L3,3 h1 L5,2 L7,2 L10,0 V10 Z" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M 0 10 v -1 L 1 8 L 1 7 L 2 5 v -1 L 3 3 h 1 L 5 2 L 7 2 L 10 0" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="3"/>
+  </g>
+  <g id="rock3" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M0,10 v-1 L1,7 v-1 L2,5 v-1 L2,2 L4,1 L5,2 L7,2 L9,1 L10,3 L8,6 L8,7 L10,10 Z" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M0,10 v-1 L1,7 v-1 L2,5 v-1 L2,2 L4,1 L5,2 L7,2 L9,1 L10,3 L8,6 L8,7 L10,10" stroke-miterlimit="1" stroke-linecap="round" stroke="black" stroke-width="3"/>
+  </g>
+  <g id="rock4" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M3,3 L5,2 L7,3 L8,5 L7,7 v1 h-1 L4,9 L2,7 L2,5 Z" stroke-linecap="round" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M3,3 L5,2 L7,3 L8,5 L7,7 v1 h-1 L4,9 L2,7 L2,5 Z" stroke-linecap="round" stroke="black" stroke-width="3"/>
+  </g>
+  <g id="rockd" width="10" transform="scale(2,2)">
+    <path width="10" class="background" d="M0,10 v-1 L1,8 L0,6 v-1 L1,4 v-2 L0,1 L0,0 H10 v1 L9,2 v1 L8,6 L9,7 v1 L10,10 Z" stroke-miterlimit="1" stroke="black" stroke-width="1"/>
+    <path width="10" class="rockWall" d="M 0 10 v -1 L 1 8 L 0 6 v -1 L 1 4 v -2 L 0 1 L 0 0 M 10 0 v 1 L 9 2 v 1 L 8 6 L 9 7 v 1 L 10 10" stroke-miterlimit="1" stroke="black" stroke-width="3"/>
+  </g>
+  </defs><style><![CDATA[
+svg { overflow: visible }
+text { font: 14px 'Courier New', Courier, monospace }
+textarea { font: 10px 'Courier New', Courier, monospace }
+p { margin: 0 0 10px 0; padding: 0; }
+.line {  }
+.line svg { display: inline; vertical-align: middle }
+.labels text, #levels text, #label { text-anchor: middle; font: 10px 'Arial Narrow', sans-serif; font-weight: bold; }
+.labels text.left, #levels text.left { text-anchor: start; font-size: 14px; }
+a { color: black; text-decoration: none; }
+.link { fill: blue; text-decoration: underline }
+/* http://paletton.com/palette.php?uid=30f0u0kk8qbaaFtfwuQo4mgswhv */
+.background { fill: inherit; }
+use.red { fill: #F6A17F; }
+use.green { fill: #A1DB71; }
+use.blue { fill: #88A9C2; }
+use.colorQ { fill: #A9A9A9; }
+use.colorE { fill: #FF5733; }
+use.colorA { fill: #FFD700; }
+use.colorS { fill: #FF8C00; }
+use.colorS { fill: #A0522D; }
+use.colorD { fill: #1E90FF; }
+use.colorF { fill: #008000; }
+use { fill: white; }
+.key { color: forestgreen; fill: forestgreen; font-weight: bold; }
+.invisible { display: none; }
+.center:hover .dot { opacity: 1; }
+#ui { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+#background { transition: fill 500ms linear; }
+#help { transition: fill 500ms linear; }
+text { fill: black; }
+
+#help { fill: #fffff0; } /* ivory and light grey */
+#background { fill: #d3d3d3; }
+
+svg.black #background { fill: black; }
+
+svg.white #background { fill: white; }
+
+svg.grid  #background { fill: url(#grid); }
+
+/* http://www.color-hex.com/color/01b0f1
+   https://de.wikipedia.org/wiki/Non-Photo_Blue */
+svg.blue * { stroke: #005878; }
+svg.blue *[fill=black],
+svg.blue a,
+svg.blue text,
+svg.blue tspan { stroke: none; fill: #005878; }
+svg.blue .key { fill: white; }
+svg.blue #background,
+svg.blue #help { fill: #01b0f1; }
+
+.menu div {
+    background: white;
+    padding: 10px;
+    overflow: scroll;
+    font: 14px 'Courier New', Courier, monospace
+}
+.menu span { display: inline-block; width: 32ex }
+.menu a { color: blue }
+
+/* thick rock walls to be displayed only when autoWaller is on*/
+.rockWall { display:none }
+  ]]></style><g id="background" inkscape:groupmode="layer" inkscape:label="Background">
+    <rect x="20" y="20" width="640" height="620" stroke="black" stroke-width="1"/>
+  </g><g id="levels" inkscape:groupmode="layer" inkscape:label="Levels"><g id="level0" inkscape:groupmode="layer" inkscape:label="Level 1"><g id="arcs0"/><g id="floor0"><use id="empty_4_0" x="100" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_5_0" x="120" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_6_0" x="140" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_7_0" x="160" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_8_0" x="180" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_9_0" x="200" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_11_0" x="240" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_12_0" x="260" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_13_0" x="280" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_14_0" x="300" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_15_0" x="320" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_16_0" x="340" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_17_0" x="360" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_18_0" x="380" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_19_0" x="400" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_21_0" x="440" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_22_0" x="460" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_24_0" x="500" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_25_0" x="520" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_26_0" x="540" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_27_0" x="560" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_28_0" x="580" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_2_1" x="60" y="40" xlink:href="#empty" class="colorD"/><use id="empty_3_1" x="80" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_4_1" x="100" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_5_1" x="120" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_6_1" x="140" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_7_1" x="160" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_8_1" x="180" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_10_1" x="220" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_11_1" x="240" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_12_1" x="260" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_13_1" x="280" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_14_1" x="300" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_15_1" x="320" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_16_1" x="340" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_17_1" x="360" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_18_1" x="380" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_19_1" x="400" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_21_1" x="440" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_22_1" x="460" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_24_1" x="500" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_25_1" x="520" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_26_1" x="540" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_27_1" x="560" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_28_1" x="580" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_2_2" x="60" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_3_2" x="80" y="60" xlink:href="#empty" class="colorD"/><use id="empty_4_2" x="100" y="60" xlink:href="#empty" class="colorD"/><use id="empty_5_2" x="120" y="60" xlink:href="#empty" class="colorD"/><use id="empty_6_2" x="140" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_7_2" x="160" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_8_2" x="180" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_9_2" x="200" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_10_2" x="220" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_11_2" x="240" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_12_2" x="260" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_13_2" x="280" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_14_2" x="300" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_15_2" x="320" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_16_2" x="340" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_17_2" x="360" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_18_2" x="380" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_19_2" x="400" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_20_2" x="420" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_21_2" x="440" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_24_2" x="500" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_25_2" x="520" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_26_2" x="540" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_27_2" x="560" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_2_3" x="60" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_3_3" x="80" y="80" xlink:href="#empty" class="colorD"/><use id="empty_4_3" x="100" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_5_3" x="120" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_6_3" x="140" y="80" xlink:href="#empty" class="colorD"/><use id="empty_7_3" x="160" y="80" xlink:href="#empty" class="colorD"/><use id="empty_8_3" x="180" y="80" xlink:href="#empty" class="colorD"/><use id="empty_9_3" x="200" y="80" xlink:href="#empty" class="colorD"/><use id="empty_10_3" x="220" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_11_3" x="240" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_12_3" x="260" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_13_3" x="280" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_14_3" x="300" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_15_3" x="320" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_16_3" x="340" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_17_3" x="360" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_18_3" x="380" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_19_3" x="400" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_20_3" x="420" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_21_3" x="440" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_22_3" x="460" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_25_3" x="520" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_26_3" x="540" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_1_4" x="40" y="100" xlink:href="#empty" class="colorD"/><use id="empty_2_4" x="60" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_3_4" x="80" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_4_4" x="100" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_5_4" x="120" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_6_4" x="140" y="100" xlink:href="#empty" class="colorD"/><use id="empty_7_4" x="160" y="100" xlink:href="#empty" class="blue"/><use id="empty_8_4" x="180" y="100" xlink:href="#empty" class="blue"/><use id="empty_9_4" x="200" y="100" xlink:href="#empty" class="blue"/><use id="empty_10_4" x="220" y="100" xlink:href="#empty" class="colorD"/><use id="empty_11_4" x="240" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_12_4" x="260" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_13_4" x="280" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_14_4" x="300" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_15_4" x="320" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_16_4" x="340" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_17_4" x="360" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_18_4" x="380" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_19_4" x="400" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_20_4" x="420" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_21_4" x="440" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_22_4" x="460" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_23_4" x="480" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_1_5" x="40" y="120" xlink:href="#empty" class="colorD"/><use id="empty_2_5" x="60" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_3_5" x="80" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_4_5" x="100" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_5_5" x="120" y="120" xlink:href="#empty" class="colorD"/><use id="empty_6_5" x="140" y="120" xlink:href="#empty" class="colorD"/><use id="empty_7_5" x="160" y="120" xlink:href="#empty" class="blue"/><use id="empty_8_5" x="180" y="120" xlink:href="#empty" class="blue"/><use id="empty_9_5" x="200" y="120" xlink:href="#empty" class="blue"/><use id="empty_10_5" x="220" y="120" xlink:href="#empty" class="colorD"/><use id="empty_11_5" x="240" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_12_5" x="260" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_13_5" x="280" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_14_5" x="300" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_15_5" x="320" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_16_5" x="340" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_17_5" x="360" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_18_5" x="380" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_19_5" x="400" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_21_5" x="440" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_22_5" x="460" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_23_5" x="480" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_24_5" x="500" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_1_6" x="40" y="140" xlink:href="#empty" class="colorD"/><use id="empty_2_6" x="60" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_3_6" x="80" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_4_6" x="100" y="140" xlink:href="#empty" class="colorD"/><use id="empty_5_6" x="120" y="140" xlink:href="#empty" class="colorD"/><use id="empty_6_6" x="140" y="140" xlink:href="#empty" class="blue"/><use id="empty_7_6" x="160" y="140" xlink:href="#empty" class="blue"/><use id="empty_8_6" x="180" y="140" xlink:href="#empty" class="blue"/><use id="empty_9_6" x="200" y="140" xlink:href="#empty" class="blue"/><use id="empty_10_6" x="220" y="140" xlink:href="#empty" class="blue"/><use id="empty_11_6" x="240" y="140" xlink:href="#empty" class="colorD"/><use id="empty_12_6" x="260" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_13_6" x="280" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_14_6" x="300" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_15_6" x="320" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_16_6" x="340" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_17_6" x="360" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_18_6" x="380" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_19_6" x="400" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_21_6" x="440" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_22_6" x="460" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_23_6" x="480" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_1_7" x="40" y="160" xlink:href="#empty" class="colorD"/><use id="empty_2_7" x="60" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_3_7" x="80" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_4_7" x="100" y="160" xlink:href="#empty" class="colorD"/><use id="empty_5_7" x="120" y="160" xlink:href="#empty" class="colorD"/><use id="empty_6_7" x="140" y="160" xlink:href="#empty" class="blue"/><use id="empty_7_7" x="160" y="160" xlink:href="#empty" class="blue"/><use id="empty_8_7" x="180" y="160" xlink:href="#empty" class="blue"/><use id="empty_9_7" x="200" y="160" xlink:href="#empty" class="blue"/><use id="empty_10_7" x="220" y="160" xlink:href="#empty" class="blue"/><use id="empty_11_7" x="240" y="160" xlink:href="#empty" class="colorD"/><use id="empty_12_7" x="260" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_13_7" x="280" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_14_7" x="300" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_15_7" x="320" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_16_7" x="340" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_17_7" x="360" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_18_7" x="380" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_19_7" x="400" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_21_7" x="440" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_22_7" x="460" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_1_8" x="40" y="180" xlink:href="#empty" class="colorD"/><use id="empty_2_8" x="60" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_3_8" x="80" y="180" xlink:href="#empty" class="colorD"/><use id="empty_4_8" x="100" y="180" xlink:href="#empty" class="colorD"/><use id="empty_5_8" x="120" y="180" xlink:href="#empty" class="colorD"/><use id="empty_6_8" x="140" y="180" xlink:href="#empty" class="blue"/><use id="empty_7_8" x="160" y="180" xlink:href="#empty" class="blue"/><use id="empty_8_8" x="180" y="180" xlink:href="#empty" class="blue"/><use id="empty_9_8" x="200" y="180" xlink:href="#empty" class="blue"/><use id="empty_10_8" x="220" y="180" xlink:href="#empty" class="blue"/><use id="empty_11_8" x="240" y="180" xlink:href="#empty" class="colorD"/><use id="empty_12_8" x="260" y="180" xlink:href="#empty" class="colorD"/><use id="empty_13_8" x="280" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_14_8" x="300" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_15_8" x="320" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_16_8" x="340" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_17_8" x="360" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_18_8" x="380" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_19_8" x="400" y="180" xlink:href="#empty" class="colorD"/><use id="empty_21_8" x="440" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_0_9" x="20" y="200" xlink:href="#empty" class="colorD"/><use id="empty_1_9" x="40" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_2_9" x="60" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_3_9" x="80" y="200" xlink:href="#empty" class="colorD"/><use id="empty_4_9" x="100" y="200" xlink:href="#empty" class="colorD"/><use id="empty_5_9" x="120" y="200" xlink:href="#empty" class="colorD"/><use id="empty_6_9" x="140" y="200" xlink:href="#empty" class="blue"/><use id="empty_7_9" x="160" y="200" xlink:href="#empty" class="blue"/><use id="empty_8_9" x="180" y="200" xlink:href="#empty" class="blue"/><use id="empty_9_9" x="200" y="200" xlink:href="#empty" class="blue"/><use id="empty_10_9" x="220" y="200" xlink:href="#empty" class="blue"/><use id="empty_11_9" x="240" y="200" xlink:href="#empty" class="colorD"/><use id="empty_12_9" x="260" y="200" xlink:href="#empty" class="colorD"/><use id="empty_13_9" x="280" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_14_9" x="300" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_15_9" x="320" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_16_9" x="340" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_17_9" x="360" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_18_9" x="380" y="200" xlink:href="#empty" class="colorD"/><use id="empty_0_10" x="20" y="220" xlink:href="#empty" class="colorD"/><use id="empty_1_10" x="40" y="220" xlink:href="#empty" class="colorQ"/><use id="empty_2_10" x="60" y="220" xlink:href="#empty" class="colorD"/><use id="empty_3_10" x="80" y="220" xlink:href="#empty" class="colorD"/><use id="empty_4_10" x="100" y="220" xlink:href="#empty" class="colorD"/><use id="empty_5_10" x="120" y="220" xlink:href="#empty" class="colorD"/><use id="empty_6_10" x="140" y="220" xlink:href="#empty" class="blue"/><use id="empty_7_10" x="160" y="220" xlink:href="#empty" class="blue"/><use id="empty_8_10" x="180" y="220" xlink:href="#empty" class="blue"/><use id="empty_9_10" x="200" y="220" xlink:href="#empty" class="blue"/><use id="empty_10_10" x="220" y="220" xlink:href="#empty" class="blue"/><use id="empty_11_10" x="240" y="220" xlink:href="#empty" class="colorD"/><use id="empty_12_10" x="260" y="220" xlink:href="#empty" class="colorD"/><use id="empty_13_10" x="280" y="220" xlink:href="#empty" class="colorD"/><use id="empty_14_10" x="300" y="220" xlink:href="#empty" class="colorQ"/><use id="empty_15_10" x="320" y="220" xlink:href="#empty" class="colorQ"/><use id="empty_16_10" x="340" y="220" xlink:href="#empty" class="colorQ"/><use id="empty_17_10" x="360" y="220" xlink:href="#empty" class="colorD"/><use id="empty_18_10" x="380" y="220" xlink:href="#empty" class="colorD"/><use id="empty_19_10" x="400" y="220" xlink:href="#empty" class="colorD"/><use id="empty_0_11" x="20" y="240" xlink:href="#empty" class="colorD"/><use id="empty_1_11" x="40" y="240" xlink:href="#empty" class="colorQ"/><use id="empty_2_11" x="60" y="240" xlink:href="#empty" class="colorD"/><use id="empty_3_11" x="80" y="240" xlink:href="#empty" class="colorD"/><use id="empty_4_11" x="100" y="240" xlink:href="#empty" class="colorD"/><use id="empty_5_11" x="120" y="240" xlink:href="#empty" class="colorD"/><use id="empty_6_11" x="140" y="240" xlink:href="#empty" class="blue"/><use id="empty_7_11" x="160" y="240" xlink:href="#empty" class="blue"/><use id="empty_8_11" x="180" y="240" xlink:href="#empty" class="blue"/><use id="empty_9_11" x="200" y="240" xlink:href="#empty" class="blue"/><use id="empty_10_11" x="220" y="240" xlink:href="#empty" class="blue"/><use id="empty_11_11" x="240" y="240" xlink:href="#empty" class="colorD"/><use id="empty_12_11" x="260" y="240" xlink:href="#empty" class="colorD"/><use id="empty_13_11" x="280" y="240" xlink:href="#empty" class="colorD"/><use id="empty_14_11" x="300" y="240" xlink:href="#empty" class="colorQ"/><use id="empty_15_11" x="320" y="240" xlink:href="#empty" class="colorQ"/><use id="empty_16_11" x="340" y="240" xlink:href="#empty" class="colorD"/><use id="empty_17_11" x="360" y="240" xlink:href="#empty" class="colorD"/><use id="empty_18_11" x="380" y="240" xlink:href="#empty" class="colorD"/><use id="empty_0_12" x="20" y="260" xlink:href="#empty" class="colorD"/><use id="empty_1_12" x="40" y="260" xlink:href="#empty" class="colorQ"/><use id="empty_2_12" x="60" y="260" xlink:href="#empty" class="colorQ"/><use id="empty_3_12" x="80" y="260" xlink:href="#empty" class="colorD"/><use id="empty_4_12" x="100" y="260" xlink:href="#empty" class="colorD"/><use id="empty_5_12" x="120" y="260" xlink:href="#empty" class="colorD"/><use id="empty_6_12" x="140" y="260" xlink:href="#empty" class="colorD"/><use id="empty_7_12" x="160" y="260" xlink:href="#empty" class="blue"/><use id="empty_8_12" x="180" y="260" xlink:href="#empty" class="blue"/><use id="empty_9_12" x="200" y="260" xlink:href="#empty" class="blue"/><use id="empty_10_12" x="220" y="260" xlink:href="#empty" class="colorD"/><use id="empty_11_12" x="240" y="260" xlink:href="#empty" class="colorD"/><use id="empty_12_12" x="260" y="260" xlink:href="#empty" class="colorD"/><use id="empty_13_12" x="280" y="260" xlink:href="#empty" class="colorD"/><use id="empty_14_12" x="300" y="260" xlink:href="#empty" class="colorQ"/><use id="empty_15_12" x="320" y="260" xlink:href="#empty" class="colorQ"/><use id="empty_16_12" x="340" y="260" xlink:href="#empty" class="colorD"/><use id="empty_17_12" x="360" y="260" xlink:href="#empty" class="colorD"/><use id="empty_0_13" x="20" y="280" xlink:href="#empty" class="colorD"/><use id="empty_1_13" x="40" y="280" xlink:href="#empty" class="colorQ"/><use id="empty_2_13" x="60" y="280" xlink:href="#empty" class="colorQ"/><use id="empty_3_13" x="80" y="280" xlink:href="#empty" class="colorD"/><use id="empty_4_13" x="100" y="280" xlink:href="#empty" class="colorD"/><use id="empty_5_13" x="120" y="280" xlink:href="#empty" class="colorD"/><use id="empty_7_13" x="160" y="280" xlink:href="#empty" class="blue"/><use id="empty_8_13" x="180" y="280" xlink:href="#empty" class="blue"/><use id="empty_9_13" x="200" y="280" xlink:href="#empty" class="blue"/><use id="empty_10_13" x="220" y="280" xlink:href="#empty" class="colorD"/><use id="empty_11_13" x="240" y="280" xlink:href="#empty" class="colorD"/><use id="empty_12_13" x="260" y="280" xlink:href="#empty" class="colorD"/><use id="empty_13_13" x="280" y="280" xlink:href="#empty" class="colorD"/><use id="empty_14_13" x="300" y="280" xlink:href="#empty" class="colorQ"/><use id="empty_15_13" x="320" y="280" xlink:href="#empty" class="colorQ"/><use id="empty_16_13" x="340" y="280" xlink:href="#empty" class="colorD"/><use id="empty_0_14" x="20" y="300" xlink:href="#empty" class="colorD"/><use id="empty_1_14" x="40" y="300" xlink:href="#empty" class="colorQ"/><use id="empty_2_14" x="60" y="300" xlink:href="#empty" class="colorQ"/><use id="empty_3_14" x="80" y="300" xlink:href="#empty" class="colorD"/><use id="empty_4_14" x="100" y="300" xlink:href="#empty" class="colorD"/><use id="empty_5_14" x="120" y="300" xlink:href="#empty" class="colorD"/><use id="empty_6_14" x="140" y="300" xlink:href="#empty" class="colorD"/><use id="empty_7_14" x="160" y="300" xlink:href="#empty" class="blue"/><use id="empty_8_14" x="180" y="300" xlink:href="#empty" class="blue"/><use id="empty_9_14" x="200" y="300" xlink:href="#empty" class="blue"/><use id="empty_10_14" x="220" y="300" xlink:href="#empty" class="colorD"/><use id="empty_11_14" x="240" y="300" xlink:href="#empty" class="colorD"/><use id="empty_12_14" x="260" y="300" xlink:href="#empty" class="colorD"/><use id="empty_13_14" x="280" y="300" xlink:href="#empty" class="colorD"/><use id="empty_14_14" x="300" y="300" xlink:href="#empty" class="colorQ"/><use id="empty_15_14" x="320" y="300" xlink:href="#empty" class="colorD"/><use id="empty_0_15" x="20" y="320" xlink:href="#empty" class="colorD"/><use id="empty_1_15" x="40" y="320" xlink:href="#empty" class="colorQ"/><use id="empty_2_15" x="60" y="320" xlink:href="#empty" class="colorQ"/><use id="empty_4_15" x="100" y="320" xlink:href="#empty" class="colorD"/><use id="empty_5_15" x="120" y="320" xlink:href="#empty" class="colorD"/><use id="empty_6_15" x="140" y="320" xlink:href="#empty" class="colorD"/><use id="empty_7_15" x="160" y="320" xlink:href="#empty" class="blue"/><use id="empty_8_15" x="180" y="320" xlink:href="#empty" class="blue"/><use id="empty_9_15" x="200" y="320" xlink:href="#empty" class="blue"/><use id="empty_10_15" x="220" y="320" xlink:href="#empty" class="colorD"/><use id="empty_11_15" x="240" y="320" xlink:href="#empty" class="colorD"/><use id="empty_12_15" x="260" y="320" xlink:href="#empty" class="colorD"/><use id="empty_13_15" x="280" y="320" xlink:href="#empty" class="colorD"/><use id="empty_14_15" x="300" y="320" xlink:href="#empty" class="colorQ"/><use id="empty_15_15" x="320" y="320" xlink:href="#empty" class="colorD"/><use id="empty_0_16" x="20" y="340" xlink:href="#empty" class="colorD"/><use id="empty_1_16" x="40" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_2_16" x="60" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_3_16" x="80" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_4_16" x="100" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_5_16" x="120" y="340" xlink:href="#empty" class="colorD"/><use id="empty_6_16" x="140" y="340" xlink:href="#empty" class="colorD"/><use id="empty_7_16" x="160" y="340" xlink:href="#empty" class="blue"/><use id="empty_8_16" x="180" y="340" xlink:href="#empty" class="blue"/><use id="empty_9_16" x="200" y="340" xlink:href="#empty" class="blue"/><use id="empty_10_16" x="220" y="340" xlink:href="#empty" class="colorD"/><use id="empty_11_16" x="240" y="340" xlink:href="#empty" class="colorD"/><use id="empty_12_16" x="260" y="340" xlink:href="#empty" class="colorD"/><use id="empty_13_16" x="280" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_14_16" x="300" y="340" xlink:href="#empty" class="colorQ"/><use id="empty_0_17" x="20" y="360" xlink:href="#empty" class="colorD"/><use id="empty_1_17" x="40" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_2_17" x="60" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_3_17" x="80" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_4_17" x="100" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_5_17" x="120" y="360" xlink:href="#empty" class="colorD"/><use id="empty_6_17" x="140" y="360" xlink:href="#empty" class="colorD"/><use id="empty_7_17" x="160" y="360" xlink:href="#empty" class="blue"/><use id="empty_8_17" x="180" y="360" xlink:href="#empty" class="blue"/><use id="empty_10_17" x="220" y="360" xlink:href="#empty" class="colorD"/><use id="empty_11_17" x="240" y="360" xlink:href="#empty" class="colorD"/><use id="empty_12_17" x="260" y="360" xlink:href="#empty" class="colorD"/><use id="empty_13_17" x="280" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_1_18" x="40" y="380" xlink:href="#empty" class="colorQ"/><use id="empty_2_18" x="60" y="380" xlink:href="#empty" class="colorQ"/><use id="empty_3_18" x="80" y="380" xlink:href="#empty" class="colorQ"/><use id="empty_4_18" x="100" y="380" xlink:href="#empty" class="colorQ"/><use id="empty_5_18" x="120" y="380" xlink:href="#empty" class="colorD"/><use id="empty_6_18" x="140" y="380" xlink:href="#empty" class="colorD"/><use id="empty_7_18" x="160" y="380" xlink:href="#empty" class="colorD"/><use id="empty_8_18" x="180" y="380" xlink:href="#empty" class="blue"/><use id="empty_9_18" x="200" y="380" xlink:href="#empty" class="colorD"/><use id="empty_10_18" x="220" y="380" xlink:href="#empty" class="colorD"/><use id="empty_11_18" x="240" y="380" xlink:href="#empty" class="colorD"/><use id="empty_12_18" x="260" y="380" xlink:href="#empty" class="colorD"/><use id="empty_13_18" x="280" y="380" xlink:href="#empty" class="colorQ"/><use id="empty_1_19" x="40" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_2_19" x="60" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_3_19" x="80" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_4_19" x="100" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_5_19" x="120" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_6_19" x="140" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_7_19" x="160" y="400" xlink:href="#empty" class="colorD"/><use id="empty_8_19" x="180" y="400" xlink:href="#empty" class="blue"/><use id="empty_9_19" x="200" y="400" xlink:href="#empty" class="colorD"/><use id="empty_10_19" x="220" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_11_19" x="240" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_12_19" x="260" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_1_20" x="40" y="420" xlink:href="#empty" class="colorD"/><use id="empty_2_20" x="60" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_3_20" x="80" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_4_20" x="100" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_5_20" x="120" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_6_20" x="140" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_7_20" x="160" y="420" xlink:href="#empty" class="colorD"/><use id="empty_8_20" x="180" y="420" xlink:href="#empty" class="blue"/><use id="empty_9_20" x="200" y="420" xlink:href="#empty" class="colorD"/><use id="empty_10_20" x="220" y="420" xlink:href="#empty" class="colorD"/><use id="empty_11_20" x="240" y="420" xlink:href="#empty" class="colorQ"/><use id="empty_1_21" x="40" y="440" xlink:href="#empty" class="colorD"/><use id="empty_2_21" x="60" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_3_21" x="80" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_4_21" x="100" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_5_21" x="120" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_6_21" x="140" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_7_21" x="160" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_8_21" x="180" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_9_21" x="200" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_10_21" x="220" y="440" xlink:href="#empty" class="colorQ"/><use id="empty_1_22" x="40" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_2_22" x="60" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_3_22" x="80" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_4_22" x="100" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_5_22" x="120" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_6_22" x="140" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_7_22" x="160" y="460" xlink:href="#empty" class="colorD"/><use id="empty_8_22" x="180" y="460" xlink:href="#empty" class="colorD"/><use id="empty_9_22" x="200" y="460" xlink:href="#empty" class="colorQ"/><use id="empty_2_23" x="60" y="480" xlink:href="#empty" class="colorQ"/><use id="empty_3_23" x="80" y="480" xlink:href="#empty" class="colorD"/><use id="empty_4_23" x="100" y="480" xlink:href="#empty" class="colorD"/><use id="empty_5_23" x="120" y="480" xlink:href="#empty" class="colorD"/><use id="empty_6_23" x="140" y="480" xlink:href="#empty" class="colorQ"/><use id="empty_7_23" x="160" y="480" xlink:href="#empty" class="colorD"/><use id="empty_8_23" x="180" y="480" xlink:href="#empty" class="colorD"/><use id="empty_3_24" x="80" y="500" xlink:href="#empty" class="colorD"/><use id="empty_4_24" x="100" y="500" xlink:href="#empty" class="colorD"/><use id="empty_5_24" x="120" y="500" xlink:href="#empty" class="colorD"/><use id="empty_6_24" x="140" y="500" xlink:href="#empty" class="colorQ"/><use id="empty_7_24" x="160" y="500" xlink:href="#empty" class="colorD"/><use id="empty_3_25" x="80" y="520" xlink:href="#empty" class="colorD"/><use id="empty_4_25" x="100" y="520" xlink:href="#empty" class="colorD"/><use id="empty_5_25" x="120" y="520" xlink:href="#empty" class="colorD"/><use id="empty_6_25" x="140" y="520" xlink:href="#empty" class="colorD"/><use id="empty_4_26" x="100" y="540" xlink:href="#empty" class="colorD"/><use id="empty_5_26" x="120" y="540" xlink:href="#empty" class="colorD"/><use id="empty_6_26" x="140" y="540" xlink:href="#empty" class="colorD"/><use id="empty_10_0" x="220" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_20_1" x="420" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_20_0" x="420" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_20_8" x="420" y="180" xlink:href="#empty" class="colorQ"/><use id="empty_20_9" x="420" y="200" xlink:href="#empty" class="colorQ"/><use id="empty_20_7" x="420" y="160" xlink:href="#empty" class="colorQ"/><use id="empty_20_6" x="420" y="140" xlink:href="#empty" class="colorQ"/><use id="empty_20_5" x="420" y="120" xlink:href="#empty" class="colorQ"/><use id="empty_23_0" x="480" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_23_1" x="480" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_23_2" x="480" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_22_2" x="460" y="60" xlink:href="#empty" class="colorQ"/><use id="empty_23_3" x="480" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_24_3" x="500" y="80" xlink:href="#empty" class="colorQ"/><use id="empty_24_4" x="500" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_25_4" x="520" y="100" xlink:href="#empty" class="colorQ"/><use id="empty_29_0" x="600" y="20" xlink:href="#empty" class="colorQ"/><use id="empty_9_1" x="200" y="40" xlink:href="#empty" class="colorQ"/><use id="empty_0_18" x="20" y="380" xlink:href="#empty" class="colorD"/><use id="empty_0_19" x="20" y="400" xlink:href="#empty" class="colorD"/><use id="empty_0_20" x="20" y="420" xlink:href="#empty" class="colorD"/><use id="empty_0_21" x="20" y="440" xlink:href="#empty" class="colorD"/><use id="empty_0_22" x="20" y="460" xlink:href="#empty" class="colorD"/><use id="empty_0_23" x="20" y="480" xlink:href="#empty" class="colorD"/><use id="empty_0_24" x="20" y="500" xlink:href="#empty" class="colorD"/><use id="empty_0_25" x="20" y="520" xlink:href="#empty" class="colorD"/><use id="empty_0_26" x="20" y="540" xlink:href="#empty" class="colorD"/><use id="empty_0_27" x="20" y="560" xlink:href="#empty" class="colorD"/><use id="empty_0_28" x="20" y="580" xlink:href="#empty" class="colorD"/><use id="empty_0_29" x="20" y="600" xlink:href="#empty" class="colorD"/><use id="empty_0_0" x="20" y="20" xlink:href="#empty" class="colorD"/><use id="empty_0_1" x="20" y="40" xlink:href="#empty" class="colorD"/><use id="empty_0_2" x="20" y="60" xlink:href="#empty" class="colorD"/><use id="empty_0_3" x="20" y="80" xlink:href="#empty" class="colorD"/><use id="empty_0_4" x="20" y="100" xlink:href="#empty" class="colorD"/><use id="empty_0_5" x="20" y="120" xlink:href="#empty" class="colorD"/><use id="empty_0_6" x="20" y="140" xlink:href="#empty" class="colorD"/><use id="empty_0_7" x="20" y="160" xlink:href="#empty" class="colorD"/><use id="empty_0_8" x="20" y="180" xlink:href="#empty" class="colorD"/><use id="empty_1_0" x="40" y="20" xlink:href="#empty" class="colorD"/><use id="empty_1_1" x="40" y="40" xlink:href="#empty" class="colorD"/><use id="empty_1_2" x="40" y="60" xlink:href="#empty" class="colorD"/><use id="empty_1_3" x="40" y="80" xlink:href="#empty" class="colorD"/><use id="empty_2_0" x="60" y="20" xlink:href="#empty" class="colorD"/><use id="empty_1_23" x="40" y="480" xlink:href="#empty" class="colorD"/><use id="empty_1_24" x="40" y="500" xlink:href="#empty" class="colorD"/><use id="empty_1_25" x="40" y="520" xlink:href="#empty" class="colorD"/><use id="empty_1_26" x="40" y="540" xlink:href="#empty" class="colorD"/><use id="empty_1_27" x="40" y="560" xlink:href="#empty" class="colorD"/><use id="empty_1_28" x="40" y="580" xlink:href="#empty" class="colorD"/><use id="empty_1_29" x="40" y="600" xlink:href="#empty" class="colorD"/><use id="empty_2_24" x="60" y="500" xlink:href="#empty" class="colorD"/><use id="empty_2_25" x="60" y="520" xlink:href="#empty" class="colorD"/><use id="empty_2_26" x="60" y="540" xlink:href="#empty" class="colorD"/><use id="empty_2_27" x="60" y="560" xlink:href="#empty" class="colorD"/><use id="empty_2_28" x="60" y="580" xlink:href="#empty" class="colorD"/><use id="empty_2_29" x="60" y="600" xlink:href="#empty" class="colorD"/><use id="empty_3_26" x="80" y="540" xlink:href="#empty" class="colorD"/><use id="empty_3_27" x="80" y="560" xlink:href="#empty" class="colorD"/><use id="empty_3_28" x="80" y="580" xlink:href="#empty" class="colorD"/><use id="empty_3_29" x="80" y="600" xlink:href="#empty" class="colorD"/><use id="empty_4_27" x="100" y="560" xlink:href="#empty" class="colorD"/><use id="empty_5_27" x="120" y="560" xlink:href="#empty" class="colorD"/><use id="empty_6_27" x="140" y="560" xlink:href="#empty" class="colorD"/><use id="empty_7_27" x="160" y="560" xlink:href="#empty" class="colorD"/><use id="empty_8_27" x="180" y="560" xlink:href="#empty" class="colorD"/><use id="empty_9_27" x="200" y="560" xlink:href="#empty" class="colorD"/><use id="empty_10_27" x="220" y="560" xlink:href="#empty" class="colorD"/><use id="empty_11_27" x="240" y="560" xlink:href="#empty" class="colorD"/><use id="empty_12_27" x="260" y="560" xlink:href="#empty" class="colorD"/><use id="empty_13_27" x="280" y="560" xlink:href="#empty" class="colorD"/><use id="empty_14_27" x="300" y="560" xlink:href="#empty" class="colorD"/><use id="empty_15_27" x="320" y="560" xlink:href="#empty" class="colorD"/><use id="empty_16_27" x="340" y="560" xlink:href="#empty" class="colorD"/><use id="empty_17_27" x="360" y="560" xlink:href="#empty" class="colorD"/><use id="empty_18_27" x="380" y="560" xlink:href="#empty" class="colorD"/><use id="empty_19_27" x="400" y="560" xlink:href="#empty" class="colorD"/><use id="empty_20_27" x="420" y="560" xlink:href="#empty" class="colorD"/><use id="empty_21_27" x="440" y="560" xlink:href="#empty" class="colorD"/><use id="empty_22_27" x="460" y="560" xlink:href="#empty" class="colorD"/><use id="empty_23_27" x="480" y="560" xlink:href="#empty" class="colorD"/><use id="empty_24_27" x="500" y="560" xlink:href="#empty" class="colorD"/><use id="empty_25_27" x="520" y="560" xlink:href="#empty" class="colorD"/><use id="empty_26_27" x="540" y="560" xlink:href="#empty" class="colorD"/><use id="empty_27_27" x="560" y="560" xlink:href="#empty" class="colorD"/><use id="empty_28_27" x="580" y="560" xlink:href="#empty" class="colorD"/><use id="empty_29_27" x="600" y="560" xlink:href="#empty" class="colorD"/><use id="empty_4_28" x="100" y="580" xlink:href="#empty" class="colorD"/><use id="empty_5_28" x="120" y="580" xlink:href="#empty" class="colorD"/><use id="empty_6_28" x="140" y="580" xlink:href="#empty" class="colorD"/><use id="empty_7_28" x="160" y="580" xlink:href="#empty" class="colorD"/><use id="empty_8_28" x="180" y="580" xlink:href="#empty" class="colorD"/><use id="empty_9_28" x="200" y="580" xlink:href="#empty" class="colorD"/><use id="empty_10_28" x="220" y="580" xlink:href="#empty" class="colorD"/><use id="empty_11_28" x="240" y="580" xlink:href="#empty" class="colorD"/><use id="empty_12_28" x="260" y="580" xlink:href="#empty" class="colorD"/><use id="empty_13_28" x="280" y="580" xlink:href="#empty" class="colorD"/><use id="empty_14_28" x="300" y="580" xlink:href="#empty" class="colorD"/><use id="empty_15_28" x="320" y="580" xlink:href="#empty" class="colorD"/><use id="empty_16_28" x="340" y="580" xlink:href="#empty" class="colorD"/><use id="empty_17_28" x="360" y="580" xlink:href="#empty" class="colorD"/><use id="empty_18_28" x="380" y="580" xlink:href="#empty" class="colorD"/><use id="empty_19_28" x="400" y="580" xlink:href="#empty" class="colorD"/><use id="empty_20_28" x="420" y="580" xlink:href="#empty" class="colorD"/><use id="empty_21_28" x="440" y="580" xlink:href="#empty" class="colorD"/><use id="empty_22_28" x="460" y="580" xlink:href="#empty" class="colorD"/><use id="empty_23_28" x="480" y="580" xlink:href="#empty" class="colorD"/><use id="empty_24_28" x="500" y="580" xlink:href="#empty" class="colorD"/><use id="empty_25_28" x="520" y="580" xlink:href="#empty" class="colorD"/><use id="empty_26_28" x="540" y="580" xlink:href="#empty" class="colorD"/><use id="empty_27_28" x="560" y="580" xlink:href="#empty" class="colorD"/><use id="empty_28_28" x="580" y="580" xlink:href="#empty" class="colorD"/><use id="empty_29_28" x="600" y="580" xlink:href="#empty" class="colorD"/><use id="empty_4_29" x="100" y="600" xlink:href="#empty" class="colorD"/><use id="empty_5_29" x="120" y="600" xlink:href="#empty" class="colorD"/><use id="empty_6_29" x="140" y="600" xlink:href="#empty" class="colorD"/><use id="empty_7_29" x="160" y="600" xlink:href="#empty" class="colorD"/><use id="empty_8_29" x="180" y="600" xlink:href="#empty" class="colorD"/><use id="empty_9_29" x="200" y="600" xlink:href="#empty" class="colorD"/><use id="empty_10_29" x="220" y="600" xlink:href="#empty" class="colorD"/><use id="empty_11_29" x="240" y="600" xlink:href="#empty" class="colorD"/><use id="empty_12_29" x="260" y="600" xlink:href="#empty" class="colorD"/><use id="empty_13_29" x="280" y="600" xlink:href="#empty" class="colorD"/><use id="empty_14_29" x="300" y="600" xlink:href="#empty" class="colorD"/><use id="empty_15_29" x="320" y="600" xlink:href="#empty" class="colorD"/><use id="empty_16_29" x="340" y="600" xlink:href="#empty" class="colorD"/><use id="empty_17_29" x="360" y="600" xlink:href="#empty" class="colorD"/><use id="empty_18_29" x="380" y="600" xlink:href="#empty" class="colorD"/><use id="empty_19_29" x="400" y="600" xlink:href="#empty" class="colorD"/><use id="empty_20_29" x="420" y="600" xlink:href="#empty" class="colorD"/><use id="empty_21_29" x="440" y="600" xlink:href="#empty" class="colorD"/><use id="empty_22_29" x="460" y="600" xlink:href="#empty" class="colorD"/><use id="empty_23_29" x="480" y="600" xlink:href="#empty" class="colorD"/><use id="empty_24_29" x="500" y="600" xlink:href="#empty" class="colorD"/><use id="empty_25_29" x="520" y="600" xlink:href="#empty" class="colorD"/><use id="empty_26_29" x="540" y="600" xlink:href="#empty" class="colorD"/><use id="empty_27_29" x="560" y="600" xlink:href="#empty" class="colorD"/><use id="empty_28_29" x="580" y="600" xlink:href="#empty" class="colorD"/><use id="empty_29_29" x="600" y="600" xlink:href="#empty" class="colorD"/><use id="empty_7_25" x="160" y="520" xlink:href="#empty" class="colorD"/><use id="empty_8_25" x="180" y="520" xlink:href="#empty" class="colorD"/><use id="empty_9_25" x="200" y="520" xlink:href="#empty" class="colorD"/><use id="empty_10_25" x="220" y="520" xlink:href="#empty" class="colorD"/><use id="empty_11_25" x="240" y="520" xlink:href="#empty" class="colorD"/><use id="empty_12_25" x="260" y="520" xlink:href="#empty" class="colorD"/><use id="empty_13_25" x="280" y="520" xlink:href="#empty" class="colorD"/><use id="empty_14_25" x="300" y="520" xlink:href="#empty" class="colorD"/><use id="empty_15_25" x="320" y="520" xlink:href="#empty" class="colorD"/><use id="empty_16_25" x="340" y="520" xlink:href="#empty" class="colorD"/><use id="empty_17_25" x="360" y="520" xlink:href="#empty" class="colorD"/><use id="empty_18_25" x="380" y="520" xlink:href="#empty" class="colorD"/><use id="empty_19_25" x="400" y="520" xlink:href="#empty" class="colorD"/><use id="empty_20_25" x="420" y="520" xlink:href="#empty" class="colorD"/><use id="empty_21_25" x="440" y="520" xlink:href="#empty" class="colorD"/><use id="empty_22_25" x="460" y="520" xlink:href="#empty" class="colorD"/><use id="empty_23_25" x="480" y="520" xlink:href="#empty" class="colorD"/><use id="empty_24_25" x="500" y="520" xlink:href="#empty" class="colorD"/><use id="empty_25_25" x="520" y="520" xlink:href="#empty" class="colorD"/><use id="empty_26_25" x="540" y="520" xlink:href="#empty" class="colorD"/><use id="empty_27_25" x="560" y="520" xlink:href="#empty" class="colorD"/><use id="empty_28_25" x="580" y="520" xlink:href="#empty" class="colorD"/><use id="empty_29_25" x="600" y="520" xlink:href="#empty" class="colorD"/><use id="empty_7_26" x="160" y="540" xlink:href="#empty" class="colorD"/><use id="empty_8_26" x="180" y="540" xlink:href="#empty" class="colorD"/><use id="empty_9_26" x="200" y="540" xlink:href="#empty" class="colorD"/><use id="empty_10_26" x="220" y="540" xlink:href="#empty" class="colorD"/><use id="empty_11_26" x="240" y="540" xlink:href="#empty" class="colorD"/><use id="empty_12_26" x="260" y="540" xlink:href="#empty" class="colorD"/><use id="empty_13_26" x="280" y="540" xlink:href="#empty" class="colorD"/><use id="empty_14_26" x="300" y="540" xlink:href="#empty" class="colorD"/><use id="empty_15_26" x="320" y="540" xlink:href="#empty" class="colorD"/><use id="empty_16_26" x="340" y="540" xlink:href="#empty" class="colorD"/><use id="empty_17_26" x="360" y="540" xlink:href="#empty" class="colorD"/><use id="empty_18_26" x="380" y="540" xlink:href="#empty" class="colorD"/><use id="empty_19_26" x="400" y="540" xlink:href="#empty" class="colorD"/><use id="empty_20_26" x="420" y="540" xlink:href="#empty" class="colorD"/><use id="empty_21_26" x="440" y="540" xlink:href="#empty" class="colorD"/><use id="empty_22_26" x="460" y="540" xlink:href="#empty" class="colorD"/><use id="empty_23_26" x="480" y="540" xlink:href="#empty" class="colorD"/><use id="empty_24_26" x="500" y="540" xlink:href="#empty" class="colorD"/><use id="empty_25_26" x="520" y="540" xlink:href="#empty" class="colorD"/><use id="empty_26_26" x="540" y="540" xlink:href="#empty" class="colorD"/><use id="empty_27_26" x="560" y="540" xlink:href="#empty" class="colorD"/><use id="empty_28_26" x="580" y="540" xlink:href="#empty" class="colorD"/><use id="empty_29_26" x="600" y="540" xlink:href="#empty" class="colorD"/><use id="empty_8_24" x="180" y="500" xlink:href="#empty" class="colorD"/><use id="empty_9_24" x="200" y="500" xlink:href="#empty" class="colorD"/><use id="empty_10_24" x="220" y="500" xlink:href="#empty" class="colorD"/><use id="empty_11_24" x="240" y="500" xlink:href="#empty" class="colorD"/><use id="empty_12_24" x="260" y="500" xlink:href="#empty" class="colorD"/><use id="empty_13_24" x="280" y="500" xlink:href="#empty" class="colorD"/><use id="empty_14_24" x="300" y="500" xlink:href="#empty" class="colorD"/><use id="empty_15_24" x="320" y="500" xlink:href="#empty" class="colorD"/><use id="empty_16_24" x="340" y="500" xlink:href="#empty" class="colorD"/><use id="empty_17_24" x="360" y="500" xlink:href="#empty" class="colorD"/><use id="empty_18_24" x="380" y="500" xlink:href="#empty" class="colorD"/><use id="empty_19_24" x="400" y="500" xlink:href="#empty" class="colorD"/><use id="empty_20_24" x="420" y="500" xlink:href="#empty" class="colorD"/><use id="empty_21_24" x="440" y="500" xlink:href="#empty" class="colorD"/><use id="empty_22_24" x="460" y="500" xlink:href="#empty" class="colorD"/><use id="empty_23_24" x="480" y="500" xlink:href="#empty" class="colorD"/><use id="empty_24_24" x="500" y="500" xlink:href="#empty" class="colorD"/><use id="empty_25_24" x="520" y="500" xlink:href="#empty" class="colorD"/><use id="empty_26_24" x="540" y="500" xlink:href="#empty" class="colorD"/><use id="empty_27_24" x="560" y="500" xlink:href="#empty" class="colorD"/><use id="empty_28_24" x="580" y="500" xlink:href="#empty" class="colorD"/><use id="empty_29_24" x="600" y="500" xlink:href="#empty" class="colorD"/><use id="empty_9_23" x="200" y="480" xlink:href="#empty" class="colorD"/><use id="empty_10_23" x="220" y="480" xlink:href="#empty" class="colorD"/><use id="empty_11_23" x="240" y="480" xlink:href="#empty" class="colorD"/><use id="empty_12_23" x="260" y="480" xlink:href="#empty" class="colorD"/><use id="empty_13_23" x="280" y="480" xlink:href="#empty" class="colorD"/><use id="empty_14_23" x="300" y="480" xlink:href="#empty" class="colorD"/><use id="empty_15_23" x="320" y="480" xlink:href="#empty" class="colorD"/><use id="empty_16_23" x="340" y="480" xlink:href="#empty" class="colorD"/><use id="empty_17_23" x="360" y="480" xlink:href="#empty" class="colorD"/><use id="empty_18_23" x="380" y="480" xlink:href="#empty" class="colorD"/><use id="empty_19_23" x="400" y="480" xlink:href="#empty" class="colorD"/><use id="empty_20_23" x="420" y="480" xlink:href="#empty" class="colorD"/><use id="empty_21_23" x="440" y="480" xlink:href="#empty" class="colorD"/><use id="empty_22_23" x="460" y="480" xlink:href="#empty" class="colorD"/><use id="empty_23_23" x="480" y="480" xlink:href="#empty" class="colorD"/><use id="empty_24_23" x="500" y="480" xlink:href="#empty" class="colorD"/><use id="empty_25_23" x="520" y="480" xlink:href="#empty" class="colorD"/><use id="empty_26_23" x="540" y="480" xlink:href="#empty" class="colorD"/><use id="empty_27_23" x="560" y="480" xlink:href="#empty" class="colorD"/><use id="empty_28_23" x="580" y="480" xlink:href="#empty" class="colorD"/><use id="empty_29_23" x="600" y="480" xlink:href="#empty" class="colorD"/><use id="empty_10_22" x="220" y="460" xlink:href="#empty" class="colorD"/><use id="empty_11_22" x="240" y="460" xlink:href="#empty" class="colorD"/><use id="empty_12_22" x="260" y="460" xlink:href="#empty" class="colorD"/><use id="empty_13_22" x="280" y="460" xlink:href="#empty" class="colorD"/><use id="empty_14_22" x="300" y="460" xlink:href="#empty" class="colorD"/><use id="empty_15_22" x="320" y="460" xlink:href="#empty" class="colorD"/><use id="empty_16_22" x="340" y="460" xlink:href="#empty" class="colorD"/><use id="empty_17_22" x="360" y="460" xlink:href="#empty" class="colorD"/><use id="empty_18_22" x="380" y="460" xlink:href="#empty" class="colorD"/><use id="empty_19_22" x="400" y="460" xlink:href="#empty" class="colorD"/><use id="empty_20_22" x="420" y="460" xlink:href="#empty" class="colorD"/><use id="empty_21_22" x="440" y="460" xlink:href="#empty" class="colorD"/><use id="empty_22_22" x="460" y="460" xlink:href="#empty" class="colorD"/><use id="empty_23_22" x="480" y="460" xlink:href="#empty" class="colorD"/><use id="empty_24_22" x="500" y="460" xlink:href="#empty" class="colorD"/><use id="empty_25_22" x="520" y="460" xlink:href="#empty" class="colorD"/><use id="empty_26_22" x="540" y="460" xlink:href="#empty" class="colorD"/><use id="empty_27_22" x="560" y="460" xlink:href="#empty" class="colorD"/><use id="empty_28_22" x="580" y="460" xlink:href="#empty" class="colorD"/><use id="empty_29_22" x="600" y="460" xlink:href="#empty" class="colorD"/><use id="empty_11_21" x="240" y="440" xlink:href="#empty" class="colorD"/><use id="empty_12_21" x="260" y="440" xlink:href="#empty" class="colorD"/><use id="empty_13_21" x="280" y="440" xlink:href="#empty" class="colorD"/><use id="empty_14_21" x="300" y="440" xlink:href="#empty" class="colorD"/><use id="empty_15_21" x="320" y="440" xlink:href="#empty" class="colorD"/><use id="empty_16_21" x="340" y="440" xlink:href="#empty" class="colorD"/><use id="empty_17_21" x="360" y="440" xlink:href="#empty" class="colorD"/><use id="empty_18_21" x="380" y="440" xlink:href="#empty" class="colorD"/><use id="empty_19_21" x="400" y="440" xlink:href="#empty" class="colorD"/><use id="empty_20_21" x="420" y="440" xlink:href="#empty" class="colorD"/><use id="empty_21_21" x="440" y="440" xlink:href="#empty" class="colorD"/><use id="empty_22_21" x="460" y="440" xlink:href="#empty" class="colorD"/><use id="empty_23_21" x="480" y="440" xlink:href="#empty" class="colorD"/><use id="empty_24_21" x="500" y="440" xlink:href="#empty" class="colorD"/><use id="empty_25_21" x="520" y="440" xlink:href="#empty" class="colorD"/><use id="empty_26_21" x="540" y="440" xlink:href="#empty" class="colorD"/><use id="empty_27_21" x="560" y="440" xlink:href="#empty" class="colorD"/><use id="empty_28_21" x="580" y="440" xlink:href="#empty" class="colorD"/><use id="empty_29_21" x="600" y="440" xlink:href="#empty" class="colorD"/><use id="empty_12_20" x="260" y="420" xlink:href="#empty" class="colorD"/><use id="empty_13_20" x="280" y="420" xlink:href="#empty" class="colorD"/><use id="empty_14_20" x="300" y="420" xlink:href="#empty" class="colorD"/><use id="empty_15_20" x="320" y="420" xlink:href="#empty" class="colorD"/><use id="empty_16_20" x="340" y="420" xlink:href="#empty" class="colorD"/><use id="empty_17_20" x="360" y="420" xlink:href="#empty" class="colorD"/><use id="empty_18_20" x="380" y="420" xlink:href="#empty" class="colorD"/><use id="empty_19_20" x="400" y="420" xlink:href="#empty" class="colorD"/><use id="empty_20_20" x="420" y="420" xlink:href="#empty" class="colorD"/><use id="empty_21_20" x="440" y="420" xlink:href="#empty" class="colorD"/><use id="empty_22_20" x="460" y="420" xlink:href="#empty" class="colorD"/><use id="empty_23_20" x="480" y="420" xlink:href="#empty" class="colorD"/><use id="empty_24_20" x="500" y="420" xlink:href="#empty" class="colorD"/><use id="empty_25_20" x="520" y="420" xlink:href="#empty" class="colorD"/><use id="empty_26_20" x="540" y="420" xlink:href="#empty" class="colorD"/><use id="empty_27_20" x="560" y="420" xlink:href="#empty" class="colorD"/><use id="empty_28_20" x="580" y="420" xlink:href="#empty" class="colorD"/><use id="empty_29_20" x="600" y="420" xlink:href="#empty" class="colorD"/><use id="empty_20_10" x="420" y="220" xlink:href="#empty" class="colorD"/><use id="empty_21_10" x="440" y="220" xlink:href="#empty" class="colorD"/><use id="empty_22_10" x="460" y="220" xlink:href="#empty" class="colorD"/><use id="empty_23_10" x="480" y="220" xlink:href="#empty" class="colorD"/><use id="empty_24_10" x="500" y="220" xlink:href="#empty" class="colorD"/><use id="empty_25_10" x="520" y="220" xlink:href="#empty" class="colorD"/><use id="empty_26_10" x="540" y="220" xlink:href="#empty" class="colorD"/><use id="empty_27_10" x="560" y="220" xlink:href="#empty" class="colorD"/><use id="empty_28_10" x="580" y="220" xlink:href="#empty" class="colorD"/><use id="empty_29_10" x="600" y="220" xlink:href="#empty" class="colorD"/><use id="empty_20_11" x="420" y="240" xlink:href="#empty" class="colorD"/><use id="empty_21_11" x="440" y="240" xlink:href="#empty" class="colorD"/><use id="empty_22_11" x="460" y="240" xlink:href="#empty" class="colorD"/><use id="empty_23_11" x="480" y="240" xlink:href="#empty" class="colorD"/><use id="empty_24_11" x="500" y="240" xlink:href="#empty" class="colorD"/><use id="empty_25_11" x="520" y="240" xlink:href="#empty" class="colorD"/><use id="empty_26_11" x="540" y="240" xlink:href="#empty" class="colorD"/><use id="empty_27_11" x="560" y="240" xlink:href="#empty" class="colorD"/><use id="empty_28_11" x="580" y="240" xlink:href="#empty" class="colorD"/><use id="empty_29_11" x="600" y="240" xlink:href="#empty" class="colorD"/><use id="empty_20_12" x="420" y="260" xlink:href="#empty" class="colorD"/><use id="empty_21_12" x="440" y="260" xlink:href="#empty" class="colorD"/><use id="empty_22_12" x="460" y="260" xlink:href="#empty" class="colorD"/><use id="empty_23_12" x="480" y="260" xlink:href="#empty" class="colorD"/><use id="empty_24_12" x="500" y="260" xlink:href="#empty" class="colorD"/><use id="empty_25_12" x="520" y="260" xlink:href="#empty" class="colorD"/><use id="empty_26_12" x="540" y="260" xlink:href="#empty" class="colorD"/><use id="empty_27_12" x="560" y="260" xlink:href="#empty" class="colorD"/><use id="empty_28_12" x="580" y="260" xlink:href="#empty" class="colorD"/><use id="empty_29_12" x="600" y="260" xlink:href="#empty" class="colorD"/><use id="empty_20_13" x="420" y="280" xlink:href="#empty" class="colorD"/><use id="empty_21_13" x="440" y="280" xlink:href="#empty" class="colorD"/><use id="empty_22_13" x="460" y="280" xlink:href="#empty" class="colorD"/><use id="empty_23_13" x="480" y="280" xlink:href="#empty" class="colorD"/><use id="empty_24_13" x="500" y="280" xlink:href="#empty" class="colorD"/><use id="empty_25_13" x="520" y="280" xlink:href="#empty" class="colorD"/><use id="empty_26_13" x="540" y="280" xlink:href="#empty" class="colorD"/><use id="empty_27_13" x="560" y="280" xlink:href="#empty" class="colorD"/><use id="empty_28_13" x="580" y="280" xlink:href="#empty" class="colorD"/><use id="empty_29_13" x="600" y="280" xlink:href="#empty" class="colorD"/><use id="empty_20_14" x="420" y="300" xlink:href="#empty" class="colorD"/><use id="empty_21_14" x="440" y="300" xlink:href="#empty" class="colorD"/><use id="empty_22_14" x="460" y="300" xlink:href="#empty" class="colorD"/><use id="empty_23_14" x="480" y="300" xlink:href="#empty" class="colorD"/><use id="empty_24_14" x="500" y="300" xlink:href="#empty" class="colorD"/><use id="empty_25_14" x="520" y="300" xlink:href="#empty" class="colorD"/><use id="empty_26_14" x="540" y="300" xlink:href="#empty" class="colorD"/><use id="empty_27_14" x="560" y="300" xlink:href="#empty" class="colorD"/><use id="empty_28_14" x="580" y="300" xlink:href="#empty" class="colorD"/><use id="empty_29_14" x="600" y="300" xlink:href="#empty" class="colorD"/><use id="empty_20_15" x="420" y="320" xlink:href="#empty" class="colorD"/><use id="empty_21_15" x="440" y="320" xlink:href="#empty" class="colorD"/><use id="empty_22_15" x="460" y="320" xlink:href="#empty" class="colorD"/><use id="empty_23_15" x="480" y="320" xlink:href="#empty" class="colorD"/><use id="empty_24_15" x="500" y="320" xlink:href="#empty" class="colorD"/><use id="empty_25_15" x="520" y="320" xlink:href="#empty" class="colorD"/><use id="empty_26_15" x="540" y="320" xlink:href="#empty" class="colorD"/><use id="empty_27_15" x="560" y="320" xlink:href="#empty" class="colorD"/><use id="empty_28_15" x="580" y="320" xlink:href="#empty" class="colorD"/><use id="empty_29_15" x="600" y="320" xlink:href="#empty" class="colorD"/><use id="empty_20_16" x="420" y="340" xlink:href="#empty" class="colorD"/><use id="empty_21_16" x="440" y="340" xlink:href="#empty" class="colorD"/><use id="empty_22_16" x="460" y="340" xlink:href="#empty" class="colorD"/><use id="empty_23_16" x="480" y="340" xlink:href="#empty" class="colorD"/><use id="empty_24_16" x="500" y="340" xlink:href="#empty" class="colorD"/><use id="empty_25_16" x="520" y="340" xlink:href="#empty" class="colorD"/><use id="empty_26_16" x="540" y="340" xlink:href="#empty" class="colorD"/><use id="empty_27_16" x="560" y="340" xlink:href="#empty" class="colorD"/><use id="empty_28_16" x="580" y="340" xlink:href="#empty" class="colorD"/><use id="empty_29_16" x="600" y="340" xlink:href="#empty" class="colorD"/><use id="empty_20_17" x="420" y="360" xlink:href="#empty" class="colorD"/><use id="empty_21_17" x="440" y="360" xlink:href="#empty" class="colorD"/><use id="empty_22_17" x="460" y="360" xlink:href="#empty" class="colorD"/><use id="empty_23_17" x="480" y="360" xlink:href="#empty" class="colorD"/><use id="empty_24_17" x="500" y="360" xlink:href="#empty" class="colorD"/><use id="empty_25_17" x="520" y="360" xlink:href="#empty" class="colorD"/><use id="empty_26_17" x="540" y="360" xlink:href="#empty" class="colorD"/><use id="empty_27_17" x="560" y="360" xlink:href="#empty" class="colorD"/><use id="empty_28_17" x="580" y="360" xlink:href="#empty" class="colorD"/><use id="empty_29_17" x="600" y="360" xlink:href="#empty" class="colorD"/><use id="empty_20_18" x="420" y="380" xlink:href="#empty" class="colorD"/><use id="empty_21_18" x="440" y="380" xlink:href="#empty" class="colorD"/><use id="empty_22_18" x="460" y="380" xlink:href="#empty" class="colorD"/><use id="empty_23_18" x="480" y="380" xlink:href="#empty" class="colorD"/><use id="empty_24_18" x="500" y="380" xlink:href="#empty" class="colorD"/><use id="empty_25_18" x="520" y="380" xlink:href="#empty" class="colorD"/><use id="empty_26_18" x="540" y="380" xlink:href="#empty" class="colorD"/><use id="empty_27_18" x="560" y="380" xlink:href="#empty" class="colorD"/><use id="empty_28_18" x="580" y="380" xlink:href="#empty" class="colorD"/><use id="empty_29_18" x="600" y="380" xlink:href="#empty" class="colorD"/><use id="empty_20_19" x="420" y="400" xlink:href="#empty" class="colorD"/><use id="empty_21_19" x="440" y="400" xlink:href="#empty" class="colorD"/><use id="empty_22_19" x="460" y="400" xlink:href="#empty" class="colorD"/><use id="empty_23_19" x="480" y="400" xlink:href="#empty" class="colorD"/><use id="empty_24_19" x="500" y="400" xlink:href="#empty" class="colorD"/><use id="empty_25_19" x="520" y="400" xlink:href="#empty" class="colorD"/><use id="empty_26_19" x="540" y="400" xlink:href="#empty" class="colorD"/><use id="empty_27_19" x="560" y="400" xlink:href="#empty" class="colorD"/><use id="empty_28_19" x="580" y="400" xlink:href="#empty" class="colorD"/><use id="empty_29_19" x="600" y="400" xlink:href="#empty" class="colorD"/><use id="empty_29_1" x="600" y="40" xlink:href="#empty" class="colorD"/><use id="empty_29_2" x="600" y="60" xlink:href="#empty" class="colorD"/><use id="empty_29_3" x="600" y="80" xlink:href="#empty" class="colorD"/><use id="empty_29_4" x="600" y="100" xlink:href="#empty" class="colorD"/><use id="empty_29_5" x="600" y="120" xlink:href="#empty" class="colorD"/><use id="empty_29_6" x="600" y="140" xlink:href="#empty" class="colorD"/><use id="empty_29_7" x="600" y="160" xlink:href="#empty" class="colorD"/><use id="empty_29_8" x="600" y="180" xlink:href="#empty" class="colorD"/><use id="empty_29_9" x="600" y="200" xlink:href="#empty" class="colorD"/><use id="empty_28_2" x="580" y="60" xlink:href="#empty" class="colorD"/><use id="empty_28_3" x="580" y="80" xlink:href="#empty" class="colorD"/><use id="empty_28_4" x="580" y="100" xlink:href="#empty" class="colorD"/><use id="empty_28_5" x="580" y="120" xlink:href="#empty" class="colorD"/><use id="empty_28_6" x="580" y="140" xlink:href="#empty" class="colorD"/><use id="empty_28_7" x="580" y="160" xlink:href="#empty" class="colorD"/><use id="empty_28_8" x="580" y="180" xlink:href="#empty" class="colorD"/><use id="empty_28_9" x="580" y="200" xlink:href="#empty" class="colorD"/><use id="empty_27_3" x="560" y="80" xlink:href="#empty" class="colorD"/><use id="empty_27_4" x="560" y="100" xlink:href="#empty" class="colorD"/><use id="empty_27_5" x="560" y="120" xlink:href="#empty" class="colorD"/><use id="empty_27_6" x="560" y="140" xlink:href="#empty" class="colorD"/><use id="empty_27_7" x="560" y="160" xlink:href="#empty" class="colorD"/><use id="empty_27_8" x="560" y="180" xlink:href="#empty" class="colorD"/><use id="empty_27_9" x="560" y="200" xlink:href="#empty" class="colorD"/><use id="empty_26_4" x="540" y="100" xlink:href="#empty" class="colorD"/><use id="empty_26_5" x="540" y="120" xlink:href="#empty" class="colorD"/><use id="empty_26_6" x="540" y="140" xlink:href="#empty" class="colorD"/><use id="empty_26_7" x="540" y="160" xlink:href="#empty" class="colorD"/><use id="empty_26_8" x="540" y="180" xlink:href="#empty" class="colorD"/><use id="empty_26_9" x="540" y="200" xlink:href="#empty" class="colorD"/><use id="empty_25_5" x="520" y="120" xlink:href="#empty" class="colorD"/><use id="empty_25_6" x="520" y="140" xlink:href="#empty" class="colorD"/><use id="empty_25_7" x="520" y="160" xlink:href="#empty" class="colorD"/><use id="empty_25_8" x="520" y="180" xlink:href="#empty" class="colorD"/><use id="empty_25_9" x="520" y="200" xlink:href="#empty" class="colorD"/><use id="empty_24_6" x="500" y="140" xlink:href="#empty" class="colorD"/><use id="empty_24_7" x="500" y="160" xlink:href="#empty" class="colorD"/><use id="empty_24_8" x="500" y="180" xlink:href="#empty" class="colorD"/><use id="empty_24_9" x="500" y="200" xlink:href="#empty" class="colorD"/><use id="empty_23_7" x="480" y="160" xlink:href="#empty" class="colorD"/><use id="empty_23_8" x="480" y="180" xlink:href="#empty" class="colorD"/><use id="empty_23_9" x="480" y="200" xlink:href="#empty" class="colorD"/><use id="empty_22_8" x="460" y="180" xlink:href="#empty" class="colorD"/><use id="empty_22_9" x="460" y="200" xlink:href="#empty" class="colorD"/><use id="empty_21_9" x="440" y="200" xlink:href="#empty" class="colorD"/><use id="empty_19_11" x="400" y="240" xlink:href="#empty" class="colorD"/><use id="empty_19_12" x="400" y="260" xlink:href="#empty" class="colorD"/><use id="empty_19_13" x="400" y="280" xlink:href="#empty" class="colorD"/><use id="empty_19_14" x="400" y="300" xlink:href="#empty" class="colorD"/><use id="empty_19_15" x="400" y="320" xlink:href="#empty" class="colorD"/><use id="empty_19_16" x="400" y="340" xlink:href="#empty" class="colorD"/><use id="empty_19_17" x="400" y="360" xlink:href="#empty" class="colorD"/><use id="empty_19_18" x="400" y="380" xlink:href="#empty" class="colorD"/><use id="empty_19_19" x="400" y="400" xlink:href="#empty" class="colorD"/><use id="empty_18_12" x="380" y="260" xlink:href="#empty" class="colorD"/><use id="empty_18_13" x="380" y="280" xlink:href="#empty" class="colorD"/><use id="empty_18_14" x="380" y="300" xlink:href="#empty" class="colorD"/><use id="empty_18_15" x="380" y="320" xlink:href="#empty" class="colorD"/><use id="empty_18_16" x="380" y="340" xlink:href="#empty" class="colorD"/><use id="empty_18_17" x="380" y="360" xlink:href="#empty" class="colorD"/><use id="empty_18_18" x="380" y="380" xlink:href="#empty" class="colorD"/><use id="empty_18_19" x="380" y="400" xlink:href="#empty" class="colorD"/><use id="empty_17_13" x="360" y="280" xlink:href="#empty" class="colorD"/><use id="empty_17_14" x="360" y="300" xlink:href="#empty" class="colorD"/><use id="empty_17_15" x="360" y="320" xlink:href="#empty" class="colorD"/><use id="empty_17_16" x="360" y="340" xlink:href="#empty" class="colorD"/><use id="empty_17_17" x="360" y="360" xlink:href="#empty" class="colorD"/><use id="empty_17_18" x="360" y="380" xlink:href="#empty" class="colorD"/><use id="empty_17_19" x="360" y="400" xlink:href="#empty" class="colorD"/><use id="empty_16_14" x="340" y="300" xlink:href="#empty" class="colorD"/><use id="empty_16_15" x="340" y="320" xlink:href="#empty" class="colorD"/><use id="empty_16_16" x="340" y="340" xlink:href="#empty" class="colorD"/><use id="empty_16_17" x="340" y="360" xlink:href="#empty" class="colorD"/><use id="empty_16_18" x="340" y="380" xlink:href="#empty" class="colorD"/><use id="empty_16_19" x="340" y="400" xlink:href="#empty" class="colorD"/><use id="empty_15_16" x="320" y="340" xlink:href="#empty" class="colorD"/><use id="empty_15_17" x="320" y="360" xlink:href="#empty" class="colorD"/><use id="empty_15_18" x="320" y="380" xlink:href="#empty" class="colorD"/><use id="empty_15_19" x="320" y="400" xlink:href="#empty" class="colorD"/><use id="empty_14_17" x="300" y="360" xlink:href="#empty" class="colorQ"/><use id="empty_14_18" x="300" y="380" xlink:href="#empty" class="colorD"/><use id="empty_14_19" x="300" y="400" xlink:href="#empty" class="colorD"/><use id="empty_13_19" x="280" y="400" xlink:href="#empty" class="colorQ"/><use id="empty_6_13" x="140" y="280" xlink:href="#empty" class="colorD"/><use id="empty_3_15" x="80" y="320" xlink:href="#empty" class="colorQ"/><use id="empty_19_9" x="400" y="200" xlink:href="#empty" class="colorD"/><use id="empty_9_17" x="200" y="360" xlink:href="#empty" class="blue"/><use id="empty_3_0" x="80" y="20" xlink:href="#empty" class="colorQ"/></g><g id="labels0"/><g id="walls0"><use id="door_0_29" x="20" y="600" xlink:href="#door" rotate="0"/></g></g></g></svg>
