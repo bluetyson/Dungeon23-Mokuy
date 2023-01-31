@@ -38,6 +38,7 @@
 1,explorers
 1,settlers
 1,australians
+1,a loaded dog
 
 ;trees
 1,dropbear
@@ -59,6 +60,7 @@
 2,convicts
 1,*The Cassowary*
 1,*The Eye Empress of Bundaberg*
+1,*The Super Roo*
 
 ;marsh
 1,bunyip
