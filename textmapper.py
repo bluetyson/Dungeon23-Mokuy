@@ -1,3 +1,11 @@
+def hr(start, stop, base):
+    uselist = []
+    for i in range(stop-start):
+        usestr = str(i+start) + str(base)
+        uselist.append(usestr)
+        #print(usestr)
+        return(uselist)
+
 terrain = {}
 terrain['sand'] = ["0710","0711","0712","0713","0714","0716","0810","0817","0818","0819","0820","0909","0920",'1008','1009']
 terrain['sand'] = terrain['sand']+['1107','1207','1306','1307','1404','1405','1504','1604','1702','1703','1802','1902']
@@ -8,7 +16,7 @@ terrain['river'] = ['1306','1307']
 terrain['water'] = ['2010','2110','2111','2211'] #inlandsea
 terrain['bush'] = ['0811'] #bush1
 terrain['trees'] = ['1217']
-terrain['forest'] = ['1116']
+terrain['forest'] = hr(11,18,16)+hr(19,21,17)+hr(23,24,17)+hr(25,25,17)+hr(21,22,18)+hr(25,25,19)++hr(26,20,20)
 terrain['volcano'] = ['3417'] #lord howe
 terrain['fir'] = ['3513'] #norfolk
 
