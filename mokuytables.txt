@@ -11,6 +11,7 @@
 ;sand
 1,sea wombat
 1,pirates
+2,convicts
 
 ;desert
 10,flies
@@ -24,6 +25,8 @@
 1,skelleagle
 2,eagle
 5,brumbies
+1,convicts
+1,bushranger
 
 ;bush
 1,dropbear
@@ -32,6 +35,9 @@
 10,kangaroos
 3,convicts
 2,bushranger
+1,explorers
+1,settlers
+1,australians
 
 ;trees
 1,dropbear
@@ -51,6 +57,7 @@
 1,giant leech
 2,convicts
 1,*The Cassowary*
+1,*The Eye Empress of Bundaberg*
 
 ;marsh
 1,bunyip
@@ -62,6 +69,7 @@
 ;water
 1,mega giant crocodile
 1,mega giant shark
+1,*Lemurians*
 
 ;forest-mountain tower
 10,land pirahna
