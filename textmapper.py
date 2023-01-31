@@ -45,7 +45,7 @@ terrain['forest'] = ["1904","1905","1906","2007","2208","2406","2507","2508","26
 terrain['forest'] = terrain['forest'] + ["2318","2917","2919","2007"]
 terrain['forest'] = terrain['forest'] + hr(11,18,16)+hr(19,21,17)+hr(23,24,17)+hr(25,25,17)+hr(21,22,18)+hr(25,25,19)+hr(26,20,20)+hr(22,23,7)+hr(23,24,21)+hr(25,28,20)
 terrain['forest'] = terrain['forest']+hr(23,24,12)+ hr(24,25,13)+ hr(24,26,14)+ hr(26,28,13)+hr(27,28,12)+hr(22,23,7)+hr(20,22,13)+hr(20,22,14)+hr(26,28,15)
-terrain['volcano'] = ['3417'] #lord howe
+terrain['forest-mountain tower'] = ['3417'] #lord howe
 terrain['fir'] = ['3513'] #norfolk
 
 
