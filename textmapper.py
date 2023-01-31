@@ -1,9 +1,10 @@
 def hr(start, stop, base):
     uselist = []
     r = stop - start + 1
+    if len(str(base)) == 1:
+        base = "0" + str(base)    
+
     for idx in range(r):
-        if len(base) == 1:
-            base = "0" + str(base)
         if len(idx+start) == 1:
             idxstr = "0" + str(idx+start)            
         else: 
