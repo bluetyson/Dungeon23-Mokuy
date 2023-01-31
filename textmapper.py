@@ -9,6 +9,7 @@ terrain['lake'] = ['2010','2110','2111','2211'] #inlandsea
 terrain['bush'] = ['3513'] #bush1
 terrain['bush2'] = ['3513']
 terrain['bush3'] = ['3513']
+terrain['volcano'] = ['3417'] #lord howe
 terrain['fir'] = ['3513'] #norfolk
 
 
