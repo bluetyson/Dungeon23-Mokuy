@@ -52,6 +52,7 @@
 1,land pirahna
 2,brumbies
 10,kangaroos
+1,vampire kangaroos
 10,koalas
 2,leech
 1,giant leech
