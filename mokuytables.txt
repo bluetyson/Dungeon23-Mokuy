@@ -1,4 +1,6 @@
 ;ocean
+100,calm
+5,a [storm]
 5,pirates
 1,kraken
 1,smelly cloud
@@ -7,6 +9,13 @@
 1,mega shark
 1,watery doom
 1,portal to *Lemuria*
+
+;storm
+10,generic storm
+5,thunder storm
+1,giant wave
+1,vortex
+
 
 ;sand
 1,sea wombat
