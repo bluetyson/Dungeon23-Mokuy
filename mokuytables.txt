@@ -1,3 +1,30 @@
 ;ocean
 1,kraken
 1,smelly cloud
+
+;sand
+1,sea wombat
+1,pirates
+
+;desert
+10,flies
+2,camel
+1,Carrack's Dirt Moth
+
+;bush
+1,vampire kangaroos
+
+;trees
+1,dropbears
+
+;forest
+1,land pirahna
+
+;marsh
+1,bunyip
+10,crocodile
+3,giant crocodile
+1,mega crocodile
+
+;water
+1,mega giant crocodile
