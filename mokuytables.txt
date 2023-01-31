@@ -1,6 +1,9 @@
 ;ocean
 1,kraken
 1,smelly cloud
+3,shark
+2,giant shark
+1,mega shark
 
 ;sand
 1,sea wombat
@@ -8,23 +11,56 @@
 
 ;desert
 10,flies
-2,camel
+2,snake
+2,dingoes
+1,Giant snake
 1,Carrack's Dirt Moth
 
+;mountains
+1,yowie
+1,skelleagle
+2,eagle
+5,brumbies
+
 ;bush
+1,dropbear
 1,vampire kangaroos
+1,megafauna
+10,kangaroos
+3,convicts
+2,bushranger
 
 ;trees
-1,dropbears
+1,dropbear
+1,megafauna
+10,kangaroos
+10,koalas
+3,convicts
+2,bushranger
 
 ;forest
+1,dropbears
 1,land pirahna
+2,brumbies
+10,kangaroos
+10,koalas
+2,leech
+1,giant leech
+2,convicts
+1,The Cassowary
 
 ;marsh
 1,bunyip
 10,crocodile
 3,giant crocodile
 1,mega crocodile
+8,snake
 
 ;water
 1,mega giant crocodile
+1,mega giant shark
+
+;forest-mountain tower
+10,land pirahna
+1,pirates
+1,convicts
