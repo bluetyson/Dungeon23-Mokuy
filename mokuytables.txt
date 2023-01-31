@@ -1,9 +1,12 @@
 ;ocean
+5,pirates
 1,kraken
 1,smelly cloud
 3,shark
 2,giant shark
 1,mega shark
+1,watery doom
+1,portal to *Lemuria*
 
 ;sand
 1,sea wombat
@@ -47,7 +50,7 @@
 2,leech
 1,giant leech
 2,convicts
-1,The Cassowary
+1,*The Cassowary*
 
 ;marsh
 1,bunyip
