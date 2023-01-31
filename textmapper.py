@@ -5,7 +5,7 @@ def hr(start, stop, base):
         base = "0" + str(base)    
 
     for idx in range(r):
-        if len(idx+start) == 1:
+        if len(str(idx+start)) == 1:
             idxstr = "0" + str(idx+start)            
         else: 
             idxstr = str(idx+start)
@@ -23,9 +23,10 @@ terrain['desert'] = ['0716','0813']
 terrain['mountain'] = ['1011']
 terrain['river'] = ['1306','1307']
 terrain['water'] = ['2010','2110','2111','2211'] #inlandsea
-terrain['bush'] = ['0811','1110']+hr(11,12,8)+hr(12,13,9)
-terrain['trees'] = ['1217']
-terrain['forest'] = hr(11,18,16)+hr(19,21,17)+hr(23,24,17)+hr(25,25,17)+hr(21,22,18)+hr(25,25,19)+hr(26,20,20)
+terrain['bush'] = ['0811','1110']+hr(11,12,8)+hr(12,13,9)+hr(10,12,18)+hr(13,18,17)
+terrain['trees'] = ['1217']++hr(25,28,21)
+terrain['forest'] = hr(11,18,16)+hr(19,21,17)+hr(23,24,17)+hr(25,25,17)+hr(21,22,18)+hr(25,25,19)+hr(26,20,20)+hr(22,23,7)+hr(23,24,21)+hr(25,28,20)
+terrain['forest'] = terrain['forest'] + hr(23,24,12) + hr(24,25,13) + hr(24,26,14) + hr(26,28,13)
 terrain['volcano'] = ['3417'] #lord howe
 terrain['fir'] = ['3513'] #norfolk
 
