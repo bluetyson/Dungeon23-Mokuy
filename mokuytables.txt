@@ -1,4 +1,5 @@
 # Mokuy table
+#https://rdrr.io/github/rpg-tips/RPGTips/src/R/silent_legions.R
 # do these [grass intro] [grass dressing] [grass landmark]
 # subtables to do monsters, animals, people, megafauna by terrain
 
@@ -66,6 +67,7 @@
 2,a mega shark
 1,a mega giant shark
 4,a giant squid
+3,a giant turtle
 2,a mega squid
 1,a mega giant squid
 2,a giant albatross
@@ -84,9 +86,9 @@
 10,stormy
 5,thunder and lightning
 1,miasmic
-1,a giant wave approaching
-1,a swirling vortex approaching
-1,watery doom
+1,a **giant wave** approaching
+1,a **swirling vortex** approaching
+1,**watery doom** approaching
 
 ;sand
 1,The weather is [sand weather] and [sand temp] and you see **[sand encounter]**
@@ -193,14 +195,14 @@
 95,[cultists]
 2,spirit
 1,ghouls
-1,[cac_mythos]
-1,[mythos_horror]
+1,[cac mythos]
+1,[mythos horror]
 
-;cac_mythos
+;cac mythos
 1,watcher spawn leech
 
 ## Dr Ruby left a hole in time
-;mythos_horror
+;mythos horror
 2,*Hound of Tindalos*
 1,*Dream Shambler*
 
@@ -209,14 +211,14 @@
 9,Secret Society of the Ring
 1,insane sorcerer
 
-;cac_cultists
+;cac cultists
 1,*Sharks Tooth*
 1,*Effigy of Scars and Suffering*
 1,*Industrious Brothers of the New World*
 1,*Outcast Dreamers*
 1,*Bacchanal Club*
 
-;cac_dreaming
+;cac dreaming
 1,*Field of Mars*
 1,*Salt Water*
 1,*Alcheringa*
@@ -312,6 +314,7 @@
 4,a mega crocodile
 2,a mega giant shark
 4,a mega shark
+3,a giant turtle
 1,a giant moray eel
 2,a mega giant moray eel
 

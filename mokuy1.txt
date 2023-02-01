@@ -710,7 +710,7 @@
 3014 sand
 3015 bush
 3016 sand
-3017 bush
+3017 bush city "Coal River"
 3018 sand city "Sydney Town"
 3019 sand
 3020 ocean
