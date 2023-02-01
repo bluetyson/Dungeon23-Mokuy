@@ -270,13 +270,16 @@ a [willy-willy] will-willy
 ;bush monsters
 1,dropbear
 1,a vampire kangaroo
-1,*The Super Roo*
+1,*The Super Roo*: [Super Roo]
 1,[cac supernatural]
 1,[cthulhu]
 1,bottersnikes
 1,gumbles
 1,emerald bush goblin
 1,succubus
+
+ ;Super Roo
+ 1,A great red kangaroo rumoured to be much taller than a person, having the strength of ten and unable to be harmed by weapons.
 
 ;bush animals
 11,kangaroos
