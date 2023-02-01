@@ -97,7 +97,7 @@
 1,**watery doom** approaching
 
 ;sand
-1,The weather is [sand weather] and [sand temp] and you see **[sand encounter]**
+1,The coastal weather is [sand weather] and [sand temp] and you see **[sand encounter]**
 
 ;sand weather
 65,calm
@@ -138,7 +138,7 @@
 1,a mega sea wombat
 
 ;desert
-1,The weather is [desert weather] and [sert temp] and you see **[deserst encounter]**
+1,The desert weather is [desert weather] and [sert temp] and you see **[deserst encounter]**
 
 ;desert weather
 70,calm
@@ -296,15 +296,31 @@
 1,*Alcheringa*
 
 ;trees
+1,The bush weather is [bush weather] and [bush temp] and you see bush encounter]
+
+;trees encounter
+100,nothing but lots of bush trees
+5,[trees people]
+1,[trees monsters]
+16,[trees animals]
+2,[trees megafauna]
+
+;trees people
+3,[convicts] convicts
+2,bushranger
+
+;trees monsters
 1,dropbear
-1,megafauna
+
+;trees animals
 2,goanna
-1,giant goanna
 10,kangaroos
 10,koalas
 2,dingoes
-3,convicts
-2,bushranger
+
+;trees megafauna
+1,giant goanna
+1,giant kangaroo
 
 ;forest
 1,dropbears
