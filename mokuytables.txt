@@ -28,9 +28,19 @@
 1,a portal to *Lemuria*
 
 ;ocean people
-49,pirates
-50,sailors
+49,[pirates]
+50,[sailors]
 1,a strange unknown vessel : [unknown vessel]
+
+;sailors
+1,settlers ship
+1,government ships
+1,local trader ship
+1,foreign trader ship
+
+;pirates
+1,local pirate ship
+1,foreign pirate ship
 
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
