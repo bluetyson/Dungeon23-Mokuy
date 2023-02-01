@@ -711,7 +711,7 @@
 3015 bush
 3016 sand
 3017 bush
-3018 sand
+3018 sand city "Sydney Town"
 3019 sand
 3020 ocean
 3021 ocean

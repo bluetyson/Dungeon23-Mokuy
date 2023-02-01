@@ -55,10 +55,11 @@
 2,a giant jellyfish
 2,a giant ray
 
-;ocean_monsters
+;ocean monsters
 1,a kraken
 2,a sea serpent
 1,sirens
+1,merpeople
 
 ;storm
 20,rough
@@ -244,13 +245,59 @@
 40,sea rats
 
 ;water
-30,placid sea
 3,sailors
+1,*Lemurians*
+
+;water
+1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter]**
+
+;water weather
+65,calm
+20,windy
+10,rainy
+5,[storm]
+
+;water temp
+65,pleasant
+10,warm
+5,hot
+10,cool
+5,cold
+5,[storm]
+
+;water encounter
+100,nothing
+5,[water people]
+1,[water monsters]
+3,[water animals]
+2,[water megafauna]
+1,a portal to *Lemuria*
+
+;water people
+49,pirates
+50,sailors
+1,a strange unknown vessel
+
+;water animals
+100,fish
+2,dolphins
+2,sharks
+1,whale
+2,squid
+1,rays
+2,birds
+1,turtles
+1,jellyfish
+
+;water megafauna
 1,mega giant crocodile
 2,mega crocodile
 1,mega giant shark
 2,mega shark
-1,*Lemurians*
+
+;water monsters
+2,a sea serpent
+2,a giant bunyip
 
 ;forest-mountain tower
 10,land pirahna
@@ -259,11 +306,14 @@
 1,soldiers
 1,sailors
 
+;city
+1,Sydney Town, a wretched hive of scum and villainy
+
 ;TOP
 1,<p>[history]<p>[secret history]
 
 ;history
-1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*.
+1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*. Unknown to even the Rubys, their second amateurish use of a time machine has had devastating consequences.  Luckily for them, the blowback from the time and space fracture obliterated *Van Diemen's Land*.  Soon, the New South Wales colony will be wondering why they have not heard from them.
 
 ;secret history
 1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science.
