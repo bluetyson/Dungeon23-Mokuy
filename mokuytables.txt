@@ -17,7 +17,8 @@
 #1,The statue of *[same power]* dominates the courtyard.
 
 ;ocean
-1,The ocean weather is [ocean weather] and ban [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here [same direction]] [!nothing||[same direction]]
+#1,The ocean weather is [ocean weather] and ban [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here [same direction]] [!nothing||[same direction]]
+1,The ocean weather is [ocean weather] and ban [ocean temp] and you see **[save ocean encounter as oe]** [here [same oe]] [!nothing||[same oe]]
 
 ;ocean weather
 65,calm
