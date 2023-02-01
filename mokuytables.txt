@@ -2,27 +2,21 @@
 # do these [grass intro] [grass dressing] [grass landmark]
 # subtables to do monsters, animals, people, megafauna by terrain
 
-#;lake intro
-#1,This is the *[lake name]*, claimed as the ancestral home of froglings, kappa, and some swamp gnomes.
-#1,The waters of *[lake name]* seems to stretch forever, mirroring the sky above.
-#1,The *[lake name]* appears to have been a quarry of some sort. Perhaps giants dug this hole in the old days. The turquoise blue waters look welcoming, though the lake sides seems steep and precarious.
-#1,The *[lake name]* is dotted here and there with islands, each of which looks barely large enough to hold a house.
-#1,The river splashes down the hillside and ends here in, *[lake name]*.
-
-;lake dressing
-#1,[capitalize cows] can be seen gathered near the water.
-#1,The silvery glint of scales gives away large fish hunting near shore.
-#1,Vibrant green duckweed floats on the water’s surface and waterfowl swim hurriedly about.
-#1,A large black snake glides away through the reeds. Setting up camp here may not be safe.
-#1,Beavers have built dams, drowning the land.
-#1,A cool breeze blows across the lake leaving shimmering waves and bobbing cattails in its wake.
-#1,Near the edge of the lake, surrounded by willows, [an old statue] of *[power]* still stands.
-
 ;ocean
-1,The ocean weather is [ocean weather] and you see [ocean encounter]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see [ocean encounter]
 
 ;ocean weather
-95,calm
+65,calm
+20,windy
+10,rainy
+5,[storm]
+
+;ocean temp
+65,pleasant
+10,warm
+5,hot
+10,cool
+5,cold
 5,[storm]
 
 ;ocean encounter
@@ -31,11 +25,12 @@
 1,[ocean monsters]
 3,[ocean animals]
 2,[ocean megafauna]
-1,portal to *Lemuria*
+1,a portal to *Lemuria*
 
 ;ocean people
-1,pirates
-1,sailors
+49,pirates
+50,sailors
+1,a strange unknown vessel
 
 ;ocean animals
 100,fish
@@ -49,17 +44,21 @@
 1,jellyfish
 
 ;ocean megafauna
-2,giant shark
-1,mega shark
-2,giant squid
-1,mega squid
-1,giant albatross
-1,giant sea eagle
-1,giant jellyfish
-1,giant ray
+4,a giant shark
+2,a mega shark
+1,a mega giant shark
+4,a giant squid
+2,a mega squid
+1,a mega giant squid
+2,a giant albatross
+2,a giant sea eagle
+2,a giant jellyfish
+2,a giant ray
 
 ;ocean_monsters
-1,kraken
+1,a kraken
+2,a sea serpent
+1,sirens
 
 ;storm
 20,rough
