@@ -1,3 +1,6 @@
+# Mokuy table
+# do these [grass intro] [grass dressing] [grass landmark]
+
 ;ocean
 100,calm
 5,a [storm]
@@ -36,9 +39,9 @@
 2,scorptions
 
 ;flies
-97,annoying
-2,difficult
-1,plague
+97,annoying flies
+2,difficult flies
+1,plague of flies
 
 ;willy-willy
 9,small
@@ -97,7 +100,8 @@
 
 ## Dr Ruby left a hole in time
 ;mythos_horror
-1,*Hound of Tindalos*
+2,*Hound of Tindalos*
+1,*Dream Shambler*
 
 ;cultists
 2,[cac cultists]
@@ -134,6 +138,9 @@
 1,dingoes
 10,kangaroos
 1,vampire kangaroos
+1,weredingo
+1,werethylacine
+1,killeroo
 10,koalas
 2,leech
 1,giant leech
