@@ -18,7 +18,7 @@
 
 
 ;ocean
-1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here direction]. [!nothing||[heading]]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here direction] [!nothing||direction]
 
 ;ocean weather
 65,calm
