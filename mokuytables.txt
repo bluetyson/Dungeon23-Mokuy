@@ -33,14 +33,18 @@
 1,a strange unknown vessel : [unknown vessel]
 
 ;sailors
-1,settlers ship
-1,government ship
-1,local trading ship
-1,foreign trading ship
+2,a settlers ship
+2,a government ship
+2,a local trading ship
+2,a foreign trading ship
+1,a floating wreck of a ship
+1,a burning floating wreck of a ship
 
 ;pirates
-1,local pirate ship
-1,foreign pirate ship
+2,a local pirate ship
+2,a foreign pirate ship
+1,a floating wreck of a ship, probably of pirate origin
+1,a burning floating wreck of a ship, probably of pirate origin
 
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
