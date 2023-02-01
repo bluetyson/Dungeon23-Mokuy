@@ -10,7 +10,7 @@
 65,calm
 20,windy
 10,rainy
-5,[storm]
+5,[storm water]
 
 ;ocean temp
 65,pleasant
@@ -18,7 +18,6 @@
 5,hot
 10,cool
 5,cold
-5,[storm]
 
 ;ocean encounter
 100,nothing
@@ -81,7 +80,7 @@
 1,sirens
 1,merpeople
 
-;storm
+;storm water
 20,rough
 10,stormy
 5,thunder and lightning
@@ -132,19 +131,54 @@
 1,a mega sea wombat
 
 ;desert
-10,[flies]
+1,The weather is [desert weather] and [sert temp] and you see **[deserst encounter]**
+
+;desert weather
+70,calm
+20,windy
+2,[storm]
+3,rainy
+1,flooding
+
+;desert temp
+80,hot
+10,very hot
+5,mild
+
+;desert encounter;
+100,[flies]
+10,[desert people]
+1,[desert monsters]
+8,[desert animals]
+2,[desert megafauna]
+
+;desert people
+1,Australians
+2,explorers
+3,convicts
+
+;desert monsters
+1,Carrack's Dirt Moth
+
+;desert animals
 2,a snake
 3,[2d4] dingoes
-1,a giant snake
-1,Carrack's Dirt Moth
-2,[willy-willy]
-1,a giant scorpion
 2,scorpions
+
+;desert megafauna
+1,a giant snake
+1,a giant scorpion
 
 ;flies
 97,annoying flies
-2,difficult flies
+2,stinging flies
 1,plague of flies
+
+;storm
+20,stormy
+5,thunder and lightning
+2,gale force storm
+1,flooding
 
 ;willy-willy
 9,small
@@ -275,7 +309,7 @@
 65,calm
 20,windy
 10,rainy
-5,[storm]
+5,[storm water]
 
 ;water temp
 65,pleasant
