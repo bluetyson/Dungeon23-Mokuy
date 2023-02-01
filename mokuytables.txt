@@ -4,7 +4,7 @@
 # subtables to do monsters, animals, people, megafauna by terrain
 
 ;ocean
-1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]**
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [heading]
 
 ;ocean weather
 65,calm
@@ -510,6 +510,11 @@ a [willy-willy] will-willy
 1,convicts
 1,soldiers
 1,sailors
+
+;direction
+4,heading towards you
+1,waiting
+1,heading away from you
 
 ;city1
 1,*Sydney Town*, a wretched hive of scum and villainy
