@@ -138,7 +138,7 @@
 1,a mega sea wombat
 
 ;desert
-1,The desert weather is [desert weather] and [sert temp] and you see **[deserst encounter]**
+1,The desert weather is [desert weather] and [sert temp] and you see **[desert encounter]**
 
 ;desert weather
 70,calm
