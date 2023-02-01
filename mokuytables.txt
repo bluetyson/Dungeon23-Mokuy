@@ -368,7 +368,7 @@ a [willy-willy] will-willy
 3,[forest megafauna]
 
 ;forest people]
-2,convicts
+2,[convicts] convicts
 1,*The Cassowary*: [The Cassowary]
 
 ;The Cassowary
