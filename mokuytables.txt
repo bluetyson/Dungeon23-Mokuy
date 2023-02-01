@@ -1,24 +1,8 @@
 # Mokuy table
 #https://rdrr.io/github/rpg-tips/RPGTips/src/R/silent_legions.R
-# do these [grass intro] [grass dressing] [grass landmark]
-# subtables to do monsters, animals, people, megafauna by terrain
-
-#[here heading]. [!blade||They look unarmed]
-#Sometimes you need to write a lot of things that depend on the results of previous tables. In order to make this easier, there are two keywords that store things without producing any output: "save … as …" does a table lookup and stores it, where as "store … as …" just stores whatever text you give it. Neither produces output. In the example below, "evil power" is the result of a table lookup, where as "Thor" is just that, a text that is being stored. Both "gate" and "statue" can now refer to "same power".
-
-#;temple
-#3,[save evil power as power] This is a ruined temple. [gate] [statue]
-#1,[store Thor as power] This is a temple. [gate] [statue]
-
-#;gate
-#1,The gate is inscribed with the *[same power]* rune.
-
-#;statue
-#1,The statue of *[same power]* dominates the courtyard.
 
 ;ocean
-####1,The ocean weather is [ocean weather] and ban [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here [same direction]] [!nothing||[same direction]]
-1,The ocean weather is [ocean weather] and [ocean temp] and you see [store nothing as noenc] **[ocean encounter]** [here same ocean encounter] [!noenc||[heading]]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter or not]** 
 
 ;ocean weather
 65,calm
@@ -33,13 +17,13 @@
 10,cool
 5,cold
 
-;ocean encounter
+;ocean encounter or not
 100,nothing
-5,[ocean people]
-1,[ocean monsters]
-3,[ocean animals]
-2,[ocean megafauna]
-1,a portal to *Lemuria*
+5,[ocean people] [heading]
+1,[ocean monsters] [heading]
+3,[ocean animals] [heading]
+2,[ocean megafauna] [heading]
+1,a portal to *Lemuria* [heading]
 
 ;ocean people
 49,[pirates]
