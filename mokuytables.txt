@@ -179,7 +179,7 @@ a [willy-willy] will-willy
 ;flies
 97,annoying flies
 2,stinging flies that do 1 damage without precautions
-1,plague of flies that make it impossible to continue
+1,a plague of flies that make it impossible to continue
 
 ;storm
 20,stormy
@@ -358,12 +358,9 @@ a [willy-willy] will-willy
 1,giant kangaroo
 
 ;forest
-2,convicts
-1,*The Cassowary*
-
-;forest
 1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter]
 
+;forest encounter
 100,nothing but lots of dense bush
 2,[forest people]
 12,[forest monsters]
@@ -371,6 +368,11 @@ a [willy-willy] will-willy
 3,[forest megafauna]
 
 ;forest people]
+2,convicts
+1,*The Cassowary*: [The Cassowary]
+
+;The Cassowary
+1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
 2,[1d2] dropbears
