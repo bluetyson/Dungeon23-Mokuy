@@ -1,5 +1,7 @@
 # Mokuy table
 #https://rdrr.io/github/rpg-tips/RPGTips/src/R/silent_legions.R
+#need ship tables and ship crew tables
+#cult tables
 
 ;ocean
 1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter or not]** 
@@ -701,4 +703,19 @@ a [willy-willy] will-willy
 ;The Cassowary stats
 ;The Eye Empress of Bundaberg stats
 
-
+;rumours
+1,The Shadow of Death Hotel exists and a meeting place for cultists and criminals
+1,The Yellow Woman has been seen, the Queen of Lemuria
+1,Reports of ape-people have been heard of up North
+1,There is a vampire woman in the marshes
+1,Strange people that look like fish have been seen on the coast
+1,The Serpent-People may attack Coal River
+1,An amazing City of the Future is in the mountains North
+1,Many people disappear or go mad at the Field of Mars
+1,The chances of anything coming from Mars is a million to one!
+1,Immortals duelling through history have been seen on the streets of Sydney-Town
+1,The Hawkesbury River monster took a boat full of people last month
+1,The Secret Society of the Ring's Conclave of Doom is nex month
+1,The Kinie Ger stalks the bush
+1,The Giant Phantom Cat of the South ate a convict laboring party last year
+1,Lemuria has pygmy-mummies
