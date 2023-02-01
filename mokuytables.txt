@@ -511,7 +511,7 @@ a [willy-willy] will-willy
 1,soldiers
 1,sailors
 
-;direction
+;heading
 4,heading towards you
 1,waiting
 1,heading away from you
