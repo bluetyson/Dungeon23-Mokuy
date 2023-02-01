@@ -30,7 +30,11 @@
 ;ocean people
 49,pirates
 50,sailors
-1,a strange unknown vessel
+1,a strange unknown vessel : [unknown vessel]
+
+;unknown vessel
+1,George Bass' *Venus*, now a **ghost ship**
+1,A giant ship 150m long, definitely not European: perhaps a descendant of *Zheng Hi*'s 15th century fleet of explorers
 
 ;ocean animals
 100,fish
