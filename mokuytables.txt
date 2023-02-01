@@ -151,7 +151,7 @@
 10,very hot
 5,mild
 
-;desert encounter;
+;desert encounter
 100,[flies]
 10,[desert people]
 1,[desert monsters]
