@@ -425,6 +425,20 @@ a [willy-willy] will-willy
 ;marsh
 1,The marsh weather is [marsh weather] and [marsh temp] and you see **[marsh encounter]**
 
+;marsh weather
+70,calm
+15,windy
+10,rainy
+5,[storm]
+
+;marsh temp
+50,pleasant
+20,warm
+15,hot
+10,cool
+5,cold
+5,[storm]
+
 ;marsh encounter
 100,nothing but lots of riverland
 12,[marsh people]
