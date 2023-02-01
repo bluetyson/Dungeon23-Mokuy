@@ -86,9 +86,18 @@
 1,Rainbow Serpent
 
 1,mythos
-10,[cultists]
+95,[cultists]
+2,spirit
 1,ghouls
+1,[cac_mythos]
+1,[mythos_horror]
 
+;cac_mythos
+1,watcher spawn leech
+
+## Dr Ruby left a hole in time
+;mythos_horror
+1,*Hound of Tindalos*
 
 ;cultists
 2,[cac cultists]
