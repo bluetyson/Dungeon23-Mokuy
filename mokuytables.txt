@@ -174,3 +174,9 @@
 10,land pirahna
 1,pirates
 1,convicts
+
+;TOP
+1,<p>[history]
+
+;history
+1,<strong>History:</strong>Dr Ruby escaped from Inguria Island in 2044 after a cataclysmic confrontation with the Freedom League blew up a volcano.  Luckily, his sister, Dr Ruby, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island of the coast of early 19th century Australia.
