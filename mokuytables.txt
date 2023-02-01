@@ -48,10 +48,17 @@
 1,a local pirate ship full of [cultists] cultists
 
 ;convicts
-85,laboring
-3,resting
-10,escaped
-2,escaped cannibals
+85,[3d6] laboring
+3,[2d6] resting
+10,[2d4] escaped
+1,[1d4+1] escaped cannibal
+
+;explorers
+85,[1d6+1] fortune hunting
+3,[1d4+1] mining
+10,[1d8+1] mapping
+1,[1d3+1] soldier
+1,[1d6+1] tracking
 
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
@@ -161,7 +168,7 @@ a [willy-willy] will-willy
 
 ;desert people
 1,Australians
-2,explorers
+2,[explorers] explorers
 3,[convicts] convicts
 
 ;desert monsters
@@ -219,7 +226,7 @@ a [willy-willy] will-willy
 
 ;mountain people
 1,[convicts] convicts
-1,explorers
+1,[explorers] explorers
 2,Australians
 
 ;mountain animals
@@ -261,9 +268,9 @@ a [willy-willy] will-willy
 1,[bush megafauna]
 
 ;bush people
-4,convicts
-2,bushranger
-4,explorers
+4,[convicts] convicts
+2,a bushranger
+4,[explorers] explorers
 4,settlers
 8,Australians
 
@@ -331,7 +338,7 @@ a [willy-willy] will-willy
 1,*Alcheringa*
 
 ;trees
-1,The bush weather is [bush weather] and [bush temp] and you see [trees encounter]
+1,The bush weather is [bush weather] and [bush temp] and you see **[trees encounter]**
 
 ;trees encounter
 100,nothing but lots of bush trees
@@ -358,17 +365,19 @@ a [willy-willy] will-willy
 1,giant kangaroo
 
 ;forest
-1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter]
+1,The bush weather is [bush weather] and [bush temp] and you see **[forest encounter]**
 
 ;forest encounter
 100,nothing but lots of dense bush
-2,[forest people]
+12,[forest people]
 12,[forest monsters]
 49,[forest animals]
 3,[forest megafauna]
 
-;forest people]
+;forest people
 2,[convicts] convicts
+1,[explorers] explorers
+2,[cultists] cultists
 1,*The Cassowary*: [The Cassowary]
 
 ;The Cassowary
