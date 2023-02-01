@@ -110,7 +110,7 @@
 1,**watery doom** approaching
 
 ;sand
-1,The coastal weather is [sand weather] and [sand temp] and you see **[sand encounter]**
+1,The coastal weather is [sand weather] and [sand temp] and you see **[sand encounter or not]**
 
 ;sand weather
 65,calm
@@ -127,12 +127,12 @@
 5,cold
 5,[storm]
 
-;sand encounter
+;sand encounter or not
 100,nothing
-10,[sand people]
-1,[sand monsters]
-50,[sand animals]
-3,[sand megafauna]
+10,[sand people] [heading]
+1,[sand monsters] [heading]
+50,[sand animals] [heading]
+3,[sand megafauna] [heading]
 
 ;sand people
 2,pirates
@@ -151,7 +151,7 @@
 1,a mega sea wombat
 
 ;desert
-1,The desert weather is [desert weather] and [sert temp] and you see **[desert encounter]**
+1,The desert weather is [desert weather] and [sert temp] and you see **[desert encounter or not]**
 
 ;desert weather
 70,calm
@@ -167,10 +167,10 @@ a [willy-willy] will-willy
 
 ;desert encounter
 100,[flies]
-10,[desert people]
-1,[desert monsters]
-8,[desert animals]
-2,[desert megafauna]
+10,[desert people] [heading]
+1,[desert monsters] [heading]
+8,[desert animals] [heading]
+2,[desert megafauna] [heading]
 
 ;desert people
 1,Australians
@@ -206,7 +206,7 @@ a [willy-willy] will-willy
 1,large
 
 ;mountains
-1,The mountain weather is [mountain weather] and [mountain temp] and you see **[mountain encounter]**
+1,The mountain weather is [mountain weather] and [mountain temp] and you see **[mountain encounter or not]**
 
 ;mountain weather
 10,calm
@@ -223,12 +223,12 @@ a [willy-willy] will-willy
 20,very cold
 5,freezing
 
-;mountain encounter
+;mountain encounter or not
 100,steep terrain
-4,[mountain people]
-3,[mountain monsters]
-7,[mountain animals]
-1,[mountain megafauna]
+4,[mountain people] [heading]
+3,[mountain monsters] [heading]
+7,[mountain animals] [heading]
+1,[mountain megafauna] [heading]
 
 ;mountain people
 1,[convicts] convicts
@@ -266,12 +266,12 @@ a [willy-willy] will-willy
 10,cool
 5,cold
 
-;bush encounter
+;bush encounter or not
 100,nothing but bush
-8,[bush people]
-9,[bush monsters]
-16,[bush animals]
-1,[bush megafauna]
+8,[bush people] [heading]
+9,[bush monsters] [heading]
+16,[bush animals] [heading]
+1,[bush megafauna] [heading]
 
 ;bush people
 4,[convicts] convicts
@@ -344,14 +344,14 @@ a [willy-willy] will-willy
 1,*Alcheringa*
 
 ;trees
-1,The bush weather is [bush weather] and [bush temp] and you see **[trees encounter]**
+1,The bush weather is [bush weather] and [bush temp] and you see **[trees encounter or not]**
 
-;trees encounter
+;trees encounter or not
 100,nothing but lots of bush trees
-5,[trees people]
-1,[trees monsters]
-16,[trees animals]
-2,[trees megafauna]
+5,[trees people] [heading]
+1,[trees monsters] [heading]
+16,[trees animals] [heading]
+2,[trees megafauna] [heading]
 
 ;trees people
 3,[convicts] convicts
@@ -371,14 +371,14 @@ a [willy-willy] will-willy
 1,giant kangaroo
 
 ;forest
-1,The bush weather is [bush weather] and [bush temp] and you see **[forest encounter]**
+1,The bush weather is [bush weather] and [bush temp] and you see **[forest encounter or not]**
 
-;forest encounter
+;forest encounter or not
 100,nothing but lots of dense bush
-12,[forest people]
-12,[forest monsters]
-49,[forest animals]
-3,[forest megafauna]
+12,[forest people] [heading]
+12,[forest monsters] [heading]
+49,[forest animals] [heading]
+3,[forest megafauna] [heading]
 
 ;forest people
 2,[convicts] convicts
@@ -423,7 +423,7 @@ a [willy-willy] will-willy
 1,giant diprotodon
 
 ;marsh
-1,The marsh weather is [marsh weather] and [marsh temp] and you see **[marsh encounter]**
+1,The marsh weather is [marsh weather] and [marsh temp] and you see **[marsh encounter or not]**
 
 ;marsh weather
 70,calm
@@ -439,12 +439,12 @@ a [willy-willy] will-willy
 5,cold
 5,[storm]
 
-;marsh encounter
+;marsh encounter or not
 100,nothing but lots of riverland
-12,[marsh people]
-1,[marsh monsters]
-78,[marsh animals]
-4,[marsh megafauna]
+12,[marsh people] [heading]
+1,[marsh monsters] [heading]
+78,[marsh animals] [heading]
+4,[marsh megafauna] [heading]
 
 ;marsh people
 1,Australians
@@ -469,7 +469,7 @@ a [willy-willy] will-willy
 1,mega crocodile
 
 ;water
-1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter]**
+1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter or not]**
 
 ;water weather
 65,calm
@@ -485,12 +485,12 @@ a [willy-willy] will-willy
 5,cold
 5,[storm]
 
-;water encounter
+;water encounter or not
 100,nothing
-5,[water people]
-1,[water monsters]
-3,[water animals]
-2,[water megafauna]
+5,[water people] [heading]
+1,[water monsters] [heading]
+3,[water animals] [heading]
+2,[water megafauna] [heading]
 1,a portal to *Lemuria*
 
 ;water people
