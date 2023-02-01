@@ -3,7 +3,7 @@
 # subtables to do monsters, animals, people, megafauna by terrain
 
 ;ocean
-1,The ocean weather is [ocean weather] and [ocean temp] and you see [ocean encounter]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]**
 
 ;ocean weather
 65,calm
@@ -70,7 +70,7 @@
 1,watery doom
 
 ;sand
-1,The weather is [sand weather] and [sand temp] and you see [sand encounter]
+1,The weather is [sand weather] and [sand temp] and you see **[sand encounter]**
 
 ;sand weather
 65,calm
