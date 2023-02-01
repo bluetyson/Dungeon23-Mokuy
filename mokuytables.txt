@@ -2,15 +2,35 @@
 # do these [grass intro] [grass dressing] [grass landmark]
 # subtables to do monsters, animals, people, megafauna by terrain
 
+#;lake intro
+#1,This is the *[lake name]*, claimed as the ancestral home of froglings, kappa, and some swamp gnomes.
+#1,The waters of *[lake name]* seems to stretch forever, mirroring the sky above.
+#1,The *[lake name]* appears to have been a quarry of some sort. Perhaps giants dug this hole in the old days. The turquoise blue waters look welcoming, though the lake sides seems steep and precarious.
+#1,The *[lake name]* is dotted here and there with islands, each of which looks barely large enough to hold a house.
+#1,The river splashes down the hillside and ends here in, *[lake name]*.
+
+;lake dressing
+#1,[capitalize cows] can be seen gathered near the water.
+#1,The silvery glint of scales gives away large fish hunting near shore.
+#1,Vibrant green duckweed floats on the water’s surface and waterfowl swim hurriedly about.
+#1,A large black snake glides away through the reeds. Setting up camp here may not be safe.
+#1,Beavers have built dams, drowning the land.
+#1,A cool breeze blows across the lake leaving shimmering waves and bobbing cattails in its wake.
+#1,Near the edge of the lake, surrounded by willows, [an old statue] of *[power]* still stands.
+
 ;ocean
-100,calm
-5,[ocean people]
+1,The ocean weather is [ocean weather] and you see [ocean encounter]
+
+;ocean weather
+95,calm
+5,[storm]
+
+;ocean encounter
+100,nothing
+5,[ocean_people]
 1,[ocean_monsters]
 3,[ocean_animals]
 2,[ocean_megafauna]
-5,a [storm]
-1,smelly cloud
-1,watery doom
 1,portal to *Lemuria*
 
 ;ocean_people
@@ -25,6 +45,8 @@
 2,squid
 1,rays
 2,birds
+1,turtles
+1,jellyfish
 
 ;ocean_megafauna
 2,giant shark
@@ -33,6 +55,8 @@
 1,mega squid
 1,giant albatross
 1,giant sea eagle
+1,giant jellyfish
+1,giant ray
 
 ;ocean_monsters
 1,kraken
@@ -40,8 +64,10 @@
 ;storm
 10,generic storm
 5,thunder storm
+1,smelly cloud
 1,giant wave
 1,vortex
+1,watery doom
 
 ;sand
 40,[2d20] sea rats
