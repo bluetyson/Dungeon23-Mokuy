@@ -70,12 +70,13 @@
 1,watery doom
 
 ;sand
-40,[2d20] sea rats
-1,sea wombat
-1,pirates
-2,convicts
-1,soldiers
-1,sailors
+50,seabirds
+2,giant sea wombat
+1,mega sea wombat
+2,pirates
+4,convicts
+2,soldiers
+2,sailors
 2,[willy-willy]
 
 ;desert
