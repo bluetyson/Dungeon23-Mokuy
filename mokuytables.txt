@@ -47,6 +47,12 @@
 1,a burning floating wreck of a ship, probably of pirate origin
 1,a local pirate ship full of [cultists] cultists
 
+;convicts
+85,laboring
+3,resting
+10,escaped
+2,escaped cannibals
+
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
 1,A giant ship 150m long, definitely not European: perhaps a descendant of *Zheng Hi*'s 15th century fleet of explorers
@@ -117,7 +123,7 @@
 
 ;sand people
 2,pirates
-4,convicts
+4,[convicts] convicts
 2,soldiers
 2,sailors
 
@@ -139,7 +145,6 @@
 20,windy
 2,[storm]
 3,rainy
-1,**flooding**
 
 ;desert temp
 80,hot
@@ -156,7 +161,7 @@
 ;desert people
 1,Australians
 2,explorers
-3,convicts
+3,[convicts] convicts
 
 ;desert monsters
 1,Carrack's Dirt Moth
@@ -187,14 +192,46 @@
 1,large
 
 ;mountains
-1,yowie
-1,skelleagle
+1,The mountain weather is [mountain weather] and [mountain temp] and you see [mountain encounter]
+
+;mountain weather
+10,calm
+20,windy
+40,very windy
+2,[storm]
+3,rainy
+
+;mountain temp
+5,warm
+10,mild
+20,cool
+40,cold
+20,very cold
+5,freezing
+
+;mountain encounter
+100,steep terrain
+4,[mountain people]
+3,[mountain monsters]
+7,[mountain animals]
+1,[mountain megafauna]
+
+;mountain people
+1,[convicts] convicts
+1,explorers
+2,Australians
+
+;mountain animals
 2,eagle
 5,[2d12] brumbies
-1,convicts
-1,explorers
+
+;mountain monsters
+1,yowie
+1,skelleagle
 1,succubus
-2,Australians
+
+;mountain megafauna
+1,giant eagle
 
 ;bush
 1,dropbear
@@ -297,7 +334,7 @@
 1,mega crocodile
 8,snake
 20,pelicans
-40,sea rats
+40,seabirds
 
 ;water
 3,sailors
@@ -365,8 +402,10 @@
 1,soldiers
 1,sailors
 
-;city2
+;city1
 1,*Sydney Town*, a wretched hive of scum and villainy
+;city2
+1,*Coal River*, a wretched hive of scum and villainy
 
 ;sand city
 1, but within is *Sydney Town*, a wretched hive of scum and villainy
