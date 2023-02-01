@@ -309,11 +309,11 @@
 1,soldiers
 1,sailors
 
-;city
+;city2
 1,*Sydney Town*, a wretched hive of scum and villainy
 
 ;sand city
-1,[sand] but within is [city]
+1, but within is *Sydney Town*, a wretched hive of scum and villainy
 
 ;TOP
 1,<p>[history]<p>[secret history]
