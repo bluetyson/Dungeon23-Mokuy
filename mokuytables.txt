@@ -16,20 +16,34 @@
 1,giant wave
 1,vortex
 
-
 ;sand
+40,sea rats
 1,sea wombat
 1,pirates
 2,convicts
 1,soldiers
 1,sailors
+2,[willy-willy]
 
 ;desert
-10,flies
+10,[flies]
 2,snake
-2,dingoes
+3,dingoes
 1,giant snake
 1,Carrack's Dirt Moth
+2,[willy-willy]
+1,giant scorpion
+2,scorptions
+
+;flies
+97,annoying
+2,difficult
+1,plague
+
+;willy-willy
+9,small
+2,medium
+1,large
 
 ;mountains
 1,yowie
@@ -37,20 +51,28 @@
 2,eagle
 5,brumbies
 1,convicts
-1,bushranger
+1,explorers
+1,succubus
+2,Australians
 
 ;bush
 1,dropbear
 1,megafauna
 11,kangaroos
 1,vampire kangaroos
-3,convicts
+1,convicts
 1,bushranger
 1,explorers
 1,settlers
-1,Australians
+4,Australians
 1,snake
 1,a loaded dog
+2,dingoes
+1,bottersnikes
+1,gumbles
+1,emerald bush goblin
+1,succubus
+1,*The Super Roo*
 
 ;trees
 1,dropbear
@@ -59,6 +81,7 @@
 1,giant goanna
 10,kangaroos
 10,koalas
+2,dingoes
 3,convicts
 2,bushranger
 
@@ -66,6 +89,7 @@
 1,dropbears
 1,land pirahna
 2,brumbies
+1,dingoes
 10,kangaroos
 1,vampire kangaroos
 10,koalas
@@ -78,7 +102,6 @@
 2,convicts
 1,*The Cassowary*
 1,*The Eye Empress of Bundaberg*
-1,*The Super Roo*
 
 ;marsh
 1,bunyip
@@ -90,6 +113,7 @@
 40,sea rats
 
 ;water
+17,placid sea
 1,mega giant crocodile
 1,mega giant shark
 1,*Lemurians*
