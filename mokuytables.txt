@@ -358,25 +358,52 @@ a [willy-willy] will-willy
 1,giant kangaroo
 
 ;forest
-1,dropbears
-1,land pirahna
+2,convicts
+1,*The Cassowary*
+
+;forest
+1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter]
+
+100,nothing but lots of dense bush
+2,[forest people]
+12,[forest monsters]
+49,[forest animals]
+3,[forest megafauna]
+
+;forest people]
+
+;forest monsters
+2,[1d2] dropbears
+1,[1d3+1] vampire kangaroos
+1,a vampire kangaroo
+1,[1d2+1] weredingoes
+1,a weredingo
+2,werethylacine
+2,Killeroo: [Killeroo]
+2,*The Eye Empress of Bundaberg*: [Eye Empress of Bundaberg]
+
+;Eye Empress of Bundaberg
+1,Rumours of a ghost apparition of a giant floating woman's head that destroys men with fiery.  The only reports come from women.
+
+;Killeroo
+1,A kangaroo that walks like a large man and wields weapons like a fearsome warrior
+
+;forest animals
+10,koalas
+20,birds
+2,leech
 2,brumbies
 1,dingoes
 10,kangaroos
-1,vampire kangaroos
-1,weredingo
-1,werethylacine
-1,killeroo
-10,koalas
-2,leech
-1,giant leech
-2,python
-1,giant python
 2,poisonous snake
-1,giant poisonous snake
-2,convicts
-1,*The Cassowary*
-1,*The Eye Empress of Bundaberg*
+2,python
+
+;forest megafauna
+2,giant leech
+2,giant python
+2,giant poisonous snake
+2,diprotodon
+1,giant diprotodon
 
 ;marsh
 1,bunyip
