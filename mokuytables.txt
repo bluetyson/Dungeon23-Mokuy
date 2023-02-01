@@ -34,9 +34,9 @@
 
 ;sailors
 1,settlers ship
-1,government ships
-1,local trader ship
-1,foreign trader ship
+1,government ship
+1,local trading ship
+1,foreign trading ship
 
 ;pirates
 1,local pirate ship
