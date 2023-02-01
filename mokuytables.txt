@@ -104,7 +104,7 @@
 20,windy
 10,rainy
 5,[storm]
-2,[willy-willy]
+2,a [willy-willy] will-willy
 
 ;sand temp
 65,pleasant
@@ -145,6 +145,7 @@
 20,windy
 2,[storm]
 3,rainy
+a [willy-willy] will-willy
 
 ;desert temp
 80,hot
@@ -177,8 +178,8 @@
 
 ;flies
 97,annoying flies
-2,stinging flies
-1,plague of flies
+2,stinging flies that do 1 damage without precautions
+1,plague of flies that make it impossible to continue
 
 ;storm
 20,stormy
@@ -234,27 +235,59 @@
 1,giant eagle
 
 ;bush
+
+1,The bush weather is [bush weather] and [bush temp] and you see [bush encounter]
+
+;bush weather
+50,calm
+25,windy
+15,very windy
+2,[storm]
+8,rainy
+
+;bush temp
+9,pleasant
+20,warm
+15,hot
+5,very hot
+10,cool
+5,cold
+
+;bush encounter
+100,nothing but bush
+8,[bush people]
+9,[bush monsters]
+16,[bush animals]
+1,[bush megafauna]
+
+;bush people
+4,convicts
+2,bushranger
+4,explorers
+4,settlers
+8,Australians
+
+;bush monsters
 1,dropbear
-1,megafauna
+1,a vampire kangaroo
+1,*The Super Roo*
+1,[cac supernatural]
+1,[cthulhu]
+1,bottersnikes
+1,gumbles
+1,emerald bush goblin
+1,succubus
+
+;bush animals
 11,kangaroos
-1,vampire kangaroo
-1,convicts
-1,bushranger
-1,explorers
-1,settlers
-4,Australians
 1,snake
 1,a loaded dog
 2,dingoes
 1,thylacine
-1,bottersnikes
-1,gumbles
+
+;bush megafauna
 1,giant earthworm
-1,emerald bush goblin
-1,succubus
-1,*The Super Roo*
-1,[cac supernatural]
-1,[cthulhu]
+
 
 ;cac supernatural
 2,globster
@@ -296,7 +329,7 @@
 1,*Alcheringa*
 
 ;trees
-1,The bush weather is [bush weather] and [bush temp] and you see bush encounter]
+1,The bush weather is [bush weather] and [bush temp] and you see [trees encounter]
 
 ;trees encounter
 100,nothing but lots of bush trees
