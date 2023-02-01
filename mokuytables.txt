@@ -336,6 +336,9 @@
 ;sand city
 1, but within is *Sydney Town*, a wretched hive of scum and villainy
 
+;bush city
+1, but within is *Coal River*, a mining hive of scum and villainy.  Here you also find the *Nobby's Island* prison.
+
 ;TOP
 1,<p>[history]<p>[secret history]
 
