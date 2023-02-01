@@ -97,8 +97,8 @@
 1,giant leech
 2,python
 1,giant python
-1,poisonous snake
-2,giant poisonous snake
+2,poisonous snake
+1,giant poisonous snake
 2,convicts
 1,*The Cassowary*
 1,*The Eye Empress of Bundaberg*
@@ -113,9 +113,12 @@
 40,sea rats
 
 ;water
-17,placid sea
+30,placid sea
+3,sailors
 1,mega giant crocodile
+2,mega crocodile
 1,mega giant shark
+2,mega shark
 1,*Lemurians*
 
 ;forest-mountain tower
