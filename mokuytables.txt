@@ -620,6 +620,7 @@ a [willy-willy] will-willy
 ;land pirahna stats
 ;elemental stats
 ;sea serpent stats
+;serpent men stats
 ;skelleagle stats
 ;succubus stats
 ;yowie stats
