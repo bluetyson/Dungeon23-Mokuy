@@ -569,28 +569,44 @@ a [willy-willy] will-willy
 ;Australians stats
 
 #animals
-;birds stats
-;brumbies stats
-;dolphins stats
+;fruit bat stats
+;bird stats
+;brumbys stats
+;cassowary stats
+;cockatoo stats
+;dolphin stats
 ;eagle stats
+;echidna stats
+;emu stats
 ;dingo stats
 ;fish stats
 ;goanna stats
 ;jellyfish stats
 ;kangaroo stats
+;tree kangaroo stats
+;kookaburra stats
 ;koala stats
-;loaded dog
+;komodo dragon stats
+;loaded dog stats
+;lyrebird stats
+;owl stats
+;platypus stats
 ;python stats
 ;ray stats
 ;scorpion stats
 ;seabirds stats
 ;sharks stats
 ;snake stats
+;spider stats
+;poisonous spider stats
 ;scorpions stats
 ;squid stats
 ;thylacine stats
 ;turtles stats
+;wallaby stats
+;wallaroo stats
 ;whale stats
+;wombat stats
 
 #monsters
 ;bottersnikes stats
@@ -598,6 +614,7 @@ a [willy-willy] will-willy
 ;giant bunyip stats
 ;dropbear stats
 ;emerald bush goblin stats
+;giant bell cockatoo stats
 ;gumble stats
 ;vampire kangaroo
 ;land pirahna stats
@@ -610,33 +627,64 @@ a [willy-willy] will-willy
 ;werethylacine stats
 
 #mythos
-;globster stats
 ;ghoul stats
-;gunni stats
-;Yara-mayha-who stats
-;Jurrawarra stats
-;Rainbow Serpent stats
 ;spirit stats
 ;watcher spawn leech stats
 ;Hound of Tindalos stats
 ;Dream Shambler stats
 
+#australia
+;globster stats
+;gunni stats
+;Yara-mayha-who stats
+;Jurrawarra stats
+;Rainbow Serpent stats
+
+;Bagini stats
+;Jannok stats
+;Koala stats
+;Kurpannga stats
+;Mimi stats
+;Nadubi stats
+;Nargun stats
+;Ngarung stats
+;Ninya stats
+;Potkurok stats
+;Turong stats
+;Wa-tha-gun-darl stats
+
+#Dreamtime
+;Bunyip
+;Diprotodon
+;Giant Kangaroos
+;Megalania
+;Thylacine
+#Totems
+
 #megafauna
 ;giant albatross stats
 ;giant eagle stats
+;giant echidna stats
 ;giant earthworm stats
+;giant fruit bat stats
 'giant moray eel stats
 ;giant goanna stats
 ;giant jellyfish stats
 ;giant kangaroo stats
+;giant platypus stats
 ;giant ray stats
 ;giant sea eagle stats
 ;giant shark stats
 ;giant scorpion stats
 ;giant snake stats
+;giant poisonous stats
+;giant python stats
+;giant spider stats
+;giant poisonous stats
 ;giant squid stats
 ;giant turtle stats
 ;giant sea wombat stats
+;giant wombat stats
 
 ;mega crocodile stats
 ;mega sea wombat stats
