@@ -458,15 +458,15 @@ a [willy-willy] will-willy
 1,bunyip
 
 ;marsh animals
-2,[1d6+1] crocodiles
-10,a crocodile
+2,[1d6+1] crocodiles ([crocodile stats])
+10,a crocodile ([crocodile stats])
 8,a snake
 8,a water snake
 20,pelicans
 40,seabirds
 
 ;marsh megafauna
-3,giant crocodile
+3,giant crocodile ([giant crocodile stats])
 1,giant water snake
 1,mega crocodile
 
@@ -574,6 +574,9 @@ a [willy-willy] will-willy
 ;brumbys stats
 ;cassowary stats
 ;cockatoo stats
+;crocodile stats
+1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
+
 ;dolphin stats
 ;eagle stats
 ;echidna stats
@@ -592,6 +595,8 @@ a [willy-willy] will-willy
 ;owl stats
 ;platypus stats
 ;python stats
+;raven stats
+1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;ray stats
 ;scorpion stats
 ;seabirds stats
@@ -664,6 +669,12 @@ a [willy-willy] will-willy
 
 #megafauna
 ;giant albatross stats
+;giant crab stats
+1,AC,3,MV,9,HD,3,Thac0,,2,NA,DM,2-8(x2),SA,Nil,SD,Nil,SZ,L (4'+),ML,,XP
+;giant crayfish stats
+1,AC,4,MV,"6, Sw 12",HD,4+4,Thac0,,2,NA,DM,2-12(x2),SA,Nil,SD,Nil,SZ,L (8'+),ML,,XP,
+;giant crocodile stats
+1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
 ;giant eagle stats
 ;giant echidna stats
 ;giant earthworm stats
