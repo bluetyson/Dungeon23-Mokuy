@@ -18,7 +18,7 @@
 
 ;ocean
 ####1,The ocean weather is [ocean weather] and ban [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here [same direction]] [!nothing||[same direction]]
-1,The ocean weather is [ocean weather] and [ocean temp] and you see [store nothing as noenc] **[ocean encounter]** [here same ocean encounter] [?noenc||[heading]]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [here same ocean encounter] [!noenc||[heading]]
 
 ;ocean weather
 65,calm
@@ -34,12 +34,12 @@
 5,cold
 
 ;ocean encounter
-100,nothing
-5,[ocean people]
-1,[ocean monsters]
-3,[ocean animals]
-2,[ocean megafauna]
-1,a portal to *Lemuria*
+100,nothing[store nothing as noenc]
+5,[ocean people][store nothing as noenc]
+1,[ocean monsters][store nothing as noenc]
+3,[ocean animals][store nothing as noenc]
+2,[ocean megafauna][store nothing as noenc]
+1,a portal to *Lemuria*[store nothing as noenc]
 
 ;ocean people
 49,[pirates]
