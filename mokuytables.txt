@@ -60,6 +60,14 @@
 1,[1d3+1] soldier
 1,[1d6+1] tracking
 
+;soldiers
+1,[1d4+1] hunting
+1,[1d3+1] tracking
+1,[1d6+4] lazing around
+1,[1d4+1] fighting
+4,[1d6+2] drinking
+1,[1d6+3] lazing around and drinking
+
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
 1,A giant ship 150m long, definitely not European: perhaps a descendant of *Zheng Hi*'s 15th century fleet of explorers
@@ -131,7 +139,7 @@
 ;sand people
 2,pirates
 4,[convicts] convicts
-2,soldiers
+2,[soldiers] soldiers
 2,sailors
 
 ;sand monsters
