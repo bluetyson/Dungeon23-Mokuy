@@ -193,7 +193,7 @@ a [willy-willy] will-willy
 1,large
 
 ;mountains
-1,The mountain weather is [mountain weather] and [mountain temp] and you see [mountain encounter]
+1,The mountain weather is [mountain weather] and [mountain temp] and you see **[mountain encounter]**
 
 ;mountain weather
 10,calm
@@ -236,7 +236,7 @@ a [willy-willy] will-willy
 
 ;bush
 
-1,The bush weather is [bush weather] and [bush temp] and you see [bush encounter]
+1,The bush weather is [bush weather] and [bush temp] and you see **[bush encounter]**
 
 ;bush weather
 50,calm
@@ -287,7 +287,6 @@ a [willy-willy] will-willy
 
 ;bush megafauna
 1,giant earthworm
-
 
 ;cac supernatural
 2,globster
