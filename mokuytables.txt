@@ -1,17 +1,41 @@
 # Mokuy table
 # do these [grass intro] [grass dressing] [grass landmark]
+# subtables to do monsters, animals, people, megafauna by terrain
 
 ;ocean
 100,calm
+5,[ocean people]
+1,[ocean_monsters]
+3,[ocean_animals]
+2,[ocean_megafauna]
 5,a [storm]
-5,pirates
-1,kraken
 1,smelly cloud
-3,shark
-2,giant shark
-1,mega shark
 1,watery doom
 1,portal to *Lemuria*
+
+;ocean_people
+1,pirates
+1,sailors
+
+;ocean_animals
+100,fish
+2,dolphins
+2,sharks
+1,whale
+2,squid
+1,rays
+2,birds
+
+;ocean_megafauna
+2,giant shark
+1,mega shark
+2,giant squid
+1,mega squid
+1,giant albatross
+1,giant sea eagle
+
+;ocean_monsters
+1,kraken
 
 ;storm
 10,generic storm
@@ -31,7 +55,7 @@
 ;desert
 10,[flies]
 2,snake
-3,dingoes
+3,[2d4] dingoes
 1,giant snake
 1,Carrack's Dirt Moth
 2,[willy-willy]
@@ -52,7 +76,7 @@
 1,yowie
 1,skelleagle
 2,eagle
-5,brumbies
+5,[2d12] brumbies
 1,convicts
 1,explorers
 1,succubus
@@ -62,7 +86,7 @@
 1,dropbear
 1,megafauna
 11,kangaroos
-1,vampire kangaroos
+1,vampire kangaroo
 1,convicts
 1,bushranger
 1,explorers
@@ -109,7 +133,7 @@
 1,insane sorcerer
 
 ;cac_cultists
-1,Sharks Tooth
+1,*Sharks Tooth*
 1,*Effigy of Scars and Suffering*
 1,*Industrious Brothers of the New World*
 1,*Outcast Dreamers*
