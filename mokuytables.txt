@@ -20,7 +20,7 @@
 1,vortex
 
 ;sand
-40,sea rats
+40,[2d20] sea rats
 1,sea wombat
 1,pirates
 2,convicts
@@ -174,9 +174,11 @@
 10,land pirahna
 1,pirates
 1,convicts
+1,soldiers
+1,sailors
 
 ;TOP
 1,<p>[history]
 
 ;history
-1,<strong>History:</strong>Dr Ruby escaped from Inguria Island in 2044 after a cataclysmic confrontation with the Freedom League blew up a volcano.  Luckily, his sister, Dr Ruby, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island of the coast of early 19th century Australia.
+1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*.
