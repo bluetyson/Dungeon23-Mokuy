@@ -290,14 +290,17 @@
 1,jellyfish
 
 ;water megafauna
-1,mega giant crocodile
-2,mega crocodile
-1,mega giant shark
-2,mega shark
+2,a mega giant crocodile
+4,a mega crocodile
+2,a mega giant shark
+4,a mega shark
+1,a giant moray eel
+2,a mega giant moray eel
 
 ;water monsters
 2,a sea serpent
 2,a giant bunyip
+4,[1d4] bunyips
 
 ;forest-mountain tower
 10,land pirahna
@@ -307,7 +310,10 @@
 1,sailors
 
 ;city
-1,Sydney Town, a wretched hive of scum and villainy
+1,*Sydney Town*, a wretched hive of scum and villainy
+
+;sand city
+1,[sand] but within is [city]
 
 ;TOP
 1,<p>[history]<p>[secret history]
