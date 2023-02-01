@@ -139,7 +139,7 @@
 20,windy
 2,[storm]
 3,rainy
-1,flooding
+1,**flooding**
 
 ;desert temp
 80,hot
@@ -178,8 +178,8 @@
 ;storm
 20,stormy
 5,thunder and lightning
-2,gale force storm
-1,flooding
+2,**gale force storm**
+1,**flooding**
 
 ;willy-willy
 9,small
@@ -216,10 +216,10 @@
 1,emerald bush goblin
 1,succubus
 1,*The Super Roo*
-1,[cac_supernatural]
+1,[cac supernatural]
 1,[cthulhu]
 
-;cac_supernatural
+;cac supernatural
 2,globster
 2,gunni
 2,Yara-mayha-who
