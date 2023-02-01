@@ -27,17 +27,17 @@
 
 ;ocean encounter
 100,nothing
-5,[ocean_people]
-1,[ocean_monsters]
-3,[ocean_animals]
-2,[ocean_megafauna]
+5,[ocean people]
+1,[ocean monsters]
+3,[ocean animals]
+2,[ocean megafauna]
 1,portal to *Lemuria*
 
-;ocean_people
+;ocean people
 1,pirates
 1,sailors
 
-;ocean_animals
+;ocean animals
 100,fish
 2,dolphins
 2,sharks
@@ -48,7 +48,7 @@
 1,turtles
 1,jellyfish
 
-;ocean_megafauna
+;ocean megafauna
 2,giant shark
 1,mega shark
 2,giant squid
@@ -62,11 +62,12 @@
 1,kraken
 
 ;storm
-10,generic storm
-5,thunder storm
-1,smelly cloud
-1,giant wave
-1,vortex
+20,rough
+10,stormy
+5,thunder and lightning
+1,miasmic
+1,a giant wave approaching
+1,a swirling vortex approaching
 1,watery doom
 
 ;sand
