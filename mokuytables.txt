@@ -45,6 +45,7 @@
 2,a foreign pirate ship
 1,a floating wreck of a ship, probably of pirate origin
 1,a burning floating wreck of a ship, probably of pirate origin
+1,a local pirate ship full of [cultists] cultists
 
 ;unknown vessel
 1,George Bass' *Venus*, now a **ghost ship**
@@ -330,7 +331,7 @@
 ;water people
 49,pirates
 50,sailors
-1,a strange unknown vessel
+1,a strange unknown vessel: [unknown vessel]
 
 ;water animals
 100,fish
