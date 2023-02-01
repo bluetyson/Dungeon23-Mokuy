@@ -3,8 +3,22 @@
 # do these [grass intro] [grass dressing] [grass landmark]
 # subtables to do monsters, animals, people, megafauna by terrain
 
+#[here heading]. [!blade||They look unarmed]
+#Sometimes you need to write a lot of things that depend on the results of previous tables. In order to make this easier, there are two keywords that store things without producing any output: "save … as …" does a table lookup and stores it, where as "store … as …" just stores whatever text you give it. Neither produces output. In the example below, "evil power" is the result of a table lookup, where as "Thor" is just that, a text that is being stored. Both "gate" and "statue" can now refer to "same power".
+
+#;temple
+#3,[save evil power as power] This is a ruined temple. [gate] [statue]
+#1,[store Thor as power] This is a temple. [gate] [statue]
+
+#;gate
+#1,The gate is inscribed with the *[same power]* rune.
+
+#;statue
+#1,The statue of *[same power]* dominates the courtyard.
+
+
 ;ocean
-1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [heading]
+1,The ocean weather is [ocean weather] and [ocean temp] and you see **[ocean encounter]** [save heading as direction] [here direction]. [!nothing||[heading]]
 
 ;ocean weather
 65,calm
@@ -386,7 +400,7 @@ a [willy-willy] will-willy
 2,[convicts] convicts
 1,[explorers] explorers
 2,[cultists] cultists
-1,*The Cassowary*: [The Cassowary]
+0,*The Cassowary*: [The Cassowary]
 
 ;The Cassowary
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
@@ -397,9 +411,9 @@ a [willy-willy] will-willy
 1,a vampire kangaroo
 1,[1d2+1] weredingoes
 1,a weredingo
-2,werethylacine
-2,Killeroo: [Killeroo]
-2,*The Eye Empress of Bundaberg*: [Eye Empress of Bundaberg]
+1,werethylacine
+0,Killeroo: [Killeroo]
+0,*The Eye Empress of Bundaberg*: [Eye Empress of Bundaberg]
 
 ;Eye Empress of Bundaberg
 1,Rumours of a ghost apparition of a giant floating woman's head that destroys men with fiery.  The only reports come from women.
