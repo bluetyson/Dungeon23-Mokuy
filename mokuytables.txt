@@ -70,24 +70,55 @@
 1,watery doom
 
 ;sand
-50,seabirds
-2,giant sea wombat
-1,mega sea wombat
+1,The weather is [sand weather] and [sand temp] and you see [sand encounter]
+
+;sand weather
+65,calm
+20,windy
+10,rainy
+5,[storm]
+2,[willy-willy]
+
+;sand temp
+65,pleasant
+10,warm
+5,hot
+10,cool
+5,cold
+5,[storm]
+
+;sand encounter
+100,nothing
+10,[sand people]
+1,[sand monsters]
+50,[sand animals]
+3,[sand megafauna]
+
+;sand people
 2,pirates
 4,convicts
 2,soldiers
 2,sailors
-2,[willy-willy]
+
+;sand monsters
+1,elemental
+
+;sand animals
+50,seabirds
+
+;sand megafauna
+2,a giant sea wombat
+1,a mega sea wombat
 
 ;desert
 10,[flies]
-2,snake
+2,a snake
 3,[2d4] dingoes
-1,giant snake
+1,a giant snake
 1,Carrack's Dirt Moth
 2,[willy-willy]
-1,giant scorpion
-2,scorptions
+1,a giant scorpion
+2,scorpions
 
 ;flies
 97,annoying flies
