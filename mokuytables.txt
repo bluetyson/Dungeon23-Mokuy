@@ -68,11 +68,44 @@
 1,snake
 1,a loaded dog
 2,dingoes
+1,thylacine
 1,bottersnikes
 1,gumbles
+1,giant earthworm
 1,emerald bush goblin
 1,succubus
 1,*The Super Roo*
+1,[cac_supernatural]
+1,[cthulhu]
+
+;cac_supernatural
+2,globster
+2,gunni
+2,Yara-mayha-who
+2,Jurrawarra
+1,Rainbow Serpent
+
+1,mythos
+10,[cultists]
+1,ghouls
+
+
+;cultists
+2,[cac cultists]
+9,Secret Society of the Ring
+1,insane sorcerer
+
+;cac_cultists
+1,Sharks Tooth
+1,*Effigy of Scars and Suffering*
+1,*Industrious Brothers of the New World*
+1,*Outcast Dreamers*
+1,*Bacchanal Club*
+
+;cac_dreaming
+1,*Field of Mars*
+1,*Salt Water*
+1,*Alcheringa*
 
 ;trees
 1,dropbear
