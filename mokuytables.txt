@@ -417,17 +417,36 @@ a [willy-willy] will-willy
 1,giant diprotodon
 
 ;marsh
+1,The marsh weather is [marsh weather] and [marsh temp] and you see **[marsh encounter]**
+
+;marsh encounter
+100,nothing but lots of riverland
+12,[marsh people]
+1,[marsh monsters]
+78,[marsh animals]
+4,[marsh megafauna]
+
+;marsh people
+1,Australians
+2,[explorers] explorers
+1,[convicts] convicts
+1,[soldiers] soldiers
+
+;marsh monsters
 1,bunyip
-10,crocodile
-3,giant crocodile
-1,mega crocodile
-8,snake
+
+;marsh animals
+2,[1d6+1] crocodiles
+10,a crocodile
+8,a snake
+8,a water snake
 20,pelicans
 40,seabirds
 
-;water
-3,sailors
-1,*Lemurians*
+;marsh megafauna
+3,giant crocodile
+1,giant water snake
+1,mega crocodile
 
 ;water
 1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter]**
@@ -457,6 +476,7 @@ a [willy-willy] will-willy
 ;water people
 49,pirates
 50,sailors
+2,*Lemurians*
 1,a strange unknown vessel: [unknown vessel]
 
 ;water animals
