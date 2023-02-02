@@ -329,7 +329,7 @@ a [willy-willy] will-willy
 ;bush monsters
 2,**drop bear**
 1,a **vampire kangaroo**
-1,**The Super Roo**: [Super Roo]
+1,**The Super Roo** [Super Roo]
 1,[cac supernatural]
 1,[cthulhu]
 1,**bottersnikes**
