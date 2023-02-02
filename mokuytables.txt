@@ -389,23 +389,23 @@ a [willy-willy] will-willy
 3,[forest megafauna] [heading]
 
 ;forest people
-2,[convicts] convicts
-1,[explorers] explorers
-2,[cultists] cultists
-0,*The Cassowary*: [The Cassowary]
+2,[convicts] **convicts**
+1,[explorers] explorers**
+2,[cultists] **cultists**
+0,<b>*The Cassowary*</b>: [The Cassowary]
 
 ;The Cassowary
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
-2,[1d2] dropbears
-1,[1d3+1] vampire kangaroos
-1,a vampire kangaroo
-1,[1d2+1] weredingoes
-1,a weredingo
-1,werethylacine
-0,Killeroo: [Killeroo]
-0,*The Eye Empress of Bundaberg*: [Eye Empress of Bundaberg]
+2,[1d2] **dropbears**
+1,[1d3+1] **vampire kangaroos**
+1,a **vampire kangaroo**
+1,[1d2+1] **weredingoes**
+1,a **weredingo
+1,a **werethylacine**
+0,<b>*Killeroo*</b>: [Killeroo]
+0,<b>*The Eye Empress of Bundaberg*</b>: [Eye Empress of Bundaberg]
 
 ;Eye Empress of Bundaberg
 1,Rumours of a ghost apparition of a giant floating woman's head that destroys men with fiery.  The only reports come from women.
@@ -414,21 +414,21 @@ a [willy-willy] will-willy
 1,A kangaroo that walks like a large man and wields weapons like a fearsome warrior
 
 ;forest animals
-10,koalas
-20,birds
-2,leech
-2,brumbies
+10,**koalas**
+20,**birds**
+2,**leeches
+2,**brumbies**
 1,[2d6] **dingoes** [dingo stats]
-10,kangaroos
-2,poisonous snake
-2,python
+10,**kangaroos**
+2,a **poisonous snake**
+2,a **python**
 
 ;forest megafauna
-2,giant leech
-2,giant python
-2,giant poisonous snake
-2,diprotodon
-1,giant diprotodon
+2,a **giant leech**
+2,a **giant python**
+2,q **giant poisonous snake**
+2,a **diprotodon**
+1,a **giant diprotodon**
 
 ;marsh
 1,The marsh weather is [marsh weather] and [marsh temp] and you see [marsh encounter or not]
