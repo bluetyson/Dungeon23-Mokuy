@@ -897,14 +897,14 @@ a [willy-willy] will-willy
 
 ;secret history
 #1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
-#1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
-1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global store [silent_cult] as silentcult1] [global store [silent_cult] as silentcult2] Problems!
+1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
+#1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global store [silent_cult] as silentcult1] [global store [silent_cult] as silentcult2] Problems!
 
 ;secret cult
-1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try5.
+1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try6.
 
 ;secret cult2
-1,**[same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try5.
+1,**[same silentcult1]** and **[same silentcult2]** grow as a consequence try6.
 
 
 #people
