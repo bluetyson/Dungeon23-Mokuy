@@ -164,9 +164,9 @@
 3,[sand megafauna] [heading]
 
 ;sand people
-2,**pirates**
+2,**pirates** ([pirate stats])
 4,[convicts] **convicts**
-2,[soldiers] **soldiers**
+2,[soldiers] **soldiers** ([soldier stats])
 2,**sailors** ([sailor stats])
 
 ;sand monsters
@@ -754,7 +754,7 @@ a [willy-willy] will-willy
 1,**Australians** ([Australians stats])
 2,[explorers] **explorers**
 1,[convicts] **convicts**
-1,[soldiers] **soldiers**
+1,[soldiers] **soldiers** ([soldier stats])
 
 ;marsh monsters
 1,**bunyip**
@@ -832,7 +832,7 @@ a [willy-willy] will-willy
 10,**land pirahna**
 1,**pirates**
 1,**convicts**
-1,**soldiers**
+1,**soldiers** ([soldier stats])
 1,**sailors**
 
 ;heading
@@ -900,11 +900,13 @@ a [willy-willy] will-willy
 ;convict stats
 ;cultist stats
 ;explorer stats
-;pirates stats
+;pirate stats
+1,AC,10 to 6,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,15
 ;sailor stats
 1,AC,10 to 8,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,15
 ;settler stats
 ;soldier stats
+1,AC,8 to 4,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,10-12,XP,15
 ;Australians stats
 1,AC,8,MV,12,HD,1-2 or 2,Thac0,20 (19),1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,35 (35)
 
