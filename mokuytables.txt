@@ -165,7 +165,7 @@
 
 ;sand people
 2,**pirates** ([pirate stats])
-4,[convicts] **convicts**
+4,[convicts] **convicts** ([convict stats])
 2,[soldiers] **soldiers** ([soldier stats])
 2,**sailors** ([sailor stats])
 
@@ -204,7 +204,7 @@ a [willy-willy] will-willy
 ;desert people
 1,**Australians** ([Australians stats])
 2,[explorers] **explorers**
-3,[convicts] **convicts**
+3,[convicts] **convicts** ([convict stats])
 
 ;desert monsters
 1,<b>*Carrack's Dirt Moth*</b>
@@ -260,7 +260,7 @@ a [willy-willy] will-willy
 1,[mountain megafauna] [heading]
 
 ;mountain people
-1,[convicts] **convicts**
+1,[convicts] **convicts** ([convict stats])
 1,[explorers] **explorers**
 2,**Australians ([Australians stats])
 
@@ -302,7 +302,7 @@ a [willy-willy] will-willy
 1,[bush megafauna] [heading]
 
 ;bush people
-4,[convicts] **convicts**
+4,[convicts] **convicts** ([convict stats])
 2,a **bushranger**
 4,[explorers] **explorers**
 4,**settlers**
@@ -657,7 +657,7 @@ a [willy-willy] will-willy
 2,[trees megafauna] [heading]
 
 ;trees people
-3,[convicts] **convicts
+3,[convicts] **convicts ([convict stats])
 2,a **bushranger**
 
 ;trees monsters
@@ -685,7 +685,7 @@ a [willy-willy] will-willy
 3,[forest megafauna] [heading]
 
 ;forest people
-2,[convicts] **convicts**
+2,[convicts] **convicts** ([convict stats])
 1,[explorers] explorers**
 2,[cultists] **cultists**
 0,<b>*The Cassowary*</b>: [The Cassowary]
@@ -753,7 +753,7 @@ a [willy-willy] will-willy
 ;marsh people
 1,**Australians** ([Australians stats])
 2,[explorers] **explorers**
-1,[convicts] **convicts**
+1,[convicts] **convicts** ([convict stats])
 1,[soldiers] **soldiers** ([soldier stats])
 
 ;marsh monsters
@@ -830,10 +830,10 @@ a [willy-willy] will-willy
 
 ;forest-mountain tower
 10,**land pirahna**
-1,**pirates**
-1,**convicts**
+1,**pirates** ([pirate stats])
+1,**convicts** ([convict stats])
 1,**soldiers** ([soldier stats])
-1,**sailors**
+1,**sailors** ([sailor stats])
 
 ;heading
 4,*heading towards you*
@@ -898,6 +898,7 @@ a [willy-willy] will-willy
 
 #people
 ;convict stats
+1,AC,10,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,15
 ;cultist stats
 ;explorer stats
 ;pirate stats
