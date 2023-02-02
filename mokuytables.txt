@@ -86,6 +86,7 @@
 2,**squid**
 1,**rays**
 2,**birds**
+2,[3d8] **ospreys** ([osprey stats])
 1,**turtles**
 1,**jellyfish**
 
@@ -272,7 +273,7 @@ a [willy-willy] will-willy
 1,a **succubus**
 
 ;mountain megafauna
-1,a **giant eagle**
+1,a **giant eagle** ([giant eagle stats])
 
 ;bush
 1,The bush weather is [bush weather] and [bush temp] and you see [bush encounter or not]
@@ -817,7 +818,7 @@ a [willy-willy] will-willy
 2,a **mega giant shark**
 4,a **mega shark**
 3,a **giant turtle**
-1,a **giant moray eel**
+1,a **giant moray eel** ([giant moray eel stats])
 2,a **mega giant moray eel**
 
 ;water monsters
@@ -890,7 +891,7 @@ a [willy-willy] will-willy
 1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence.
 
 ;secret cult2
-1,**[same silentcult1]** and **[same silentcult2]** grow as a consequence.
+1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence.
 
 
 #people
@@ -928,6 +929,8 @@ a [willy-willy] will-willy
 ;loaded dog stats
 1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
 ;lyrebird stats
+;osprey stats
+1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
 ;owl stats
 ;platypus stats
 ;python stats
@@ -1012,10 +1015,12 @@ a [willy-willy] will-willy
 ;giant crocodile stats
 1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
 ;giant eagle stats
+1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
 ;giant echidna stats
 ;giant earthworm stats
 ;giant fruit bat stats
 'giant moray eel stats
+1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
 ;giant goanna stats
 ;giant jellyfish stats
 ;giant kangaroo stats
