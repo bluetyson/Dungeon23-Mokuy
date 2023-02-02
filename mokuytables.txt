@@ -497,7 +497,7 @@ a [willy-willy] will-willy
 1,[silent_cult_hue] [silent_cult_group]
 1,[silent_cult_laud] [silent_cult_group]
 1,[silent_cult_material] [silent_cult_group]
-1,[silent_cult_complex_master] 's [silent_cult_group] 
+1,[silent_cult_complex_master]'s [silent_cult_group] 
 1,[silent_cult_hue] [silent_cult_object] [silent_cult_group]
 
 ;silent_god_epithet
@@ -591,7 +591,7 @@ a [willy-willy] will-willy
 1,rage
 1,ravening
 1,red
-1,1,rotting
+1,rotting
 1,sagacious
 1,sand
 1,scarlet
@@ -628,18 +628,18 @@ a [willy-willy] will-willy
 [silent_god_adjective] [silent_god_epithet]
 
 ;silent_cult
-1,silent_cult_group] 'of The' [silent_cult_hue] [silent_cult_object] 
-1,silent_cult_object] 'of The' [silent_cult_laud] [silent_cult_master] 
-1,silent_cult_hue] [silent_cult_group] 'of' [silent_cult_occult] [silent_cult_count] 
-1,silent_cult_laud] [silent_cult_group] 'of The' [silent_cult_count] [silent_cult_master] 
-1,silent_cult_occult] [silent_cult_object] 'of The' [silent_cult_material] [silent_cult_master] 
-1,silent_cult_material] [silent_cult_object] 'of The' [silent_cult_hue] [silent_cult_group] 
-1,silent_cult_count] [silent_cult_group] 'of The' [silent_cult_occult] [silent_cult_master] 
-1,silent_cult_hue] [silent_cult_object] 'of The' [silent_cult_material] [silent_cult_master] 
-1,silent_cult_hue] [silent_cult_object] [' of The '] [silent_cult_master] '\'s '] [silent_cult_group] 
-1,silent_cult_hue] [silent_cult_count] 'of The' [silent_cult_occult] [silent_cult_master] 
-1,silent_cult_laud] [silent_cult_master]'\'s [silent_cult_group] 
-1,silent_cult_material] [silent_cult_group] 'of The' [silent_cult_laud] [silent_cult_master)
+1,[silent_cult_group] of The [silent_cult_hue] [silent_cult_object] 
+1,[silent_cult_object] of The [silent_cult_laud] [silent_cult_master] 
+1,[silent_cult_hue] [silent_cult_group] of [silent_cult_occult] [silent_cult_count] 
+1,[silent_cult_laud] [silent_cult_group] of The [silent_cult_count] [silent_cult_master] 
+1,[silent_cult_occult] [silent_cult_object] of The [silent_cult_material] [silent_cult_master] 
+1,[silent_cult_material] [silent_cult_object] of The [silent_cult_hue] [silent_cult_group] 
+1,[silent_cult_count] [silent_cult_group] of The [silent_cult_occult] [silent_cult_master] 
+1,[silent_cult_hue] [silent_cult_object] of The [silent_cult_material] [silent_cult_master] 
+1,[silent_cult_hue] [silent_cult_object] of The [silent_cult_master]'s [silent_cult_group] 
+1,[silent_cult_hue] [silent_cult_count] of The [silent_cult_occult] [silent_cult_master] 
+1,[silent_cult_laud] [silent_cult_master]'s [silent_cult_group] 
+1,[silent_cult_material] [silent_cult_group] of The [silent_cult_laud] [silent_cult_master)
 
 ;trees
 1,The bush weather is [bush weather] and [bush temp] and you see [trees encounter or not]
