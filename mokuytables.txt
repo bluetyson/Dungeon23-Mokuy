@@ -344,7 +344,7 @@ a [willy-willy] will-willy
 
 ;bush animals
 1,a **falcon** ([falcon stats])
-11,[2d6] **kangaroos**
+11,[2d6] **kangaroos** ([kangaroo stats])
 1,**snake**
 1,a **loaded dog** ([loaded dog stats])
 2,[2d4] **dingoes** [dingo stats]
@@ -689,7 +689,7 @@ a [willy-willy] will-willy
 
 ;trees animals
 2,a **goanna**
-10,[3d6] **kangaroos**
+10,[3d6] **kangaroos** ([kangaroo stats])
 10,[1d3+1] **koalas**
 1,a **koala**
 2,[2d4] **dingoes** [dingo stats]
@@ -740,7 +740,7 @@ a [willy-willy] will-willy
 2,**leeches ([leech stats])
 2,**brumbies**
 1,[2d6] **dingoes** ([dingo stats])
-10,[2d6] **kangaroos**
+10,[2d6] **kangaroos** ([kangaroo stats])
 2,a **poisonous snake**
 2,a **python** ([python stats])
 
@@ -1014,6 +1014,7 @@ a [willy-willy] will-willy
 ;echidna stats
 1,AC,6,MV,"9, Cl 2",HD,1-2,Thac0,20,1,NA,DM,1-4,SA,Nil,SD,Nil,SZ,S,ML,2-4,XP,15
 ;kangaroo stats
+1,AC,6,MV,"12,,HD,2+2,Thac0,19,3,NA,DM,1-3/1-3/1-4,SA,Nil,SD,Nil,SZ,S,ML,7,XP,25
 ;tree kangaroo stats
 ;koala stats
 ;platypus stats
