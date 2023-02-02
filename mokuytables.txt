@@ -167,7 +167,7 @@ a [willy-willy] will-willy
 10,very hot
 5,mild
 
-;desert encounter
+;desert encounter or not
 100,[flies]
 10,[desert people] [heading]
 1,[desert monsters] [heading]
@@ -251,7 +251,7 @@ a [willy-willy] will-willy
 
 ;bush
 
-1,The bush weather is [bush weather] and [bush temp] and you see **[bush encounter]**
+1,The bush weather is [bush weather] and [bush temp] and you see [bush encounter or not]
 
 ;bush weather
 50,calm
@@ -276,77 +276,77 @@ a [willy-willy] will-willy
 1,[bush megafauna] [heading]
 
 ;bush people
-4,[convicts] convicts
-2,a bushranger
-4,[explorers] explorers
-4,settlers
-8,Australians
+4,[convicts] **convicts**
+2,a **bushranger**
+4,[explorers] **explorers**
+4,**settlers**
+8,**Australians**
 
 ;bush monsters
-1,dropbear
-1,a vampire kangaroo
-1,*The Super Roo*: [Super Roo]
+1,**dropbear**
+1,a **vampire kangaroo**
+1,**The Super Roo**: [Super Roo]
 1,[cac supernatural]
 1,[cthulhu]
-1,bottersnikes
-1,gumbles
-1,emerald bush goblin
-1,succubus
+1,**bottersnikes**
+1,**gumbles**
+1,**emerald bush goblins**
+1,**succubus**
 
  ;Super Roo
  1,A great red kangaroo rumoured to be much taller than a person, having the strength of ten and unable to be harmed by weapons.
 
 ;bush animals
-11,kangaroos
-1,snake
-1,a loaded dog ([loaded dog stats])
-2,dingoes [dingo stats]
-1,thylacine
+11,[2d6] **kangaroos**
+1,**snake**
+1,a **loaded dog** ([loaded dog stats])
+2,[2d4] **dingoes** [dingo stats]
+1,a **thylacine**
 
 ;bush megafauna
-1,giant earthworm
+1,a **giant earthworm**
 
 ;cac supernatural
-2,globster
-2,gunni
-2,Yara-mayha-who
-2,Jurrawarra
-1,Rainbow Serpent
+2,a **globster**
+2,a **gunni**
+2,a **Yara-mayha-who**
+2,a **Jurrawarra**
+1,a **Rainbow Serpent**
 
 1,mythos
 95,[cultists]
-2,spirit
-1,ghouls
+2,a **spirit**
+1,[1d3+1] **ghouls**
 1,[cac mythos]
 1,[mythos horror]
 
 ;cac mythos
-1,watcher spawn leech
+1,a **watcher spawn leech**
 
 ## Dr Ruby left a hole in time
 ;mythos horror
-2,*Hound of Tindalos*
-1,*Dream Shambler*
+2,a **Hound of Tindalos**
+1,a **Dream Shambler**
 
 ;cultists
 2,[cac cultists]
-9,Secret Society of the Ring
-1,insane sorcerer
+9,**Secret Society of the Ring**
+1,an **insane sorcerer**
 
 ;cac cultists
-1,*Sharks Tooth*
-1,*Effigy of Scars and Suffering*
-1,*Industrious Brothers of the New World*
-1,*Outcast Dreamers*
-1,*Bacchanal Club*
+1,**Sharks Tooth**
+1,**Effigy of Scars and Suffering**
+1,**Industrious Brothers of the New World**
+1,**Outcast Dreamers**
+1,**Bacchanal Club**
 
 ;cac dreaming
-1,*Field of Mars*
-1,*Salt Water*
-1,*Alcheringa*
+1,**Field of Mars**
+1,**Salt Water**
+1,**Alcheringa**
 
 ;trees
-1,The bush weather is [bush weather] and [bush temp] and you see **[trees encounter or not]**
+1,The bush weather is [bush weather] and [bush temp] and you see [trees encounter or not]
 
 ;trees encounter or not
 100,nothing but lots of bush trees
@@ -356,21 +356,22 @@ a [willy-willy] will-willy
 2,[trees megafauna] [heading]
 
 ;trees people
-3,[convicts] convicts
-2,bushranger
+3,[convicts] **convicts
+2,a **bushranger**
 
 ;trees monsters
-1,dropbear
+1,a **dropbear**
 
 ;trees animals
-2,goanna
-10,kangaroos
-10,koalas
-2,dingoes [dingo stats]
+2,a **goanna**
+10,[3d6] **kangaroos**
+10,[1d3+1] **koalas**
+1,a **koala**
+2,[2d4] **dingoes** [dingo stats]
 
 ;trees megafauna
-1,giant goanna
-1,giant kangaroo
+1,a **giant goanna**
+1,a **giant kangaroo**
 
 ;forest
 1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter or not]
