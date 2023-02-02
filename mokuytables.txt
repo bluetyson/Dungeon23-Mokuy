@@ -1,4 +1,5 @@
 # Mokuy table
+#https://campaignwiki.org/wiki/Mokuy/HomePage
 #https://rdrr.io/github/rpg-tips/RPGTips/src/R/silent_legions.R
 #need ship tables and ship crew tables
 #https://media.wizards.com/2018/dnd/downloads/UA_ShipsSea.pdf
@@ -935,10 +936,10 @@ a [willy-willy] will-willy
 #1,**[capitalise namecult1]** and **[capitalise namecult2]** grow as a consequence. try10
 
 ;secret cult2
-1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. exp3: **[same exp1]
+1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. exp4: **[same exp1]
 
 ;test lookup
-1,[global save explorers as exp1]
+1,[global save [explorers] as exp1]
 
 #people
 ;bushranger stats
