@@ -153,7 +153,7 @@
 1,a **mega sea wombat**
 
 ;desert
-1,The desert weather is [desert weather] and [sert temp] and you see **[desert encounter or not]**
+1,The desert weather is [desert weather] and [sert temp] and you see [desert encounter or not]
 
 ;desert weather
 70,calm
@@ -175,26 +175,26 @@ a [willy-willy] will-willy
 2,[desert megafauna] [heading]
 
 ;desert people
-1,Australians
-2,[explorers] explorers
-3,[convicts] convicts
+1,**Australians**
+2,[explorers] **explorers**
+3,[convicts] **convicts**
 
 ;desert monsters
-1,Carrack's Dirt Moth
+1,<b>*Carrack's Dirt Moth*</b>
 
 ;desert animals
-2,a snake
-3,[2d4] dingoes [dingo stats]
-2,scorpions
+2,**a snake**
+3,[2d4] **dingoes** [dingo stats]
+2,[4d6] **scorpions**
 
 ;desert megafauna
-1,a giant snake
-1,a giant scorpion
+1,a **giant snake**
+1,a **giant scorpion** ([giant scorpion stats])
 
 ;flies
 97,annoying flies
-2,stinging flies that do 1 damage without precautions
-1,a plague of flies that make it impossible to continue
+2,**stinging flies** that do 1 damage without precautions
+1,a **plague of flies** that make it impossible to continue
 
 ;storm
 20,stormy
@@ -208,7 +208,7 @@ a [willy-willy] will-willy
 1,large
 
 ;mountains
-1,The mountain weather is [mountain weather] and [mountain temp] and you see **[mountain encounter or not]**
+1,The mountain weather is [mountain weather] and [mountain temp] and you see [mountain encounter or not]
 
 ;mountain weather
 10,calm
@@ -233,24 +233,23 @@ a [willy-willy] will-willy
 1,[mountain megafauna] [heading]
 
 ;mountain people
-1,[convicts] convicts
-1,[explorers] explorers
-2,Australians
+1,[convicts] **convicts**
+1,[explorers] **explorers**
+2,**Australians
 
 ;mountain animals
-2,eagle
-5,[2d12] brumbies
+2,an **eagle**
+5,[2d12] **brumbies**
 
 ;mountain monsters
-1,yowie
-1,skelleagle
-1,succubus
+1,a **yowie**
+1,a **skelleagle**
+1,a **succubus**
 
 ;mountain megafauna
-1,giant eagle
+1,a **giant eagle**
 
 ;bush
-
 1,The bush weather is [bush weather] and [bush temp] and you see [bush encounter or not]
 
 ;bush weather
@@ -690,6 +689,7 @@ a [willy-willy] will-willy
 ;giant sea eagle stats
 ;giant shark stats
 ;giant scorpion stats
+1,AC,5,MV,9,HD,2+2,Thac0,19,3,NA,DM,1-4(x2)/1,SA,Poison sting,SD,Nil,SZ,S (2'),ML,8,XP,175
 ;giant snake stats
 ;giant poisonous stats
 ;giant python stats
