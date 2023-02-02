@@ -327,7 +327,7 @@ a [willy-willy] will-willy
 8,**Australians** ([Australians stats])
 
 ;bush monsters
-2,**dropbear**
+2,**drop bear**
 1,a **vampire kangaroo**
 1,**The Super Roo**: [Super Roo]
 1,[cac supernatural]
@@ -1053,7 +1053,8 @@ a [willy-willy] will-willy
 ;bottersnikes stats
 ;bunyip stats
 ;giant bunyip stats
-;dropbear stats
+;drop bear stats
+1,AC,6,MV,15,HD,9,Thac0,12,3,NA,DM,1d6+3/1d6+3/1d8+3,SA,Rend 4d4,SD,Special,SZ,M,ML,10,XP,
 ;elemental stats
 
 ;giant bell cockatoo stats
