@@ -373,7 +373,7 @@ a [willy-willy] will-willy
 1,giant kangaroo
 
 ;forest
-1,The bush weather is [bush weather] and [bush temp] and you see **[forest encounter or not]**
+1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter or not]
 
 ;forest encounter or not
 100,nothing but lots of dense bush
@@ -412,7 +412,7 @@ a [willy-willy] will-willy
 20,birds
 2,leech
 2,brumbies
-1,[2d6] dingoes [dingo stats]
+1,[2d6] **dingoes** [dingo stats]
 10,kangaroos
 2,poisonous snake
 2,python
