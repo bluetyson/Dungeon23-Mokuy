@@ -727,17 +727,19 @@ a [willy-willy] will-willy
 20,**birds**
 2,**leeches ([leech stats])
 2,**brumbies**
-1,[2d6] **dingoes** [dingo stats]
+1,[2d6] **dingoes** ([dingo stats])
 10,**kangaroos**
 2,a **poisonous snake**
-2,a **python**
+2,a **python** ([python stats])
 
 ;forest megafauna
 2,a **giant leech** [(giant leech stats)]
-2,a **giant python**
-2,q **giant poisonous snake**
+2,a **giant python** [(giant python stats)]
+2,q **giant taipan**
 2,a **diprotodon**
 1,a **giant diprotodon**
+1,[1d6+1] **giant spiders** ([giant spider stats])
+2,a **giant spider** ([giant spider stats])
 
 ;marsh
 1,The marsh weather is [marsh weather] and [marsh temp] and you see [marsh encounter or not]
@@ -776,7 +778,7 @@ a [willy-willy] will-willy
 2,[1d6+1] **crocodiles** ([crocodile stats])
 10,a **crocodile** ([crocodile stats])
 8,a **snake**
-8,a **water snake**
+8,a **water snake** ([water snake stats])
 20,**pelicans**
 40,**seabirds**
 
@@ -981,7 +983,10 @@ a [willy-willy] will-willy
 ;goanna stats
 ;komodo dragon stats
 ;python stats
+1,AC,6,MV,9,HD,3+2,Thac0,17,2,NA,DM,1/1-3,SA,Constriction,SD,Nil,SZ,M (10-20'),ML,8,XP,"175 (Elder 420, Jaculi 270)"
 ;snake stats
+;water snake stats
+1,AC,8 (4 in water),MV,12,HD,3+3,Thac0,17,1,NA,DM,1-4,SA,Poison,SD,Water blending,SZ,S (3'),ML,8-10,XP,420
 ;turtles stats
 
 #mammals
@@ -1115,8 +1120,12 @@ a [willy-willy] will-willy
 ;giant goanna stats
 1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
 ;giant snake stats
-;giant poisonous snake stats
+;giant taipan stats
+1,AC,8,MV,12,HD,3,Thac0,17,1,NA,DM,1-8 ,SA,Poison; Charm,SD,Nil,SZ,H (12-24'),ML,15-16,XP,270 (Elder 975)
 ;giant python stats
+1,AC,5,MV,"12, Sw 12",HD,8+1,Thac0,,1,NA,DM,1-6,SA,Constriction; Poison,SD,Nil,SZ,L (40-50'),ML,,XP,825+10
+;giant water snake stats
+1,AC,5,MV,"12, Sw 12",HD,10,Thac0,11,2,NA,DM,1-6/3-18,SA,Poison,SD,Nil,SZ,G (50'),ML,11,XP,3000 (Elder 5000)
 
 ;giant earthworm stats
 ;giant fly stats
@@ -1124,6 +1133,7 @@ a [willy-willy] will-willy
 ;giant mosquito stats
 1,AC,5,MV,"6, Fl 15 (B)",HD,6,Thac0,15,2,NA,DM,1-4(x2),SA,Nil,SD,Nil,SZ,M (7'),ML,20,XP,420
 ;giant spider stats
+1,AC,4,MV,"3, Wb 12",HD,3+3 or 4+4,Thac0,17 or 15,1,NA,DM,1-8,SA,Special,SD,Nil,SZ,L (8-12'),ML,13,XP,420 to 975
 ;giant poisonous spider stats
 
 ;giant echidna stats
