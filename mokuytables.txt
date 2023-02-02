@@ -79,7 +79,7 @@
 1,A giant ship 150m long, definitely not European: perhaps a descendant of *Zheng Hi*'s 15th century fleet of explorers
 
 ;ocean animals
-100,**fish**
+100,**[fish type]**
 2,**dolphins**
 2,**sharks**
 1,**whale**
@@ -764,4 +764,20 @@ a [willy-willy] will-willy
 1,The Giant Phantom Cat of the South ate a convict laboring party last year
 1,Lemuria has pygmy-mummies
 
-
+;fish type
+1,Bluefin tuna
+1,Yellowfin tuna
+1,Salmon
+1,Cod
+1,Bream
+1,Marlin
+1,Swordfish
+1,Mullet
+1,Eels
+1,Bass
+1,Whiting
+1,Groper
+1,Trevallies
+1,Flathead
+1,Garfish
+1,Kingfish
