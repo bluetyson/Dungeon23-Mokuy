@@ -685,7 +685,7 @@ a [willy-willy] will-willy
 2,a **bushranger**
 
 ;trees monsters
-1,a **dropbear**
+1,a **drop bear** [(drop bear stats)]
 
 ;trees animals
 2,a **goanna**
@@ -719,7 +719,7 @@ a [willy-willy] will-willy
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
-2,[1d2] **dropbears**
+2,[1d2] **dropbears**  [(drop bear stats)]
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
 1,[1d2+1] **weredingoes** ([weredingo stats])
@@ -905,7 +905,8 @@ a [willy-willy] will-willy
 1, but within is *Coal River*, a mining hive of scum and villainy.  Here you also find the *Nobby's Island* prison.
 
 ;TOP
-1,<p>[history]<p>[secret_history_old]<p>[secret history]<p>[secret cult]<p>[secret cult2]
+#1,<p>[history]<p>[secret_history_old]<p>[secret history]<p>[secret cult]<p>[secret cult2]
+1,<p>[history]<p>[secret history]<p>[secret cult]<p>[secret cult2]
 
 ;history
 1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*. Unknown to even the Rubys, their second amateurish use of a time machine has had devastating consequences.  Luckily for them, the blowback from the time and space fracture obliterated *Van Diemen's Land*.  Soon, *Sydney Town* will be wondering why they have not heard from them.
