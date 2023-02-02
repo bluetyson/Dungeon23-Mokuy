@@ -1,15 +1,3 @@
-;explorers
-1,foolhardy gold mad
-1,sensible well provisioned
-
-[global save [explorers] as exp1]
-[global save explorers as exp2]
-[global store [explorers] as exp3]
-[global store explorers as exp4]
-
-;forest
-f1:[exp1] f2:[exp2] f3:[exp3] ff:[exp4]
-
 ;light-grey mountain
 banana
 
