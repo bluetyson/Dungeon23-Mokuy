@@ -116,3 +116,89 @@ def populate_region(hex, primary):
     encounters = {"water": 10, "swamp": 20, "sand": 20, "grass": 60, "forest": 40, "hill": 40, "mountain": 20}
     if primary in encounters and random_num < encounters[primary]:
         place_major(hex[0], hex[1], random.choice(list(encounters.keys())))
+
+def member(element, *args):
+    for arg in args:
+        if element == arg:
+            return True
+    return False
+
+def verbose(message):
+    log.debug(message)
+
+def place_major(x, y, encounter):
+    thing = one(encounters[encounter])
+    if not thing:
+        return
+    verbose(f"placing {thing} ({encounter}) at ({x},{y})")
+    hex = one(full_hexes(x, y))
+    x += hex[0]
+    y += hex[1]
+    coordinates = Point.coord(x, y)
+    primary = reverse_lookup[world[coordinates]]
+    color, terrain = world[coordinates].split(' ', 1)
+    if encounter == 'settlement':
+        if primary == 'plains':
+            color = one(['light-soil', 'soil'])
+            verbose(f" {world[coordinates]} is {primary} and was changed to {color}")
+        if primary != 'plains' or member(thing, ['large-town', 'city']):
+            needs_fields.append([x, y])
+    world[coordinates] = f"{color} {thing}"
+
+def populate_region(hex, primary):
+    random = randint(100)
+    if (
+        (primary == "water" and random < 10)
+        or (primary == "swamp" and random < 20)
+        or (primary == "sand" and random < 20)
+        or (primary == "grass" and random < 60)
+        or (primary == "forest" and random < 40)
+        or (primary == "hill" and random < 40)
+        or (primary == "mountain" and random < 20)
+    ):
+        place_major(hex[0], hex[1], random.choice(list(encounters.keys())))
+
+
+def pick_unassigned(x, y, region):
+    hex = random.choice(region)
+    coordinates = Point.coord(x + hex[0], y + hex[1])
+    while coordinates in world:
+        hex = random.choice(region)
+        coordinates = Point.coord(x + hex[0], y + hex[1])
+    return coordinates
+
+
+def pick_remaining(x, y, region):
+    coordinates = []
+    for hex in region:
+        coord = Point.coord(x + hex[0], y + hex[1])
+        coordinates.append(coord) if coord not in world
+    return coordinates
+
+def full_hexes(x, y):
+    if x % 2:
+        return ([0, -2],
+                [-2, -1], [-1, -1], [0, -1], [1, -1], [2, -1],
+                [-2,  0], [-1,  0], [0,  0], [1,  0], [2,  0],
+                [-2,  1], [-1,  1], [0,  1], [1,  1], [2,  1],
+                [-1,  2], [0,  2], [1,  2])
+    else:
+        return ([-1, -2], [0, -2], [1, -2],
+                [-2, -1], [-1, -1], [0, -1], [1, -1], [2, -1],
+                [-2,  0], [-1,  0], [0,  0], [1,  0], [2,  0],
+                [-2,  1], [-1,  1], [0,  1], [1,  1], [2,  1],
+                [0,  2])
+
+def half_hexes(x, y):
+    if x % 2:
+        return ([-2, -2], [-1, -2], [1, -2], [2, -2],
+                [-3,  0], [3,  0],
+                [-3,  1], [3,  1],
+                [-2,  2], [2,  2],
+                [-1,  3], [1,  3])
+    else:
+        return ([-1, -3], [1, -3],
+                [-2, -2], [2, -2],
+                [-3, -1], [3, -1],
+                [-3,  0], [3,  0],
+                [-2,  2], [-1,  2], [1,  2], [2,  2])    
