@@ -875,7 +875,7 @@ a [willy-willy] will-willy
 
 ;TOP
 1,<p>[secret_history_old]
-1,<p>[history]<p>[secret history]<p>[secret cult]<p>[secret cult2]<p>[secret cult3]
+#1,<p>[history]<p>[secret history]<p>[secret cult]<p>[secret cult2]<p>[secret cult3]
 
 ;silent_cult_name
 1,[name for a cult1]
