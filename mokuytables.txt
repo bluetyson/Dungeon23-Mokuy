@@ -706,7 +706,7 @@ a [willy-willy] will-willy
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
 1,[1d2+1] **weredingoes** ([weredingo stats])
-1,a **weredingo ([weredingo stats])
+1,a **weredingo** ([weredingo stats])
 1,a **werethylacine** ([werethylacine stats])
 0,<b>*Killeroo*</b>: [Killeroo]
 0,<b>*The Eye Empress of Bundaberg*</b>: [Eye Empress of Bundaberg]
