@@ -882,10 +882,10 @@ a [willy-willy] will-willy
 1,[name for a cult2]
 
 ;name for a cult1
-[silent_cult]
+1,[silent_cult]
 
 ;name for a cult2
-[silent_cult]
+1,[silent_cult]
 
 ;history
 1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*. Unknown to even the Rubys, their second amateurish use of a time machine has had devastating consequences.  Luckily for them, the blowback from the time and space fracture obliterated *Van Diemen's Land*.  Soon, *Sydney Town* will be wondering why they have not heard from them.
