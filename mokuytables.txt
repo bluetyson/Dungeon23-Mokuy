@@ -1015,15 +1015,16 @@ a [willy-willy] will-willy
 ;echidna stats
 1,AC,6,MV,"9, Cl 2",HD,1-2,Thac0,20,1,NA,DM,1-4,SA,Nil,SD,Nil,SZ,S,ML,2-4,XP,15
 ;kangaroo stats
-1,AC,6,MV,"12,,HD,2+2,Thac0,17,3,NA,DM,1-3/1-3/1-4,SA,Nil,SD,Nil,SZ,S,ML,7,XP,25
+1,AC,6,MV,"12,,HD,2+2,Thac0,17,3,NA,DM,1-3/1-3/1-4,SA,Kick for 2d8,SD,Nil,SZ,S,ML,7,XP,25
 ;tree kangaroo stats
+1,AC,7,MV,"6, Cl 2, Jump 1,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Nil,SZ,S,ML,6,XP,15
 ;koala stats
 ;platypus stats
 ;rat stats
 1,AC,7,MV,15,HD,1/4,Thac0,,1,NA,DM,1,SA,Nil,SD,Nil,SZ,S,ML,,XP,2+1
 ;thylacine stats
 ;wallaby stats
-1,AC,7,MV,"12,,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Nil,SZ,S,ML,6,XP,15
+1,AC,7,MV,"12,,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d8,SZ,S,ML,6,XP,15
 ;wallaroo stats
 ;wombat stats
 
