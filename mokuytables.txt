@@ -741,6 +741,7 @@ a [willy-willy] will-willy
 2,**brumbies**
 1,[2d6] **dingoes** ([dingo stats])
 10,[2d6] **kangaroos** ([kangaroo stats])
+10,[2d6] **wallabies** ([wallaby stats])
 2,a **poisonous snake**
 2,a **python** ([python stats])
 
