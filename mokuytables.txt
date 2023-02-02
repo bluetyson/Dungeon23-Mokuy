@@ -906,7 +906,7 @@ a [willy-willy] will-willy
 
 ;TOP
 #1,<p>[history]<p>[secret_history_old]<p>[secret history]<p>[secret cult]<p>[secret cult2]
-1,<p>[history]<p>[secret history]<p>[secret cult]<p>[secret cult2]
+1,<p>[history]<p>[secret history]<p>[secret cult][secret cult2]
 
 ;history
 1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*. Unknown to even the Rubys, their second amateurish use of a time machine has had devastating consequences.  Luckily for them, the blowback from the time and space fracture obliterated *Van Diemen's Land*.  Soon, *Sydney Town* will be wondering why they have not heard from them.
@@ -930,11 +930,11 @@ a [willy-willy] will-willy
 ;namecult2
 1,[same silentcult2]
 
-1,**[capitalise same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try11
+1,**[capitalise same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try12
 #1,**[capitalise namecult1]** and **[capitalise namecult2]** grow as a consequence. try10
 
 ;secret cult2
-1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. try11
+1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. try12
 
 
 #people
