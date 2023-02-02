@@ -683,6 +683,7 @@ a [willy-willy] will-willy
 ;trees megafauna
 1,a **giant goanna** ([giant goanna stats])
 1,a **giant kangaroo**
+1,a **giant owl** ([giant owl stats])
 
 ;forest
 1,The bush weather is [bush weather] and [bush temp] and you see [forest encounter or not]
@@ -1073,8 +1074,9 @@ a [willy-willy] will-willy
 ;giant albatross stats
 ;giant eagle stats
 1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
+;giant owl stats
+1,AC,6,MV,"3, Fl 18",HD,4,Thac0,,3,NA,DM,2-8(x2)/2-5,SA,Surprise on 1-5,SD,Nil,SZ,M,ML,,XP,
 ;giant sea eagle stats
-
 ;giant crab stats
 1,AC,3,MV,9,HD,3,Thac0,,2,NA,DM,2-8(x2),SA,Nil,SD,Nil,SZ,L (4'+),ML,,XP
 ;giant crayfish stats
