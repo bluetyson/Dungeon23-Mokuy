@@ -184,7 +184,7 @@ a [willy-willy] will-willy
 
 ;desert animals
 2,a snake
-3,[2d4] dingoes
+3,[2d4] dingoes [dingo stats]
 2,scorpions
 
 ;desert megafauna
@@ -299,8 +299,8 @@ a [willy-willy] will-willy
 ;bush animals
 11,kangaroos
 1,snake
-1,a loaded dog
-2,dingoes
+1,a loaded dog ([loaded dog stats])
+2,dingoes [dingo stats]
 1,thylacine
 
 ;bush megafauna
@@ -366,7 +366,7 @@ a [willy-willy] will-willy
 2,goanna
 10,kangaroos
 10,koalas
-2,dingoes
+2,dingoes [dingo stats]
 
 ;trees megafauna
 1,giant goanna
@@ -412,7 +412,7 @@ a [willy-willy] will-willy
 20,birds
 2,leech
 2,brumbies
-1,dingoes
+1,[2d6] dingoes [dingo stats]
 10,kangaroos
 2,poisonous snake
 2,python
@@ -458,7 +458,7 @@ a [willy-willy] will-willy
 1,bunyip
 
 ;marsh animals
-2,[1d6+1] crocodiles ([crocodile stats])
+2,[1d6+1] crocodiles <span style="font-weight:normal">([crocodile stats])</span>
 10,a crocodile ([crocodile stats])
 8,a snake
 8,a water snake
@@ -576,12 +576,12 @@ a [willy-willy] will-willy
 ;cockatoo stats
 ;crocodile stats
 1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
-
 ;dolphin stats
 ;eagle stats
 ;echidna stats
 ;emu stats
 ;dingo stats
+1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
 ;fish stats
 ;goanna stats
 ;jellyfish stats
@@ -591,6 +591,7 @@ a [willy-willy] will-willy
 ;koala stats
 ;komodo dragon stats
 ;loaded dog stats
+1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
 ;lyrebird stats
 ;owl stats
 ;platypus stats
