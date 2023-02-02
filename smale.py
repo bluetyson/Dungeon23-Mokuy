@@ -201,4 +201,45 @@ def half_hexes(x, y):
                 [-2, -2], [2, -2],
                 [-3, -1], [3, -1],
                 [-3,  0], [3,  0],
-                [-2,  2], [-1,  2], [1,  2], [2,  2])    
+                [-2,  2], [-1,  2], [1,  2], [2,  2])
+
+def generate_region(x, y, primary):
+  world[Point.coord(x, y)] = one(primary[primary])
+  
+  region = full_hexes(x, y)
+  terrain = None
+
+  for i in range(1, 10):
+    coordinates = pick_unassigned(x, y, region)
+    terrain = one(primary[primary])
+    verbose(" primary   {} => {}".format(coordinates, terrain))
+    world[coordinates] = terrain
+    
+  for i in range(1, 7):
+    coordinates = pick_unassigned(x, y, region)
+    terrain = one(secondary[primary])
+    verbose(" secondary {} => {}".format(coordinates, terrain))
+    world[coordinates] = terrain
+
+  for coordinates in pick_remaining(x, y, region):
+    if random.random() > 0.1:
+      terrain = one(tertiary[primary])
+      verbose(" tertiary  {} => {}".format(coordinates, terrain))
+    else:
+      terrain = one(wildcard[primary])
+      verbose(" wildcard  {} => {}".format(coordinates, terrain))
+    world[coordinates] = terrain
+
+  for coordinates in pick_remaining(x, y, half_hexes(x, y)):
+    random = random.randint(6)
+    if random < 3:
+      terrain = one(primary[primary])
+      verbose("  halfhex primary   {} => {}".format(coordinates, terrain))
+    elif random < 5:
+      terrain = one(secondary[primary])
+      verbose("  halfhex secondary {} => {}".format(coordinates, terrain))
+    else:
+      terrain = one(tertiary[primary])
+      verbose("  halfhex tertiary  {} => {}".format(coordinates, terrain))
+    world[coordinates] = terrain
+
