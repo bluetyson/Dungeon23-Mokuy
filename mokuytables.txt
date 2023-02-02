@@ -720,7 +720,7 @@ a [willy-willy] will-willy
 ;forest animals
 10,**koalas**
 20,**birds**
-2,**leeches
+2,**leeches ([leech stats])
 2,**brumbies**
 1,[2d6] **dingoes** [dingo stats]
 10,**kangaroos**
@@ -728,7 +728,7 @@ a [willy-willy] will-willy
 2,a **python**
 
 ;forest megafauna
-2,a **giant leech**
+2,a **giant leech** [(giant leech stats)]
 2,a **giant python**
 2,q **giant poisonous snake**
 2,a **diprotodon**
@@ -932,13 +932,15 @@ a [willy-willy] will-willy
 ;crocodile stats
 1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
 ;dolphin stats
+;dingo stats
+1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
+;loaded dog stats
+1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Dynamite 2d12,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
 ;eagle stats
 ;echidna stats
 ;eel stats
 1,AC,6,MV,Sw 9,HD,6 to 8,Thac0,13 to 12,1,NA,DM,"6HD: 2-8, 7HD: 3-12, 8HD: 4-16",SA,Nil,SD,Nil,SZ,?,ML,9,XP,420/650/975
 ;emu stats
-;dingo stats
-1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
 ;falcon stats
 1,AC,5,MV,"1, Fl 36",HD,1-1,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
 ;fish stats
@@ -949,8 +951,8 @@ a [willy-willy] will-willy
 ;kookaburra stats
 ;koala stats
 ;komodo dragon stats
-;loaded dog stats
-1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Dynamite 2d12,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
+;leech stats
+1,AC,10,MV,"1, Sw 1",HD,1/8,Thac0,20,1,NA,DM,1-3,SA,Choke,SD,Nil,SZ,"T (1"")",ML,6,XP,35
 ;lyrebird stats
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
@@ -1044,13 +1046,15 @@ a [willy-willy] will-willy
 1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
 ;giant eagle stats
 1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
-;giant echidna stats
 ;giant earthworm stats
+;giant echidna stats
+;giant moray eel stats
+1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
 ;giant fly stats
 ;giant frog stats
 ;giant fruit bat stats
-;giant moray eel stats
-1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
+;giant leech stats
+1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant goanna stats
 ;giant jellyfish stats
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
