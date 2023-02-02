@@ -9,7 +9,7 @@
 [global store [explorers] as exp3]
 [global store explorers as exp4]
 
-;forest
+;green forest
 1,f1:[exp1] f2:[exp2] f3:[exp3] ff:[exp4]
 
 ;light-grey mountain
