@@ -874,7 +874,7 @@ a [willy-willy] will-willy
 1, but within is *Coal River*, a mining hive of scum and villainy.  Here you also find the *Nobby's Island* prison.
 
 ;TOP
-1,<p>[history]<p>[secret history][secret cult]
+1,<p>[history]<p>[secret history]<p>[secret cult]
 
 ;silent_cult_name
 1,[name for a cult1]
@@ -892,7 +892,7 @@ a [willy-willy] will-willy
 ;secret history
 #1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. The cults **[highlightcase silent_cult]** [global save same silent_cult as silentcult1] and **[highlightcase silent_cult]** [global save same silent_cult as silentcult2] grow as a consequence.
 #1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. The cults **[highlightcase name for a cult1]** and **[highlightcase name for a cult2]** grow as a consequence.
-1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save silent_cult as silentcult1][global save silent_cult as silentcult2] 
+1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1][global save [silent_cult] as silentcult2] 
 
 ;secret cult
 **[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence with banana.
