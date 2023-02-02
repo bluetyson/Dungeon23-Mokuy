@@ -781,6 +781,7 @@ a [willy-willy] will-willy
 3,**a giant crocodile** ([giant crocodile stats])
 1,a **giant water snake**
 1,a **mega crocodile**
+4,[1d4+1] **giant mosquitos** ([giant mosquito stats])
 
 ;water
 1,The inland sea weather is [water weather] and [water temp] and you see [water encounter or not]
@@ -1103,6 +1104,7 @@ a [willy-willy] will-willy
 ;giant fly stats
 ;giant leech stats
 ;giant mosquito stats
+1,AC,5,MV,"6, Fl 15 (B)",HD,6,Thac0,15,2,NA,DM,1-4(x2),SA,Nil,SD,Nil,SZ,M (7'),ML,20,XP,420
 ;giant spider stats
 ;giant poisonous spider stats
 
