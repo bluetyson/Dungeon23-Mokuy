@@ -459,7 +459,7 @@ a [willy-willy] will-willy
 
 ;marsh animals
 2,[1d6+1] crocodiles <span style="font-weight:normal">([crocodile stats])</span>
-10,a crocodile ([crocodile stats])
+10,a crocodile <span style="font-weight:normal">([crocodile stats])</span>
 8,a snake
 8,a water snake
 20,pelicans
