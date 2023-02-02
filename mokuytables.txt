@@ -230,8 +230,10 @@ a [willy-willy] will-willy
 2,[4d6] **scorpions**
 
 ;desert megafauna
-1,a **giant snake**
-1,a **giant scorpion** ([giant scorpion stats])
+8,a **giant snake**
+8,a **giant scorpion** ([giant scorpion stats])
+1,a **mega giant worm** ([mega giant worm stats])
+
 
 ;flies
 97,annoying flies
@@ -325,7 +327,7 @@ a [willy-willy] will-willy
 8,**Australians** ([Australians stats])
 
 ;bush monsters
-1,**dropbear**
+2,**dropbear**
 1,a **vampire kangaroo**
 1,**The Super Roo**: [Super Roo]
 1,[cac supernatural]
@@ -333,7 +335,9 @@ a [willy-willy] will-willy
 1,**bottersnikes**
 1,**gumbles**
 1,**emerald bush goblins** ([emerald bush goblin stats])
-1,**succubus**
+1,**succubus** ([succubus stats])
+1,**incubus** ([incubus stats])
+1,serpent people ([serpent people stats])
 
  ;Super Roo
  1,A great red kangaroo rumoured to be much taller than a person, having the strength of ten and unable to be harmed by weapons.
@@ -347,8 +351,11 @@ a [willy-willy] will-willy
 1,a **thylacine**
 
 ;bush megafauna
-1,a **giant earthworm**
-1,a **giant echidna** [(giant echidna stats)]
+4,a **giant earthworm** [(giant earthworm stats)]
+4,a **giant echidna** [(giant echidna stats)]
+4,a **giant owl** [(giant owl stats)]
+2,a **mega earthworm** [(mega earthworm stats)]
+1,a **mega giant earthworm** [(mega earthworm stats)]
 
 ;cac supernatural
 2,a **globster**
@@ -1029,7 +1036,8 @@ a [willy-willy] will-willy
 #MONSTERS
 ;emerald bush goblin stats
 1,AC,6,MV,6,HD,1-1,Thac0,,1,NA,DM,1-6 or by weapon,SA,Nil,SD,Nil,SZ,S (4'),ML,,XP,
-;serpent men stats
+;serpent people stats
+1,AC,6 (Base),MV,"9, Sw 18",HD,2,Thac0,19,2,NA,DM,1-3/by weapon,SA,Special,SD,Camouflage,SZ,M (5-6'),ML,5-7,XP,175 to 270
 ;incubus stats
 1,AC,0,MV,"12, Fl 18",HD,6,Thac0,,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
 ;succubus stats
@@ -1140,6 +1148,7 @@ a [willy-willy] will-willy
 1,AC,5,MV,"12, Sw 12",HD,10,Thac0,11,2,NA,DM,1-6/3-18,SA,Poison,SD,Nil,SZ,G (50'),ML,11,XP,3000 (Elder 5000)
 
 ;giant earthworm stats
+1,AC,10,MV,6,HD,1,Thac0,19,1,NA,DM,1-8,SA,Nil,SD,Nil,SZ,S (3'),ML,8-10,XP,35
 ;giant fly stats
 ;giant leech stats
 ;giant mosquito stats
@@ -1172,6 +1181,8 @@ a [willy-willy] will-willy
 ;mega shark stats
 ;mega squid stats
 1,AC,5/0,MV,"Sw 3, Jet 21",HD,20,Thac0,1,9,NA,DM,3-18x2/2-12x6/7-28,SA,Special,SD,Special,SZ,G (90'+),ML,18,XP,14000
+;mega worm stats
+1,AC,7,MV,"3, Sw 15",HD,20,Thac0,5,1,NA,DM,3-30,SA,Nil,SD,Poisonous secretions,SZ,G (100'),ML,12,XP,14000
 ;mega whale stats
 1,4,MV,Sw 24,HD,48 (250 hp),Thac0,1,2,NA,DM,6-60/1-100,SA,Tail,SD,Nil,SZ,L (360'),ML,,XP,???
 
@@ -1181,6 +1192,10 @@ a [willy-willy] will-willy
 ;mega giant squid stats
 ;mega giant whale stats
 1,AC,1,MV,Sw 18,HD,36 to 72,Thac0,5,1,NA,DM,Varies,SA,Special,SD,Nil,SZ,G,ML,15,XP,26000 + 1000 per HD
+;mega giant earthworm stats
+1,AC,2,MV,Br 24,HD,60,Thac0,1,1,NA,DM,3-36,SA,Swallow,SD,Special,SZ,G (500'),ML,19,XP,20000
+;mega giant worm stats
+1,AC,2,MV,Br 24,HD,60,Thac0,1,1,NA,DM,3-36,SA,Swallow,SD,Special,SZ,G (500'),ML,19,XP,20000
 
 #unique
 ;Killero stats
