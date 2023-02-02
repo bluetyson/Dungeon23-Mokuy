@@ -1,6 +1,12 @@
 # Mokuy table
 #https://rdrr.io/github/rpg-tips/RPGTips/src/R/silent_legions.R
 #need ship tables and ship crew tables
+#https://media.wizards.com/2018/dnd/downloads/UA_ShipsSea.pdf
+#https://www.reddit.com/r/DnDBehindTheScreen/comments/3ll11w/random_tables_pirate_crews/
+#https://www.dndspeak.com/2017/12/04/100-sea-travel-events/
+#https://randomtablesrpg.com/fantasy/100-random-ocean-encounters-dnd/
+#https://www.dndspeak.com/2019/11/12/100-sailing-conditions/
+#https://www.randroll.com/table/ships-crew/
 #cult tables
 
 ;ocean
@@ -753,7 +759,9 @@ a [willy-willy] will-willy
 1,The chances of anything coming from Mars is a million to one!
 1,Immortals duelling through history have been seen on the streets of Sydney-Town
 1,The Hawkesbury River monster took a boat full of people last month
-1,The Secret Society of the Ring's Conclave of Doom is nex month
+1,The Secret Society of the Ring's Conclave of Doom is next month
 1,The Kinie Ger stalks the bush
 1,The Giant Phantom Cat of the South ate a convict laboring party last year
 1,Lemuria has pygmy-mummies
+
+
