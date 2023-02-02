@@ -326,7 +326,7 @@ a [willy-willy] will-willy
 1,[cthulhu]
 1,**bottersnikes**
 1,**gumbles**
-1,**emerald bush goblins**
+1,**emerald bush goblins** ([emerald bush goblin stats])
 1,**succubus**
 
  ;Super Roo
@@ -1005,6 +1005,7 @@ a [willy-willy] will-willy
 ;dropbear stats
 ;elemental stats
 ;emerald bush goblin stats
+1,AC,6,MV,6,HD,1-1,Thac0,,1,NA,DM,1-6 or by weapon,SA,Nil,SD,Nil,SZ,S (4'),ML,,XP,
 ;giant bell cockatoo stats
 ;gumble stats
 ;vampire kangaroo stats
@@ -1084,6 +1085,7 @@ a [willy-willy] will-willy
 ;giant crocodile stats
 1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
 ;giant frog stats
+1,AC,7,MV,"3, Sw 9",HD,1 to 3,Thac0,,1,NA,DM,"1-3, 1-6, or 2-8",SA,Special,SD,Nil,SZ,S-M (3-6'),ML,,XP,
 ;giant goanna stats
 1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
 ;giant snake stats
