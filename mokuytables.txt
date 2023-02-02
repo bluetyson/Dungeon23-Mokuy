@@ -103,9 +103,9 @@
 4,a **giant shark** ([giant shark stats])
 2,a **mega shark**
 1,a **mega giant shark**
-4,a **giant squid**
+4,a **giant squid** ([giant squid stats])
 3,a **giant turtle**
-2,a **mega squid**
+2,a **mega squid** ([mega squid stats])
 1,a **mega giant squid**
 2,a **giant albatross**
 2,a **giant sea eagle**
@@ -282,7 +282,8 @@ a [willy-willy] will-willy
 ;mountain monsters
 1,a **yowie**
 1,a **skelleagle**
-1,a **succubus**
+1,a **succubus** ([succubus stats])
+1,an **incubus** ([succubus stats])
 
 ;mountain megafauna
 1,a **giant eagle** ([giant eagle stats])
@@ -1025,7 +1026,10 @@ a [willy-willy] will-willy
 ;emerald bush goblin stats
 1,AC,6,MV,6,HD,1-1,Thac0,,1,NA,DM,1-6 or by weapon,SA,Nil,SD,Nil,SZ,S (4'),ML,,XP,
 ;serpent men stats
+;incubus stats
+1,AC,0,MV,"12, Fl 18",HD,6,Thac0,,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
 ;succubus stats
+1,AC,0,MV,"12, Fl 18",HD,6,Thac0,,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
 ;werecrocodile stats
 1,AC,1,MV,"3, Sw 12",HD,5+5,Thac0,15,2,NA,DM,2-12/1-8,SA,Control 1-3 crocodiles; Infection,SD,+1 or silver to hit,SZ,M-L (5-12'),ML,13-14,XP,650 to 1400
 ;weredingo stats
@@ -1112,6 +1116,7 @@ a [willy-willy] will-willy
 ;giant shark stats
 1,AC,5,MV,Sw 18,HD,10 to 15,Thac0,11 to 5,1,NA,DM,"10-11HD: 4-16, 12-13HD: 5-20, 14-15HD: 6-24",SA,Nil,SD,Nil,SZ,?,ML,11,XP,2000-7000
 ;giant squid stats
+1,AC,7/3,MV,"Sw 3, Jet 18",HD,12,Thac0,9,9,NA,DM,1-6(x8)/5-20,SA,Constriction,SD,Special,SZ,G (60'+),ML,13,XP,5000
 
 ;giant crocodile stats
 1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
@@ -1155,6 +1160,7 @@ a [willy-willy] will-willy
 ;mega sea wombat stats
 ;mega shark stats
 ;mega squid stats
+1,AC,5/0,MV,"Sw 3, Jet 21",HD,20,Thac0,1,9,NA,DM,3-18x2/2-12x6/7-28,SA,Special,SD,Special,SZ,G (90'+),ML,18,XP,14000
 
 ;mega giant crocodile stats
 ;mega giant moray eel stats
