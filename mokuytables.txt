@@ -351,7 +351,7 @@ a [willy-willy] will-willy
 2,a **gunni**
 2,a **Yara-mayha-who**
 2,a **Jurrawarra**
-1,a **Rainbow Serpent**
+1,a **Rainbow Serpent** ([Rainbow Serpent stats])
 
 1,mythos
 95,[cultists]
@@ -1073,6 +1073,7 @@ a [willy-willy] will-willy
 ;Yara-mayha-who stats
 ;Jurrawarra stats
 ;Rainbow Serpent stats
+1,AC,1,MV,"9, Fl 6 (C)",HD,10,Thac0,11,1,NA,DM,2-5,SA,Poison; Suggestion,SD,+1 to hit,SZ,S (4'),ML,12,XP,10000
 
 ;Bagini stats
 ;Jannok stats
@@ -1140,6 +1141,9 @@ a [willy-willy] will-willy
 ;giant spider stats
 1,AC,4,MV,"3, Wb 12",HD,3+3 or 4+4,Thac0,17 or 15,1,NA,DM,1-8,SA,Special,SD,Nil,SZ,L (8-12'),ML,13,XP,420 to 975
 ;giant poisonous spider stats
+1,AC,4,MV,"8, Fl 10",HD,3+3,Thac0,17,1,NA,DM,1-3,SA,Poison,SD,Nil,SZ,L (10'),ML,13,XP,650
+;giant tick stats
+1,AC,3,MV,3,HD,2 to 4,Thac0,,1,NA,DM,1-4,SA,Blood drain,SD,Nil,SZ,S,ML,,XP,
 
 ;giant echidna stats
 1,AC,5,MV,6,HD,6,Thac0,,1,NA,DM,2-8,SA,Shoot quills,SD,Quills,SZ,L,ML,,XP,
