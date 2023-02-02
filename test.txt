@@ -1,3 +1,5 @@
+#test silent_god_function
+
 ;explorers
 1,foolhardy gold mad
 1,sensible well provisioned
