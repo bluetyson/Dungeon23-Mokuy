@@ -577,7 +577,7 @@ a [willy-willy] will-willy
 1,howling
 1,hunger
 1,incarnadine
-1,1,indifference
+1,indifference
 1,listening
 1,living
 1,lust
