@@ -353,8 +353,8 @@ a [willy-willy] will-willy
 1,a **Dream Shambler**
 
 ;cultists
-100,**[name for a cult1]**
-100,**[name for a cult2]**
+100,**[same silentcult1]**
+100,**[same silentcult2]**
 2,[cac cultists]
 9,**Secret Society of the Ring**
 1,an **insane sorcerer**
