@@ -109,7 +109,7 @@
 1,a **mega giant squid**
 2,a **giant albatross**
 2,a **giant sea eagle**
-2,a **giant jellyfish**
+2,a **giant jellyfish** [(giant jellyfish stats)]
 2,a **giant ray**
 
 ;ocean monsters
@@ -1053,6 +1053,7 @@ a [willy-willy] will-willy
 1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
 ;giant goanna stats
 ;giant jellyfish stats
+1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
 ;giant kangaroo stats
 ;giant platypus stats
 ;giant ray stats
