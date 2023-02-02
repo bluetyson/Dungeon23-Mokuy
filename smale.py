@@ -69,6 +69,42 @@ wildcard = {
     "mountain": ["desert", "desert"],
 }
 
+primary = {
+    "water": ["water"],
+    "swamp": ["marsh"],
+    "desert": ["desert"],
+    "plains": ["bush"],
+    "forest": ["forest"],
+    "hill": ["trees"],
+    "mountain": ["mountains"]
+}
+
+reverse_lookup = {
+  # primary
+  "water": "water",
+  "marsh": "swamp",
+  "desert": "desert",
+  "bush": "plains",
+  "forest": "forest",
+  "trees": "hill",
+  "mountain": "mountain",
+  
+}
+
+encounters = {
+    "settlement": ["thorp", "thorp", "thorp", "thorp",
+                   "village",
+                   "town", "town",
+                   "large-town",
+                   "city"],
+    "fortress": ["keep", "tower", "castle"],
+    "religious": ["shrine", "law", "chaos"],
+    "ruin": [],
+    "monster": [],
+    "natural": []
+}
+
+needs_fields = []
 
 def one(arr):
     if len(arr) == 1 and isinstance(arr[0], list):
