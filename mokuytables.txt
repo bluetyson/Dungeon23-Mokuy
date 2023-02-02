@@ -342,6 +342,7 @@ a [willy-willy] will-willy
 
 ;bush megafauna
 1,a **giant earthworm**
+1,a **giant echidna** [(giant echidna stats)]
 
 ;cac supernatural
 2,a **globster**
@@ -1121,6 +1122,7 @@ a [willy-willy] will-willy
 ;giant poisonous spider stats
 
 ;giant echidna stats
+1,AC,5,MV,6,HD,6,Thac0,,1,NA,DM,2-8,SA,Shoot quills,SD,Quills,SZ,L,ML,,XP,
 ;giant fruit bat stats
 1,AC,8,MV,"3, Fl 18",HD,1/2 to 1,Thac0,,1,NA,DM,1-2 or 1-4,SA,Nil,SD,Special,SZ,S,ML,,XP,5+1 to 10+1
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
