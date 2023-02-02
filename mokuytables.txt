@@ -639,7 +639,7 @@ a [willy-willy] will-willy
 1,[silent_cult_hue] [silent_cult_object] of The [silent_cult_master]'s [silent_cult_group] 
 1,[silent_cult_hue] [silent_cult_count] of The [silent_cult_occult] [silent_cult_master] 
 1,[silent_cult_laud] [silent_cult_master]'s [silent_cult_group] 
-1,[silent_cult_material] [silent_cult_group] of The [silent_cult_laud] [silent_cult_master)
+1,[silent_cult_material] [silent_cult_group] of The [silent_cult_laud] [silent_cult_master]
 
 ;trees
 1,The bush weather is [bush weather] and [bush temp] and you see [trees encounter or not]
