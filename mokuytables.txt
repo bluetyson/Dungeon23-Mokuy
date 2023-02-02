@@ -116,7 +116,7 @@
 1,a **kraken**
 2,a **sea serpent**
 1,**sirens**
-1,**merpeople**
+1,**merpeople** ([merpeople stats])
 
 ;ocean fish type
 1,bluefin tuna
@@ -923,83 +923,95 @@ a [willy-willy] will-willy
 1,AC,8,MV,12,HD,1-2 or 2,Thac0,20 (19),1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,35 (35)
 
 #animals
-;fruit bat stats
+#birds
 ;bird stats
-;brumby stats
-1,AC,7,MV,18,HD,2+2,Thac0,19,3,NA,DM,1-6(x2),SA,Nil,SD,Nil,SZ,L,ML,5-7,XP,65
 ;cassowary stats
 ;cockatoo stats
-;crocodile stats
-1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
-;dolphin stats
-;dingo stats
-1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
-;loaded dog stats
-1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Dynamite 2d12,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
 ;eagle stats
-;echidna stats
-;eel stats
-1,AC,6,MV,Sw 9,HD,6 to 8,Thac0,13 to 12,1,NA,DM,"6HD: 2-8, 7HD: 3-12, 8HD: 4-16",SA,Nil,SD,Nil,SZ,?,ML,9,XP,420/650/975
 ;emu stats
 ;falcon stats
 1,AC,5,MV,"1, Fl 36",HD,1-1,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
-;fish stats
-;goanna stats
-;jellyfish stats
-;kangaroo stats
-;tree kangaroo stats
 ;kookaburra stats
-;koala stats
-;komodo dragon stats
-;leech stats
-1,AC,10,MV,"1, Sw 1",HD,1/8,Thac0,20,1,NA,DM,1-3,SA,Choke,SD,Nil,SZ,"T (1"")",ML,6,XP,35
+;seabird stats
 ;lyrebird stats
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
 ;owl stats
-;platypus stats
-;python stats
 ;raven stats
 1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
+;seabirds stats
+#aquatic
+;dolphin stats
+;eel stats
+1,AC,6,MV,Sw 9,HD,6 to 8,Thac0,13 to 12,1,NA,DM,"6HD: 2-8, 7HD: 3-12, 8HD: 4-16",SA,Nil,SD,Nil,SZ,?,ML,9,XP,420/650/975
+;fish stats
+;jellyfish stats
 ;manta ray stats
+;squid stats
+;stingray stats
+;whale stats
+1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
+#reptiles
+;crocodile stats
+1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
+;goanna stats
+;komodo dragon stats
+;python stats
+;snake stats
+;turtles stats
+#mammals
+;fruit bat stats
+;brumby stats
+1,AC,7,MV,18,HD,2+2,Thac0,19,3,NA,DM,1-6(x2),SA,Nil,SD,Nil,SZ,L,ML,5-7,XP,65
+;dingo stats
+1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
+;loaded dog stats
+1,AC,7,MV,18,HD,2,Thac0,,1,NA,DM,2-5,SA,Dynamite 2d12,SD,Nil,SZ,M (80+ lbs),ML,,XP,20+2
+;echidna stats
+1,AC,6,MV,"9, Cl 2",HD,1-2,Thac0,20,1,NA,DM,1-4,SA,Nil,SD,Nil,SZ,S,ML,2-4,XP,15
+;kangaroo stats
+;tree kangaroo stats
+;koala stats
+;platypus stats
+;thylacine stats
+;wallaby stats
+;wallaroo stats
+;wombat stats
+
+;leech stats
+1,AC,10,MV,"1, Sw 1",HD,1/8,Thac0,20,1,NA,DM,1-3,SA,Choke,SD,Nil,SZ,"T (1"")",ML,6,XP,35
 1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
 ;scorpion stats
-;seabirds stats
+1,AC,6,MV,"6, Sw 15",HD,3 (2),Thac0,,1,NA,DM,2-5(1-4),SA,Nil,SD,Nil,SZ,L,ML,,XP,???
 ;sharks stats
-;snake stats
 ;spider stats
 ;poisonous spider stats
 ;scorpions stats
-;squid stats
-;stingray stats
-1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
-;thylacine stats
-;turtles stats
-;wallaby stats
-;wallaroo stats
-;whale stats
-;wombat stats
 
 #monsters
 ;bottersnikes stats
 ;bunyip stats
 ;giant bunyip stats
 ;dropbear stats
+;elemental stats
 ;emerald bush goblin stats
 ;giant bell cockatoo stats
 ;gumble stats
 ;vampire kangaroo stats
 ;land pirahna stats
-;elemental stats
+;merpeople stats
+1,AC,7,MV,"1, Sw 18",HD,1+1,Thac0,19,1,NA,DM,By weapon,SA,Grapple Ship,SD,Nil,SZ,M (5-6'),ML,10,XP,65-650
 ;sea serpent stats
 ;serpent men stats
 ;skelleagle stats
 ;succubus stats
-;yowie stats
+;werecrocodile stats
+1,AC,1,MV,"3, Sw 12",HD,5+5,Thac0,15,2,NA,DM,2-12/1-8,SA,Control 1-3 crocodiles; Infection,SD,+1 or silver to hit,SZ,M-L (5-12'),ML,13-14,XP,650 to 1400
 ;weredingo stats
 1,AC,5,MV,15,HD,4+3,Thac0,,1,NA,DM,2-8,SA,Special,SD,+1 or silver to hit,SZ,M,ML,,XP,
 ;werethylacine stats
 1,AC,3,MV,12,HD,6+2,Thac0,15,3,NA,DM,1-4(x2)/1-12,SA,Rake for 2-5/2-5,SD,Silver or +1 to hit,SZ,M or L (6-9'),ML,13-14,XP,975
+;yowie stats
 
 #mythos
 ;ghoul stats
@@ -1062,6 +1074,7 @@ a [willy-willy] will-willy
 ;giant jellyfish stats
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
 ;giant kangaroo stats
+;giant mosquito stats
 ;giant platypus stats
 ;giant ray stats
 ;giant sea eagle stats
