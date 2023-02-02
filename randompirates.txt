@@ -225,4 +225,11 @@ Cabin Boy: 1-3: Cleaning, 4-6: Errands
 
 Assign Equipment: Assign appropriate equipment to each crew member based on their job on the ship, using the AD&D 1st Edition Player's Handbook as a reference.
 
-Note: These rules provide a rough outline for generating the crew of a sailing ship in AD&D 1st Edition and can be adjusted to suit the specific needs of the campaign. The actual stats and abilities of the crew members may vary based on the interpretation and adjustments made by the Dungeon Master.
+Assign Jobs: Roll 1d100 for each crew member to determine their job on the ship:
+1-5: Captain
+6-15: First Mate
+16-45: Sailor
+46-60: Navigator
+61-75: Cook
+76-90: Cabin Boy
+91-100: Surgeon (if available in the campaign setting)

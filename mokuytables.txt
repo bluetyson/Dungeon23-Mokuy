@@ -9,6 +9,7 @@
 #https://www.dndspeak.com/2019/11/12/100-sailing-conditions/
 #https://www.randroll.com/table/ships-crew/
 #cult tables
+#https://nla.gov.au/nla.obj-703257590
 
 ;ocean
 1,The ocean weather is [ocean weather] and [ocean temp] and you see [ocean encounter or not] 

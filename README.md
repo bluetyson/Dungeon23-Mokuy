@@ -25,3 +25,6 @@ Code for the Dungeon 23 project
 
 ### Errors to deal
 InvalidArchiveError('Error with archive C:\\Users\\bloodyerrors\\anaconda3\\pkgs\\icu-70.1-h0e60522_0.tar.bz2.  You probably need to delete and re-download or re-create this file.  Message from libarchive was:\n\nCould not unlink')
+
+### References
+- Terra Australis: https://nla.gov.au/nla.obj-703257590 [circa 1800]
