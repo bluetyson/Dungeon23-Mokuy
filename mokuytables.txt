@@ -85,7 +85,7 @@
 1,**whale**
 2,**squid**
 1,**manta ray** ([manta ray stats])
-2,**stingray**
+2,**stingray** ([stingray stats])
 2,**birds**
 2,[3d8] **ospreys** ([osprey stats])
 1,**turtles**
@@ -266,7 +266,7 @@ a [willy-willy] will-willy
 
 ;mountain animals
 2,an **eagle**
-5,[2d12] **brumbies**
+5,[2d12] **brumbies** ([brumby stats])
 
 ;mountain monsters
 1,a **yowie**
@@ -343,7 +343,7 @@ a [willy-willy] will-willy
 1,mythos
 95,[cultists]
 2,a **spirit**
-1,[1d3+1] **ghouls**
+1,[1d3+1] **ghouls** ([ghoul stats])
 1,[cac mythos]
 1,[mythos horror]
 
@@ -909,7 +909,8 @@ a [willy-willy] will-willy
 #animals
 ;fruit bat stats
 ;bird stats
-;brumbys stats
+;brumby stats
+1,AC,7,MV,18,HD,2+2,Thac0,19,3,NA,DM,1-6(x2),SA,Nil,SD,Nil,SZ,L,ML,5-7,XP,65
 ;cassowary stats
 ;cockatoo stats
 ;crocodile stats
@@ -953,6 +954,7 @@ a [willy-willy] will-willy
 ;scorpions stats
 ;squid stats
 ;stingray stats
+1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
 ;thylacine stats
 ;turtles stats
 ;wallaby stats
@@ -981,7 +983,9 @@ a [willy-willy] will-willy
 
 #mythos
 ;ghoul stats
+1,6,MV,9,HD,2,Thac0,,3,NA,DM,1-3(x2)/1-6,SA,Paralysis,SD,Special,SZ,M,ML,,XP,
 ;spirit stats
+1,AC,0 or 8,MV,9,HD,10,Thac0,11,1,NA,DM,Age 10-40 years,SA,Special,SD,Special,SZ,M (5-6'),ML,Special,XP,7000
 ;watcher spawn leech stats
 ;Hound of Tindalos stats
 ;Dream Shambler stats
@@ -1026,8 +1030,10 @@ a [willy-willy] will-willy
 1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
 ;giant echidna stats
 ;giant earthworm stats
+;giant fly stats
+;giant frog stats
 ;giant fruit bat stats
-'giant moray eel stats
+;giant moray eel stats
 1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
 ;giant goanna stats
 ;giant jellyfish stats
