@@ -679,7 +679,7 @@ a [willy-willy] will-willy
 2,[2d4] **dingoes** [dingo stats]
 
 ;trees megafauna
-1,a **giant goanna**
+1,a **giant goanna** ([giant goanna stats])
 1,a **giant kangaroo**
 
 ;forest
@@ -705,9 +705,9 @@ a [willy-willy] will-willy
 2,[1d2] **dropbears**
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
-1,[1d2+1] **weredingoes**
-1,a **weredingo
-1,a **werethylacine**
+1,[1d2+1] **weredingoes** ([weredingo stats])
+1,a **weredingo ([weredingo stats])
+1,a **werethylacine** ([werethylacine stats])
 0,<b>*Killeroo*</b>: [Killeroo]
 0,<b>*The Eye Empress of Bundaberg*</b>: [Eye Empress of Bundaberg]
 
@@ -997,7 +997,9 @@ a [willy-willy] will-willy
 ;succubus stats
 ;yowie stats
 ;weredingo stats
+1,AC,5,MV,15,HD,4+3,Thac0,,1,NA,DM,2-8,SA,Special,SD,+1 or silver to hit,SZ,M,ML,,XP,
 ;werethylacine stats
+1,AC,3,MV,12,HD,6+2,Thac0,15,3,NA,DM,1-4(x2)/1-12,SA,Rake for 2-5/2-5,SD,Silver or +1 to hit,SZ,M or L (6-9'),ML,13-14,XP,975
 
 #mythos
 ;ghoul stats
@@ -1056,6 +1058,7 @@ a [willy-willy] will-willy
 ;giant leech stats
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant goanna stats
+1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
 ;giant jellyfish stats
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
 ;giant kangaroo stats
