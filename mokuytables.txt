@@ -111,6 +111,7 @@
 2,a **giant sea eagle**
 2,a **giant jellyfish** [(giant jellyfish stats)]
 2,a **giant ray**
+4,a **giant octopus** [(giant octopus stats)]
 
 ;ocean monsters
 1,a **kraken**
@@ -947,8 +948,10 @@ a [willy-willy] will-willy
 ;fish stats
 ;jellyfish stats
 ;manta ray stats
-;squid stats
 ;stingray stats
+;octopus stats
+1,AC,7,MV,"2, Sw 12",HD,3 to 5,Thac0,17 to 15,7,NA,DM,1-2(x6)/1-4,SA,Poison; Constriction,SD,"Ink, Camouflage",SZ,L (4-6'),ML,14,XP,650 or 5000
+;squid stats
 ;whale stats
 1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
 #reptiles
@@ -1075,6 +1078,8 @@ a [willy-willy] will-willy
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
 ;giant kangaroo stats
 ;giant mosquito stats
+;giant octopus stats
+1,AC,7,MV,"3, Sw 12",HD,8,Thac0,13,7,NA,DM,1-4(x6)/2-12,SA,Constriction,SD,"Ink, Color Change",SZ,L (9-12'),ML,13,XP,2000
 ;giant platypus stats
 ;giant ray stats
 ;giant sea eagle stats
