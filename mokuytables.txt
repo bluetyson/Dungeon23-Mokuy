@@ -425,7 +425,7 @@ a [willy-willy] will-willy
 1,giant diprotodon
 
 ;marsh
-1,The marsh weather is [marsh weather] and [marsh temp] and you see **[marsh encounter or not]**
+1,The marsh weather is [marsh weather] and [marsh temp] and you see [marsh encounter or not]
 
 ;marsh weather
 70,calm
@@ -458,17 +458,17 @@ a [willy-willy] will-willy
 1,bunyip
 
 ;marsh animals
-2,[1d6+1] crocodiles <span style="font-weight:normal">([crocodile stats])</span>
-10,a crocodile <span style="font-weight:normal">([crocodile stats])</span>
+2,[1d6+1] **crocodiles** ([crocodile stats])
+10,a **crocodile** ([crocodile stats])
 8,a snake
 8,a water snake
 20,pelicans
 40,seabirds
 
 ;marsh megafauna
-3,giant crocodile ([giant crocodile stats])
-1,giant water snake
-1,mega crocodile
+3,**a giant crocodile** ([giant crocodile stats])
+1,a giant water snake
+1,a mega crocodile
 
 ;water
 1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter or not]**
