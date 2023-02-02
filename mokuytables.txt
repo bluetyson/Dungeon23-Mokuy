@@ -765,19 +765,19 @@ a [willy-willy] will-willy
 1,Lemuria has pygmy-mummies
 
 ;fish type
-1,Bluefin tuna
-1,Yellowfin tuna
-1,Salmon
-1,Cod
-1,Bream
-1,Marlin
-1,Swordfish
-1,Mullet
+1,bluefin tuna
+1,yellowfin tuna
+1,salmon
+1,cod
+1,bream
+1,marlin
+1,swordfish
+1,mullet
 1,Eels
-1,Bass
-1,Whiting
-1,Groper
-1,Trevallies
-1,Flathead
-1,Garfish
-1,Kingfish
+1,bass
+1,whiting
+1,groper
+1,trevallies
+1,flathead
+1,garfish
+1,kingfish
