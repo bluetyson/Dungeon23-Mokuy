@@ -937,7 +937,7 @@ a [willy-willy] will-willy
 #1,**[capitalise namecult1]** and **[capitalise namecult2]** grow as a consequence. try10
 
 ;secret cult2
-1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. exp5: **[same exp1]
+1,*[same silentcult1]* and *[same silentcult2]* cults grow as a consequence. exp5: **[same exp1]
 
 ;test lookup
 1,[global store explorers as exp1]
