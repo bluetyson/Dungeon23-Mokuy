@@ -897,13 +897,14 @@ a [willy-willy] will-willy
 
 ;secret history
 #1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
-1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
+#1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
+1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global store [silent_cult] as silentcult1] [global store [silent_cult] as silentcult2] Problems!
 
 ;secret cult
-1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try4.
+1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try5.
 
 ;secret cult2
-1,**[same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try4.
+1,**[same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try5.
 
 
 #people
@@ -972,7 +973,7 @@ a [willy-willy] will-willy
 #mammals
 ;fruit bat stats
 ;brumby stats
-1,AC,7,MV,18,HD,2+2,Thac0,19,3,NA,DM,1-6(x2),SA,Nil,SD,Nil,SZ,L,ML,5-7,XP,65
+1,AC,7,MV,24,HD,2,Thac0,19,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,L,ML,5-7,XP,35
 ;dingo stats
 1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
 ;loaded dog stats
@@ -993,10 +994,10 @@ a [willy-willy] will-willy
 1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
 ;scorpion stats
 1,AC,6,MV,"6, Sw 15",HD,3 (2),Thac0,,1,NA,DM,2-5(1-4),SA,Nil,SD,Nil,SZ,L,ML,,XP,???
-;sharks stats
+;shark stats
 ;spider stats
 ;poisonous spider stats
-;scorpions stats
+;scorpion stats
 
 #monsters
 ;bottersnikes stats
@@ -1101,6 +1102,7 @@ a [willy-willy] will-willy
 
 ;giant echidna stats
 ;giant fruit bat stats
+1,AC,8,MV,"3, Fl 18",HD,1/2 to 1,Thac0,,1,NA,DM,1-2 or 1-4,SA,Nil,SD,Special,SZ,S,ML,,XP,5+1 to 10+1
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant kangaroo stats
 ;giant platypus stats
