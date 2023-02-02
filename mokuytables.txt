@@ -520,7 +520,7 @@ a [willy-willy] will-willy
 
 ;water megafauna
 2,a **mega giant crocodile**
-4,a m**ega crocodile**
+4,a **mega crocodile**
 2,a **mega giant shark**
 4,a **mega shark**
 3,a **giant turtle**
@@ -653,7 +653,7 @@ a [willy-willy] will-willy
 ;emerald bush goblin stats
 ;giant bell cockatoo stats
 ;gumble stats
-;vampire kangaroo
+;vampire kangaroo stats
 ;land pirahna stats
 ;elemental stats
 ;sea serpent stats
