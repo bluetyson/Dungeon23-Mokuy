@@ -186,9 +186,9 @@
 1,**elemental**
 
 ;sand animals
-50,**seabirds**
+50,[2d20]**seabirds**
 4,**cane toads** ([cane toad stats])
-5,**rats** ([rat stats])
+5,[1d100]**rats** ([rat stats])
 
 ;sand megafauna
 2,a **giant sea wombat**
