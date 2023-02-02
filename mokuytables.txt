@@ -923,7 +923,7 @@ a [willy-willy] will-willy
 
 ;secret cult
 #1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence. try7
-#1,**[same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try8
+#1,*[same silentcult1]* and *[capitalise same silentcult2]* grow as a consequence. try8
 
 ;namecult1
 1,[same silentcult1]
