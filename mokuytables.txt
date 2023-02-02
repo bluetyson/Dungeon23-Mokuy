@@ -183,6 +183,7 @@
 
 ;sand animals
 50,**seabirds**
+4,**cane toads** ([cane toad stats])
 
 ;sand megafauna
 2,a **giant sea wombat**
@@ -938,9 +939,11 @@ a [willy-willy] will-willy
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
 ;owl stats
+1,AC,5,MV,"1, Fl 27 (D)",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (4-5'),ML,,XP,30+1
 ;raven stats
 1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;seabirds stats
+
 #aquatic
 ;dolphin stats
 ;eel stats
@@ -954,7 +957,10 @@ a [willy-willy] will-willy
 ;squid stats
 ;whale stats
 1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
+
 #reptiles
+;cane toad stats
+1,AC,8,MV,"3, Jp 3",HD,1,Thac0,20,1,NA,DM,Nil,SA,Poison,SD,Nil,SZ,"T-S (3-9"")",ML,8,XP,120
 ;crocodile stats
 1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
 ;goanna stats
@@ -962,6 +968,7 @@ a [willy-willy] will-willy
 ;python stats
 ;snake stats
 ;turtles stats
+
 #mammals
 ;fruit bat stats
 ;brumby stats
@@ -980,7 +987,7 @@ a [willy-willy] will-willy
 ;wallaby stats
 ;wallaroo stats
 ;wombat stats
-
+#crawlies
 ;leech stats
 1,AC,10,MV,"1, Sw 1",HD,1/8,Thac0,20,1,NA,DM,1-3,SA,Choke,SD,Nil,SZ,"T (1"")",ML,6,XP,35
 1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
@@ -1055,44 +1062,48 @@ a [willy-willy] will-willy
 
 #megafauna
 ;giant albatross stats
+;giant eagle stats
+1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
+;giant sea eagle stats
+
 ;giant crab stats
 1,AC,3,MV,9,HD,3,Thac0,,2,NA,DM,2-8(x2),SA,Nil,SD,Nil,SZ,L (4'+),ML,,XP
 ;giant crayfish stats
 1,AC,4,MV,"6, Sw 12",HD,4+4,Thac0,,2,NA,DM,2-12(x2),SA,Nil,SD,Nil,SZ,L (8'+),ML,,XP,
-;giant crocodile stats
-1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
-;giant eagle stats
-1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
-;giant earthworm stats
-;giant echidna stats
 ;giant moray eel stats
 1,AC,4,MV,Sw 6,HD,5 or more,Thac0,15,1 (2),NA,DM,2-8 or 3-6/1-4,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,L-H (8-20'),ML,12 or 20,XP,420 to 650
-;giant fly stats
-;giant frog stats
-;giant fruit bat stats
-;giant leech stats
-1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
-;giant goanna stats
-1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
 ;giant jellyfish stats
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
-;giant kangaroo stats
-;giant mosquito stats
 ;giant octopus stats
 1,AC,7,MV,"3, Sw 12",HD,8,Thac0,13,7,NA,DM,1-4(x6)/2-12,SA,Constriction,SD,"Ink, Color Change",SZ,L (9-12'),ML,13,XP,2000
-;giant platypus stats
 ;giant ray stats
-;giant sea eagle stats
 ;giant shark stats
 1,AC,5,MV,Sw 18,HD,10 to 15,Thac0,11 to 5,1,NA,DM,"10-11HD: 4-16, 12-13HD: 5-20, 14-15HD: 6-24",SA,Nil,SD,Nil,SZ,?,ML,11,XP,2000-7000
+;giant squid stats
+
+;giant crocodile stats
+1,AC,4,MV,"6, Sw 12",HD,7,Thac0,13,2,NA,DM,3-18/2-20,SA,Surprise,SD,Nil,SZ,H (21-30'),ML,11,XP,1400
+;giant frog stats
+;giant goanna stats
+1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
+;giant snake stats
+;giant poisonous snake stats
+;giant python stats
+
+;giant earthworm stats
+;giant fly stats
+;giant leech stats
+;giant mosquito stats
+;giant spider stats
+;giant poisonous spider stats
+
+;giant echidna stats
+;giant fruit bat stats
+1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
+;giant kangaroo stats
+;giant platypus stats
 ;giant scorpion stats
 1,AC,5,MV,9,HD,2+2,Thac0,19,3,NA,DM,1-4(x2)/1,SA,Poison sting,SD,Nil,SZ,S (2'),ML,8,XP,175
-;giant snake stats
-;giant poisonous stats
-;giant python stats
-;giant spider stats
-;giant poisonous stats
-;giant squid stats
 ;giant turtle stats
 ;giant sea wombat stats
 ;giant wombat stats
