@@ -907,7 +907,7 @@ a [willy-willy] will-willy
 
 ;TOP
 #1,<p>[history]<p>[secret_history_old]<p>[secret history]<p>[secret cult]<p>[secret cult2]
-1,<p>[history]<p>[secret history][secret cult2]
+1,<p>[history]<p>[secret history][secret cult2][test lookup]
 
 ;history
 1,<strong>History:</strong>*Dr Ruby* escaped from Inguria Island in 2044 after a cataclysmic confrontation with the *Freedom League* blew up a volcano.  Luckily, his sister, *Dr Ruby*, had prepared a one-way time travel escape hatch for if things went terribly wrong.  A volcanic island off the coast of early 19th century New South Wales: *Ruby Base*. Unknown to even the Rubys, their second amateurish use of a time machine has had devastating consequences.  Luckily for them, the blowback from the time and space fracture obliterated *Van Diemen's Land*.  Soon, *Sydney Town* will be wondering why they have not heard from them.
@@ -935,8 +935,10 @@ a [willy-willy] will-willy
 #1,**[capitalise namecult1]** and **[capitalise namecult2]** grow as a consequence. try10
 
 ;secret cult2
-1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. 
+1,**[same silentcult1]** and **[same silentcult2]** cults grow as a consequence. exp1: **[same exp1]
 
+;test lookup
+1,[global save explorers as exp1]
 
 #people
 ;bushranger stats
