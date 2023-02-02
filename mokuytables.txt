@@ -449,29 +449,29 @@ a [willy-willy] will-willy
 4,[marsh megafauna] [heading]
 
 ;marsh people
-1,Australians
-2,[explorers] explorers
-1,[convicts] convicts
-1,[soldiers] soldiers
+1,**Australians**
+2,[explorers] **explorers**
+1,[convicts] **convicts**
+1,[soldiers] **soldiers**
 
 ;marsh monsters
-1,bunyip
+1,**bunyip**
 
 ;marsh animals
 2,[1d6+1] **crocodiles** ([crocodile stats])
 10,a **crocodile** ([crocodile stats])
-8,a snake
-8,a water snake
-20,pelicans
-40,seabirds
+8,a **snake**
+8,a **water snake**
+20,**pelicans**
+40,**seabirds**
 
 ;marsh megafauna
 3,**a giant crocodile** ([giant crocodile stats])
-1,a giant water snake
-1,a mega crocodile
+1,a **giant water snake**
+1,a **mega crocodile**
 
 ;water
-1,The inland sea weather is [water weather] and [water temp] and you see **[water encounter or not]**
+1,The inland sea weather is [water weather] and [water temp] and you see [water encounter or not]
 
 ;water weather
 65,calm
@@ -496,47 +496,47 @@ a [willy-willy] will-willy
 1,a portal to *Lemuria*
 
 ;water people
-49,pirates
-50,sailors
-2,*Lemurians*
-1,a strange unknown vessel: [unknown vessel]
+49,**pirates**
+50,**sailors**
+2,**Lemurians**
+1,a **strange unknown vessel**: [unknown vessel]
 
 ;water animals
-100,fish
-2,dolphins
-2,sharks
-1,whale
-2,squid
-1,rays
-2,birds
-1,turtles
-1,jellyfish
+100,**fish**
+2,**dolphins**
+2,**sharks**
+1,**whale**
+2,**squid**
+1,**rays**
+2,**birds**
+1,**turtles**
+1,**jellyfish**
 
 ;water megafauna
-2,a mega giant crocodile
-4,a mega crocodile
-2,a mega giant shark
-4,a mega shark
-3,a giant turtle
-1,a giant moray eel
-2,a mega giant moray eel
+2,a **mega giant crocodile**
+4,a m**ega crocodile**
+2,a **mega giant shark**
+4,a **mega shark**
+3,a **giant turtle**
+1,a **giant moray eel**
+2,a **mega giant moray eel**
 
 ;water monsters
-2,a sea serpent
-2,a giant bunyip
-4,[1d4] bunyips
+2,a **sea serpent**
+2,a **giant bunyip**
+4,[1d4] **bunyips**
 
 ;forest-mountain tower
-10,land pirahna
-1,pirates
-1,convicts
-1,soldiers
-1,sailors
+10,**land pirahna**
+1,**pirates**
+1,**convicts**
+1,**soldiers**
+1,**sailors**
 
 ;heading
-4,heading towards you
-1,waiting
-1,heading away from you
+4,*heading towards you*
+1,*waiting*
+1,*heading away from you*
 
 ;city1
 1,*Sydney Town*, a wretched hive of scum and villainy
