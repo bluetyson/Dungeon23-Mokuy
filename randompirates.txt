@@ -192,3 +192,37 @@ Longship	14	75	+5	60 feet*	1	4d6+18	3	50/75+100
 Sailing ship	15	125	+6	60 feet* (sails only)	2	3d6+12	3	20/50+120
 Warship	18	175	+7	60 feet*	3	3d6+12	4	60/80+160
 Galley	16	200	+8	90 feet*	4	6d6+24	4	200/250+200
+
+ship crew generator
+
+Certainly! Here is a revised random sailing ship crew generator for AD&D 1st Edition, using normal human NPCs with varying job descriptions on the ship:
+
+Determine the size of the crew: Roll 1d6 to determine the number of crew members on the ship, with the result being the number of crew members (minimum of 4 and maximum of 9).
+
+Assign Jobs: Roll 1d6 for each crew member to determine their job on the ship:
+1: Captain
+2: First Mate
+3: Navigator
+4: Cook
+5: Sailor
+6: Cabin Boy
+
+Assign Stats: For each crew member, generate their stats as follows:
+
+Strength: Roll 3d6
+Dexterity: Roll 3d6
+Constitution: Roll 3d6
+Intelligence: Roll 3d6
+Wisdom: Roll 3d6
+Charisma: Roll 3d6
+Determine Skills: Roll 1d6 for each crew member to determine their relevant skills:
+Captain: 1-2: Leadership, 3-4: Navigation, 5-6: Tactics
+First Mate: 1-2: Navigation, 3-4: Leadership, 5-6: Tactics
+Navigator: 1-3: Navigation, 4-6: Astronomy
+Cook: 1-3: Cooking, 4-6: Fishing
+Sailor: 1-3: Climbing, 4-6: Swimming
+Cabin Boy: 1-3: Cleaning, 4-6: Errands
+
+Assign Equipment: Assign appropriate equipment to each crew member based on their job on the ship, using the AD&D 1st Edition Player's Handbook as a reference.
+
+Note: These rules provide a rough outline for generating the crew of a sailing ship in AD&D 1st Edition and can be adjusted to suit the specific needs of the campaign. The actual stats and abilities of the crew members may vary based on the interpretation and adjustments made by the Dungeon Master.
