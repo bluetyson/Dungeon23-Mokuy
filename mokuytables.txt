@@ -79,19 +79,20 @@
 1,A giant ship 150m long, definitely not European: perhaps a descendant of *Zheng Hi*'s 15th century fleet of explorers
 
 ;ocean animals
-100,**[ocean fish type]**
+100,[ocean fish type]
 2,**dolphins**
 2,**sharks**
 1,**whale**
 2,**squid**
-1,**rays**
+1,**manta ray** ([manta ray stats])
+2,**stingray**
 2,**birds**
 2,[3d8] **ospreys** ([osprey stats])
 1,**turtles**
 1,**jellyfish**
 
 ;ocean megafauna
-4,a **giant shark**
+4,a **giant shark** ([giant shark stats])
 2,a **mega shark**
 1,a **mega giant shark**
 4,a **giant squid**
@@ -118,7 +119,7 @@
 1,marlin
 1,swordfish
 1,mullet
-1,Eels
+1,**eels** ([eel stats])
 1,bass
 1,whiting
 1,groper
@@ -886,13 +887,13 @@ a [willy-willy] will-willy
 
 ;secret history
 #1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
-1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save silent_cult as silentcult1] [global save silent_cult as silentcult2] Problems!
+1,<strong>Secret History:</strong>Elder Races have warred over the Australian continent in the past.  The influence of the Australians has held this at bay. Dr Ruby's part *Fomaulhautian* part *Ingurian* jury-rigged time travel shenanigans may have altered this balance.  The arrival of convicts and settlers brings with it foreign disasters.  The Rubys are also not the only source of Super Science. [global save [silent_cult] as silentcult1] [global save [silent_cult] as silentcult2] Problems!
 
 ;secret cult
-1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try2.
+1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try3.
 
 ;secret cult2
-1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try2.
+1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence try3..
 
 
 #people
@@ -916,6 +917,8 @@ a [willy-willy] will-willy
 ;dolphin stats
 ;eagle stats
 ;echidna stats
+;eel stats
+1,AC,6,MV,Sw 9,HD,6 to 8,Thac0,13 to 12,1,NA,DM,"6HD: 2-8, 7HD: 3-12, 8HD: 4-16",SA,Nil,SD,Nil,SZ,?,ML,9,XP,420/650/975
 ;emu stats
 ;dingo stats
 1,AC,7,MV,15,HD,1+1,Thac0,,1,NA,DM,2-5,SA,Hold,SD,Nil,SZ,S (41-80 lbs),ML,,XP,20+2
@@ -939,7 +942,8 @@ a [willy-willy] will-willy
 ;python stats
 ;raven stats
 1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
-;ray stats
+;manta ray stats
+1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
 ;scorpion stats
 ;seabirds stats
 ;sharks stats
@@ -948,6 +952,7 @@ a [willy-willy] will-willy
 ;poisonous spider stats
 ;scorpions stats
 ;squid stats
+;stingray stats
 ;thylacine stats
 ;turtles stats
 ;wallaby stats
@@ -1031,6 +1036,7 @@ a [willy-willy] will-willy
 ;giant ray stats
 ;giant sea eagle stats
 ;giant shark stats
+1,AC,5,MV,Sw 18,HD,10 to 15,Thac0,11 to 5,1,NA,DM,"10-11HD: 4-16, 12-13HD: 5-20, 14-15HD: 6-24",SA,Nil,SD,Nil,SZ,?,ML,11,XP,2000-7000
 ;giant scorpion stats
 1,AC,5,MV,9,HD,2+2,Thac0,19,3,NA,DM,1-4(x2)/1,SA,Poison sting,SD,Nil,SZ,S (2'),ML,8,XP,175
 ;giant snake stats
