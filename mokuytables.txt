@@ -904,7 +904,16 @@ a [willy-willy] will-willy
 
 ;secret cult
 #1,**[highlightcase same silentcult1]** and **[highlightcase same silentcult2]** grow as a consequence. try7
-1,**[capitalise same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try8
+#1,**[same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try8
+
+;namecult1
+1,[same silentcult1]
+
+;namecult2
+1,[same silentcult2]
+
+#1,**[capitalise same silentcult1]** and **[capitalise same silentcult2]** grow as a consequence. try9
+1,**[capitalise namecult1]** and **[capitalise namecult2]** grow as a consequence. try9
 
 ;secret cult2
 1,**[same silentcult1]** and **[same silentcult2]** grow as a consequence. try8
