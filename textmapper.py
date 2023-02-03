@@ -298,27 +298,26 @@ license <text>Public Domain</text>
             glow_attributes = self.glow_attributes
 
             if path or attributes:
-                doc += f"    <g id='{type}'>\n"
+                doc = doc + f"    <g id='{type}'>\n"
 
                 # just shapes get a glow such, eg. a house (must come first)
                 if path and not attributes:
-                    doc += f"      <path {glow_attributes} d='{path}' />\n"
+                    doc = doc + f"      <path {glow_attributes} d='{path}' />\n"
 
                 # region with attributes get a shape (square or hex), eg. plains and grass
                 if attributes:
-                    doc += "      " + self.shape(attributes) + "\n"
+                    doc = doc + "      " + self.shape(attributes) + "\n"
 
                 # and now the attributes themselves the shape itself
                 if path:
-                    doc += f"      <path {path_attributes} d='{path}' />\n"
+                    doc = doc + f"      <path {path_attributes} d='{path}' />\n"
 
                 # close
-                doc += "    </g>\n"
+                doc = doc + "    </g>\n"
             else:
-                # nothing
                 pass
 
-        doc += "  </defs>\n"
+        doc = doc + "  </defs>\n"
         return doc
 
     def svg_backgrounds(self):
