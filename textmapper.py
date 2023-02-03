@@ -178,31 +178,91 @@ def process(self):
             if line and not line.startswith("#"):
                 print(f"Did not parse {line}")                
 
-def svg_other(self):
-    data = "\n"
-    for other in self.other():
-        if callable(other):
-            data += other()
-        else:
-            data += other
-        data += "\n"
-    return data
+    def svg_other(self):
+        data = "\n"
+        for other in self.other():
+            if callable(other):
+                data += other()
+            else:
+                data += other
+            data += "\n"
+        return data
 
-def other_text(self, region, label, size=None, transform=None):
-    if transform is None:
-        transform = "translate({},{})".format(*region.pixels(self.offset))
-    else:
-        transform = "translate({},{})".format(*region.pixels(self.offset)) + transform
-    attributes = "transform=\"{}\" {}".format(transform, self.label_attributes)
-    if size and "font-size" not in attributes:
-        attributes += " font-size=\"{}\"".format(size)
-    data = "    <g><text text-anchor=\"middle\" {} {}>{}</text>".format(attributes, self.glow_attributes or '', label)
-    url = self.url
-    if url:
-        if "%s" in url:
-            url = url.replace("%s", url_escape(encode_utf8(label)))
+    def other_text(self, region, label, size=None, transform=None):
+        if transform is None:
+            transform = "translate({},{})".format(*region.pixels(self.offset))
         else:
-            url += url_escape(encode_utf8(label))
-    data += "<a xlink:href=\"{}\"><text text-anchor=\"middle\" {}>{}</text></a>".format(url, attributes, label) if url else ""
-    data += "</g>\n"
-    return data
+            transform = "translate({},{})".format(*region.pixels(self.offset)) + transform
+        attributes = "transform=\"{}\" {}".format(transform, self.label_attributes)
+        if size and "font-size" not in attributes:
+            attributes += " font-size=\"{}\"".format(size)
+        data = "    <g><text text-anchor=\"middle\" {} {}>{}</text>".format(attributes, self.glow_attributes or '', label)
+        url = self.url
+        if url:
+            if "%s" in url:
+                url = url.replace("%s", url_escape(encode_utf8(label)))
+            else:
+                url += url_escape(encode_utf8(label))
+        data += "<a xlink:href=\"{}\"><text text-anchor=\"middle\" {}>{}</text></a>".format(url, attributes, label) if url else ""
+        data += "</g>\n"
+        return data
+
+    def def(self, svg):
+        svg = svg.replace(">\s+<", "><")
+        self.defs.append(svg)
+
+    def merge_attributes(*args):
+        attr = {}
+        for a in args:
+            if a:
+                matches = re.findall(r'(\S+)=((["\']).*?\3)', a)
+                for m in matches:
+                    attr[m[0]] = m[1]
+        return ' '.join([f"{k}={v}" for k, v in sorted(attr.items())])
+
+    def svg_header(self):
+        header = '''<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+    '''
+
+        if not self.regions:
+            return header + "\n"
+        
+        maxz = 0
+        for region in self.regions:
+            maxz = region.z if region.z > maxz
+
+        min_x_overall = None
+        max_x_overall = None
+        min_y_overall = None
+        max_y_overall = None
+        
+        for z in range(maxz + 1):
+            minx = None
+            miny = None
+            maxx = None
+            maxy = None
+            self.offset[z] = max_y_overall or 0
+            for region in self.regions:
+                if region.z != z:
+                    continue
+                minx = region.x if minx is None or minx >= region.x
+                maxx = region.x if maxx is None or maxx <= region.x
+                miny = region.y if miny is None or miny >= region.y
+                maxy = region.y if maxy is None or maxy <= region.y
+            
+            min_x_overall = minx if min_x_overall is None or minx >= min_x_overall
+            max_x_overall = maxx if max_x_overall is None or maxx <= max_x_overall
+            if z == 0:
+                min_y_overall = miny if min_y_overall is None else min_y_overall
+                max_y_overall = miny if max_y_overall is None else max_y_overall
+            else:
+                max_y_overall += 1
+                max_y_overall += 1 + maxy - miny
+        
+        vx1, vy1, width, height = self.viewbox(min_x_overall, min_y_overall, max_x_overall, max_y_overall)
+        header += f"     viewBox='{vx1} {vy1} {width} {height}'>"
+        header += f"\n     <!-- min ({min_x_overall}, {min_y_overall}), max ({max_x_overall}, {max_y_overall}) -->\n"
+        
+        return header
