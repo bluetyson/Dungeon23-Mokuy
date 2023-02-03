@@ -72,7 +72,7 @@ def process(self):
             z = m.group(3) if m.group(3) else "00"
             rest = m.group(4)
             while True:
-                m = re.search(r"\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)", rest)
+                m = re.search(r"\b([a-z]+)=[""]([^""]+)[""]\s*(\d+)", rest)
                 if not m:
                     break
                 tag = m.group(1)
@@ -82,9 +82,9 @@ def process(self):
                     region = self.make_region(x=x, y=y, z=z, map=self)
                     region.label(label)
                     region.size(size)
-                rest = re.sub(r"\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)?", "", rest)
+                rest = re.sub(r"\b([a-z]+)=[""]([^""]+)[""]\s*(\d+)?", "", rest)
             while True:
-                m = re.search(r"["“]([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", rest)
+                m = re.search(r"[""]([^""]+)[""]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", rest)
                 if not m:
                     break
                 label = m.group(1)
@@ -95,20 +95,20 @@ def process(self):
                 else:
                     region.label(label)
                     region.size(size)
-                rest = re.sub(r"["“]([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", "", rest)
+                rest = re.sub(r"[""]([^""]+)[""]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", "", rest)
             types = rest.split()
             region.type(types)
             self.regions.append(region)
             self.things.append(region)
-        elif re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“](.+)["”])?\s*(left|right)?\s*(\d+%)?", line):
-            m = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“](.+)["”])?\s*(left|right)?\s*(\d+%)?",
+        elif re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[""](.+)[""])?\s*(left|right)?\s*(\d+%)?", line):
+            m = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[""](.+)[""])?\s*(left|right)?\s*(\d+%)?",
 
             line = self.make_line(map=self)
-            str = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[“](.+)[”])?\s*(left|right)?\s*(\d+%)?", line).group(1)
-            line.type = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[“](.+)[”])?\s*(left|right)?\s*(\d+%)?", line).group(2)
-            line.label = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[“](.+)[”])?\s*(left|right)?\s*(\d+%)?", line).group(3)
-            line.side = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[“](.+)[”])?\s*(left|right)?\s*(\d+%)?", line).group(4)
-            line.start = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:[“](.+)[”])?\s*(left|right)?\s*(\d+%)?", line).group(5)
+            str = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["](.+)["])?\s*(left|right)?\s*(\d+%)?", line).group(1)
+            line.type = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["](.+)["])?\s*(left|right)?\s*(\d+%)?", line).group(2)
+            line.label = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["](.+)["])?\s*(left|right)?\s*(\d+%)?", line).group(3)
+            line.side = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["](.+)["])?\s*(left|right)?\s*(\d+%)?", line).group(4)
+            line.start = re.match(r"^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["](.+)["])?\s*(left|right)?\s*(\d+%)?", line).group(5)
             line.id = "line" + str(line_id)
             line_id += 1
             points = []
