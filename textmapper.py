@@ -266,3 +266,81 @@ def process(self):
         header += f"\n     <!-- min ({min_x_overall}, {min_y_overall}), max ({max_x_overall}, {max_y_overall}) -->\n"
         
         return header
+
+    def svg_defs(self):
+        # All the definitions are included by default.
+        doc = "  <defs>\n"
+
+        if self.defs:
+            doc += "    " + "\n    ".join(self.defs) + "\n"
+
+        # collect region types from attributes and paths in case the sets don't overlap
+        types = {}
+        for region in self.regions:
+            for type in region.type:
+                types[type] = 1
+
+        for line in self.lines:
+            types[line.type] = 1
+
+        # now go through them all
+        for type in sorted(types.keys()):
+            path = self.path[type]
+            attributes = merge_attributes(self.attributes[type])
+            path_attributes = merge_attributes(self.path_attributes['default'], self.path_attributes[type])
+            glow_attributes = self.glow_attributes
+
+            if path or attributes:
+                doc += f"    <g id='{type}'>\n"
+
+                # just shapes get a glow such, eg. a house (must come first)
+                if path and not attributes:
+                    doc += f"      <path {glow_attributes} d='{path}' />\n"
+
+                # region with attributes get a shape (square or hex), eg. plains and grass
+                if attributes:
+                    doc += "      " + self.shape(attributes) + "\n"
+
+                # and now the attributes themselves the shape itself
+                if path:
+                    doc += f"      <path {path_attributes} d='{path}' />\n"
+
+                # close
+                doc += "    </g>\n"
+            else:
+                # nothing
+
+        doc += "  </defs>\n"
+        return doc
+
+    def svg_backgrounds(self):
+        doc = "  <g id='backgrounds'>\n"
+        for thing in self.things:
+            types = thing.type
+            thing.type = [typ for typ in thing.type if typ in self.attributes]
+            doc += thing.svg(self.offset)
+            thing.type = types
+        doc += "  </g>\n"
+        return doc
+
+    def svg_things(self):
+        doc = "  <g id='things'>\n"
+        for thing in self.things:
+            thing.type = [typ for typ in thing.type if typ not in self.attributes]
+            doc += thing.svg(self.offset)
+        doc += "  </g>\n"
+        return doc
+
+    def svg_coordinates(self):
+        doc = "  <g id='coordinates'>\n"
+        for region in self.regions:
+            doc += region.svg_coordinates(self.offset)
+        doc += "  </g>\n"
+        return doc
+
+    def svg_lines(self):
+        doc = "  <g id='lines'>\n"
+        for line in self.lines:
+            doc += line.svg(self.offset)
+        doc += "  </g>\n"
+        return doc
