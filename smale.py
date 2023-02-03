@@ -1,17 +1,33 @@
 import random
+from future import division
+from future import absolute_import
+from future import print_function
+import math
+import sys
+from builtins import range
+
+from future_builtins import ascii
+from future_builtins import hex
+from future_builtins import oct
+from future_builtins import map
+from future_builtins import filter
+from future_builtins import zip
+
+dx = 100
+dy = 100 * math.sqrt(3)
 #BW stands for "black & white", i.e. a true value skips background colours.
 log = []
 
 world = {}
 
-primary = {
+primary_dict = {
     "water": ["water"],
     "swamp": ["marsh"],
     "desert": ["desert"],
     "plains": ["bush"],
     "forest": ["forest"],
     "hill": ["trees"],
-    "mountain": ["mountains"]
+    "mountain": ["mountain"]
 }
 
 secondary = {
@@ -55,7 +71,7 @@ wildcard = {
         "swamp",
         "mountain",
         "mountain",
-        "mountains",
+        "mountain",
     ],
     "hill": [
         "water",
@@ -78,7 +94,7 @@ primary = {
     "plains": ["bush"],
     "forest": ["forest"],
     "hill": ["trees"],
-    "mountain": ["mountains"]
+    "mountain": ["mountain"]
 }
 
 reverse_lookup = {
@@ -90,6 +106,7 @@ reverse_lookup = {
   "forest": "forest",
   "trees": "hill",
   "mountain": "mountain",
+  "swamp": "swamp",    
   
 }
 
@@ -109,8 +126,10 @@ encounters = {
 needs_fields = []
 
 def one(arr):
+    print(arr)
     if len(arr) == 1 and isinstance(arr[0], list):
         arr = arr[0]
+    print(arr)
     return arr[random.randint(0, len(arr) - 1)]
 
 def populate_region(hex, primary):
@@ -129,34 +148,45 @@ def verbose(message):
     log.append(message)
 
 def place_major(x, y, encounter):
-    thing = one(encounters[encounter])
-    if not thing:
+    print("pm:",x,y,encounter)
+    print("pm:",encounters[encounter])
+    if len(encounters[encounter]) > 0:
+        thing = one(encounters[encounter])
+    else:
+        thing = False
         return
+    #if not thing:
+        #return
     verbose(f"placing {thing} ({encounter}) at ({x},{y})")
     hex = one(full_hexes(x, y))
     x += hex[0]
     y += hex[1]
     coordinates = Point.coord(x, y)
+    print("pm:",world[coordinates])
     primary = reverse_lookup[world[coordinates]]
-    color, terrain = world[coordinates].split(' ', 1)
-    if encounter == 'settlement':
-        if primary == 'plains':
-            color = one(['light-soil', 'soil'])
-            verbose(f" {world[coordinates]} is {primary} and was changed to {color}")
-        if primary != 'plains' or member(thing, ['large-town', 'city']):
-            needs_fields.append([x, y])
-    world[coordinates] = f"{color} {thing}"
+    print("pm:",primary)
+    
+    if 1 == 2:
+        #bypass don't need?
+        color, terrain = world[coordinates].split(' ', 1)
+        if encounter == 'settlement':
+            if primary == 'plains':
+                color = one(['light-soil', 'soil'])
+                verbose(f" {world[coordinates]} is {primary} and was changed to {color}")
+            if primary != 'plains' or member(thing, ['large-town', 'city']):
+                needs_fields.append([x, y])
+        world[coordinates] = f"{color} {thing}"
 
 def populate_region(hex, primary):
-    random = randint(100)
+    random_ = random.randint(1,100)
     if (
-        (primary == "water" and random < 10)
-        or (primary == "swamp" and random < 20)
-        or (primary == "sand" and random < 20)
-        or (primary == "grass" and random < 60)
-        or (primary == "forest" and random < 40)
-        or (primary == "hill" and random < 40)
-        or (primary == "mountain" and random < 20)
+        (primary == "water" and random_ < 10)
+        or (primary == "swamp" and random_ < 20)
+        or (primary == "sand" and random_ < 20)
+        or (primary == "grass" and random_ < 60)
+        or (primary == "forest" and random_ < 40)
+        or (primary == "hill" and random_ < 40)
+        or (primary == "mountain" and random_ < 20)
     ):
         place_major(hex[0], hex[1], random.choice(list(encounters.keys())))
 
@@ -207,14 +237,17 @@ def half_hexes(x, y):
                 [-2,  2], [-1,  2], [1,  2], [2,  2])
 
 def generate_region(x, y, primary):
-  world[Point.coord(x, y)] = one(primary[primary])
+  print(x,y,primary)
+  print(world)
+  print(primary_dict[primary])
+  world[Point.coord(x, y)] = one(primary_dict[primary])
   
   region = full_hexes(x, y)
   terrain = None
 
   for i in range(1, 10):
     coordinates = pick_unassigned(x, y, region)
-    terrain = one(primary[primary])
+    terrain = one(primary_dict[primary])
     verbose(" primary   {} => {}".format(coordinates, terrain))
     world[coordinates] = terrain
     
@@ -234,11 +267,11 @@ def generate_region(x, y, primary):
     world[coordinates] = terrain
 
   for coordinates in pick_remaining(x, y, half_hexes(x, y)):
-    random = random.randint(6)
-    if random < 3:
-      terrain = one(primary[primary])
+    random_ = random.randint(1,6)
+    if random_ < 3:
+      terrain = one(primary_dict[primary])
       verbose("  halfhex primary   {} => {}".format(coordinates, terrain))
-    elif random < 5:
+    elif random_ < 5:
       terrain = one(secondary[primary])
       verbose("  halfhex secondary {} => {}".format(coordinates, terrain))
     else:
@@ -252,7 +285,7 @@ def seed_region(seeds, terrain):
     verbose("seed_region ({}, {}) with {}".format(hex_[0], hex_[1], terrain))
     generate_region(hex_[0], hex_[1], terrain)
     populate_region(hex_, terrain)
-    random_ = randint(12)
+    random_ = random.randint(1,12)
     # pick next terrain based on the previous one (to the left); or the one
     # above if in the first column
     next_ = None
@@ -261,16 +294,16 @@ def seed_region(seeds, terrain):
     else:
         terrain
     if random_ < 6:
-      next_ = choice(primary[terrain])
+      next_ = random.choice(primary[terrain])
       verbose("picked primary {}".format(next_))
     elif random_ < 9:
-      next_ = choice(secondary[terrain])
+      next_ = random.choice(secondary[terrain])
       verbose("picked secondary {}".format(next_))
     elif random_ < 11:
-      next_ = choice(tertiary[terrain])
+      next_ = random.choice(tertiary[terrain])
       verbose("picked tertiary {}".format(next_))
     else:
-      next_ = choice(wildcard[terrain])
+      next_ = random.choice(wildcard[terrain])
       verbose("picked wildcard {}".format(next_))
     if hex_[0] == 1:
         terrain_above = terrain 
@@ -278,26 +311,26 @@ def seed_region(seeds, terrain):
       raise ValueError("Terrain lacks reverse_lookup: {}".format(next_))
     terrain = reverse_lookup[next_]
 
-    def agriculture():
-        for hex_ in needs_fields:
-            verbose(f"looking to plant fields near {Point.coord(hex_[0], hex_[1])}")
-            delta = [[[-1, 0], [0, -1], [1, 0], [1, 1], [0, 1], [-1, 1]],
-                    [[-1, -1], [0, -1], [1, -1], [1, 0], [0, 1], [-1, 0]]]
-            plains = []
-            for i in range(6):
-                x, y = hex_[0] + delta[hex_[0] % 2][i][0], hex_[1] + delta[hex_[0] % 2][i][1]
-                coordinates = Point.coord(x, y)
-                if coordinates in world:
-                    color, terrain = world[coordinates].split(" ", 1)
-                    verbose(f"  {coordinates} is {world[coordinates]} ie. {reverse_lookup[world[coordinates]]}")
-                    if reverse_lookup[world[coordinates]] == "plains":
-                        verbose(f"   {coordinates} is a candidate")
-                        plains.append(coordinates)
-            if not plains:
-                continue
-            target = random.choice(plains)
-            world[target] = random.choice(["light-soil fields", "soil fields"])
-            verbose(f" {target} planted with {world[target]}")
+def agriculture():
+    for hex_ in needs_fields:
+        verbose(f"looking to plant fields near {Point.coord(hex_[0], hex_[1])}")
+        delta = [[[-1, 0], [0, -1], [1, 0], [1, 1], [0, 1], [-1, 1]],
+                [[-1, -1], [0, -1], [1, -1], [1, 0], [0, 1], [-1, 0]]]
+        plains = []
+        for i in range(6):
+            x, y = hex_[0] + delta[hex_[0] % 2][i][0], hex_[1] + delta[hex_[0] % 2][i][1]
+            coordinates = Point.coord(x, y)
+            if coordinates in world:
+                color, terrain = world[coordinates].split(" ", 1)
+                verbose(f"  {coordinates} is {world[coordinates]} ie. {reverse_lookup[world[coordinates]]}")
+                if reverse_lookup[world[coordinates]] == "plains":
+                    verbose(f"   {coordinates} is a candidate")
+                    plains.append(coordinates)
+        if not plains:
+            continue
+        target = random.choice(plains)
+        world[target] = random.choice(["light-soil fields", "soil fields"])
+        verbose(f" {target} planted with {world[target]}")
 
 def generate_map(bw, width=20, height=10):
     seeds = []
@@ -311,16 +344,23 @@ def generate_map(bw, width=20, height=10):
     agriculture()
     to_delete = []
     for coordinates in world:
-        x, y = map(int, [coordinates[0:2], coordinates[2:4]])
+        print(coordinates)
+        ##python version
+        usecoord = coordinates.replace("-",'')
+        
+        #x, y = map(int, [coordinates[0:2], coordinates[2:4]])
+        x, y = map(int, [usecoord[0:2], usecoord[2:4]])
         if x < 1 or y < 1 or x > width or y > height:
             to_delete.append(coordinates)
     for coordinates in to_delete:
         del world[coordinates]
-    if bw:
-        for coordinates in world:
-            color, *rest = world[coordinates].split(' ', maxsplit=1)
-            if rest:
-                world[coordinates] = rest[0]
-            else:
-                del world[coordinates]
+    if 1 == 2:
+        if bw:
+            for coordinates in world:
+                color, *rest = world[coordinates].split(' ', maxsplit=1)
+                if rest:
+                    world[coordinates] = rest[0]
+                else:
+                    del world[coordinates]
     return '\n'.join(f'{coordinates} {world[coordinates]}' for coordinates in sorted(world)) + '\n' + f'include {contrib}/gnomeyland.txt\n'
+
