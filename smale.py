@@ -1,24 +1,62 @@
 import random
-from future import division
-from future import absolute_import
-from future import print_function
-import math
-import sys
-from builtins import range
 
-from future_builtins import ascii
-from future_builtins import hex
-from future_builtins import oct
-from future_builtins import map
-from future_builtins import filter
-from future_builtins import zip
+class Point:
+    def __init__(self):
+        self.x = None
+        self.y = None
+        self.z = None
+        self.type = None
+        self.label = None
+        self.size = None
+        self.map = None
+
+    def equal(self, other):
+        return self.x == other.x and self.y == other.y and self.z == other.z
+        
+    def cmp(a, b):
+        return (a.x - b.x) or (a.y - b.y) or (a.z - b.z)
+
+    def coordinates(self):
+        if self.z is not None:
+            return self.x, self.y, self.z
+        return self.x, self.y
+
+    def coord(x, y, separator=''):
+        usex = x
+        usey = y
+        if x < 0:
+            if len(str(x)) == 2:
+                usex = "-0" + str(x)[1:]
+            else:
+                usex = str(x)
+        else:
+            if len(str(x)) == 1:
+                usex = "0" + str(x)
+            else:
+                usex = str(x)
+        
+        if y < 0:
+            if len(str(y)) == 2:
+                usey = "-0" + str(y)[1:]
+            else:
+                usey = str(y)
+        else:
+            if len(str(y)) == 1:
+                usey = "0" + str(y)
+            else:
+                usey =  str(y)
+            
+                
+        return usex+usey
 
 dx = 100
 dy = 100 * math.sqrt(3)
 
 contrib = ""
 #BW stands for "black & white", i.e. a true value skips background colours.
+#BW stands for "black & white", i.e. a true value skips background colours.
 log = []
+contrib = ""
 
 world = {}
 
@@ -346,13 +384,15 @@ def generate_map(bw, width=20, height=10):
     agriculture()
     to_delete = []
     for coordinates in world:
-        print(coordinates)
+        #print(coordinates)
         ##python version
         usecoord = coordinates.replace("-",'')
         
         #x, y = map(int, [coordinates[0:2], coordinates[2:4]])
         x, y = map(int, [usecoord[0:2], usecoord[2:4]])
-        if x < 1 or y < 1 or x > width or y > height:
+        print(usecoord[0:2], usecoord[2:4], coordinates)
+        if x < 1 or y < 1 or x > width or y > height or '-' in coordinates:
+            print("getridof")
             to_delete.append(coordinates)
     for coordinates in to_delete:
         del world[coordinates]
@@ -365,4 +405,3 @@ def generate_map(bw, width=20, height=10):
                 else:
                     del world[coordinates]
     return '\n'.join(f'{coordinates} {world[coordinates]}' for coordinates in sorted(world)) + '\n' + f'include {contrib}/gnomeyland.txt\n'
-
