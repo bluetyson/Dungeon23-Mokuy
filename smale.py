@@ -1,4 +1,6 @@
 import random
+#BW stands for "black & white", i.e. a true value skips background colours.
+
 
 world = {}
 
@@ -243,3 +245,77 @@ def generate_region(x, y, primary):
       verbose("  halfhex tertiary  {} => {}".format(coordinates, terrain))
     world[coordinates] = terrain
 
+def seed_region(seeds, terrain):
+  terrain_above = None
+  for hex_ in seeds:
+    verbose("seed_region ({}, {}) with {}".format(hex_[0], hex_[1], terrain))
+    generate_region(hex_[0], hex_[1], terrain)
+    populate_region(hex_, terrain)
+    random_ = randint(12)
+    # pick next terrain based on the previous one (to the left); or the one
+    # above if in the first column
+    next_ = None
+    terrain = terrain_above if hex_[0] == 1 and terrain_above else terrain
+    if random_ < 6:
+      next_ = choice(primary[terrain])
+      verbose("picked primary {}".format(next_))
+    elif random_ < 9:
+      next_ = choice(secondary[terrain])
+      verbose("picked secondary {}".format(next_))
+    elif random_ < 11:
+      next_ = choice(tertiary[terrain])
+      verbose("picked tertiary {}".format(next_))
+    else:
+      next_ = choice(wildcard[terrain])
+      verbose("picked wildcard {}".format(next_))
+    terrain_above = terrain if hex_[0] == 1
+    if next_ not in reverse_lookup:
+      raise ValueError("Terrain lacks reverse_lookup: {}".format(next_))
+    terrain = reverse_lookup[next_]
+
+    def agriculture():
+        for hex_ in needs_fields:
+            verbose(f"looking to plant fields near {Point.coord(hex_[0], hex_[1])}")
+            delta = [[[-1, 0], [0, -1], [1, 0], [1, 1], [0, 1], [-1, 1]],
+                    [[-1, -1], [0, -1], [1, -1], [1, 0], [0, 1], [-1, 0]]]
+            plains = []
+            for i in range(6):
+                x, y = hex_[0] + delta[hex_[0] % 2][i][0], hex_[1] + delta[hex_[0] % 2][i][1]
+                coordinates = Point.coord(x, y)
+                if coordinates in world:
+                    color, terrain = world[coordinates].split(" ", 1)
+                    verbose(f"  {coordinates} is {world[coordinates]} ie. {reverse_lookup[world[coordinates]]}")
+                    if reverse_lookup[world[coordinates]] == "plains":
+                        verbose(f"   {coordinates} is a candidate")
+                        plains.append(coordinates)
+            if not plains:
+                continue
+            target = random.choice(plains)
+            world[target] = random.choice(["light-soil fields", "soil fields"])
+            verbose(f" {target} planted with {world[target]}")
+
+def generate_map(bw, width=20, height=10):
+    seeds = []
+    for y in range(1, height + 3, 5):
+        for x in range(1, width + 3, 5):
+            y0 = y + (x % 10) // 3
+            seeds.append([x, y0])
+    world.clear()
+    seed_terrain = list(primary.keys())
+    seed_region(seeds, random.choice(seed_terrain))
+    agriculture()
+    to_delete = []
+    for coordinates in world:
+        x, y = map(int, [coordinates[0:2], coordinates[2:4]])
+        if x < 1 or y < 1 or x > width or y > height:
+            to_delete.append(coordinates)
+    for coordinates in to_delete:
+        del world[coordinates]
+    if bw:
+        for coordinates in world:
+            color, *rest = world[coordinates].split(' ', maxsplit=1)
+            if rest:
+                world[coordinates] = rest[0]
+            else:
+                del world[coordinates]
+    return '\n'.join(f'{coordinates} {world[coordinates]}' for coordinates in sorted(world)) + '\n' + f'include {contrib}/gnomeyland.txt\n'
