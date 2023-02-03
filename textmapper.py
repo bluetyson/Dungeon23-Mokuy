@@ -123,9 +123,9 @@ license <text>Public Domain</text>
             elif re.match(r"^(\S+)\s+attributes\s+(.*)", line):
                 self.attributes[re.match("^(\S+)\s+attributes\s+(.*)", line).group(1)] = re.match("^(\S+)\s+attributes\s+(.*)", line).group(2)
             elif re.match("^(\S+)\s+lib\s+(.*)", line):
-                self.def1(f"<g id='{re.match(r'^(\\S+)\\s+lib\\s+(.*)', line).group(1)}'>{re.match(r'^(\\S+)\\s+lib\\s+(.*)', line).group(2)}</g>")
+                self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(2)}</g>")
             elif re.match("^(\S+)\s+xml\s+(.*)", line):
-                self.def1(f"<g id='{re.match(r'^(\\S+)\\s+xml\\s+(.*)', line).group(1)}'>{re.match(r'^(\\S+)\\s+xml\\s+(.*)', line).group(2)}</g>")
+                self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(2)}</g>")
             elif re.match("^(<.*>)", line):
                 self.def1(re.match("^(<.*>)", line).group(1))
             elif re.match("^(\S+)\s+path\s+attributes\s+(.*)", line):
