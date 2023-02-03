@@ -316,6 +316,7 @@ license <text>Public Domain</text>
                 doc += "    </g>\n"
             else:
                 # nothing
+                pass
 
         doc += "  </defs>\n"
         return doc
