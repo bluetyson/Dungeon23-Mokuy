@@ -1,6 +1,6 @@
 import random
 #BW stands for "black & white", i.e. a true value skips background colours.
-
+log = []
 
 world = {}
 
@@ -126,7 +126,7 @@ def member(element, *args):
     return False
 
 def verbose(message):
-    log.debug(message)
+    log.append(message)
 
 def place_major(x, y, encounter):
     thing = one(encounters[encounter])
@@ -174,7 +174,8 @@ def pick_remaining(x, y, region):
     coordinates = []
     for hex in region:
         coord = Point.coord(x + hex[0], y + hex[1])
-        coordinates.append(coord) if coord not in world
+        if coord not in world:
+            coordinates.append(coord) 
     return coordinates
 
 def full_hexes(x, y):
@@ -255,7 +256,10 @@ def seed_region(seeds, terrain):
     # pick next terrain based on the previous one (to the left); or the one
     # above if in the first column
     next_ = None
-    terrain = terrain_above if hex_[0] == 1 and terrain_above else terrain
+    if hex_[0] == 1 and terrain_above:
+        terrain = terrain_above  
+    else:
+        terrain
     if random_ < 6:
       next_ = choice(primary[terrain])
       verbose("picked primary {}".format(next_))
@@ -268,7 +272,8 @@ def seed_region(seeds, terrain):
     else:
       next_ = choice(wildcard[terrain])
       verbose("picked wildcard {}".format(next_))
-    terrain_above = terrain if hex_[0] == 1
+    if hex_[0] == 1:
+        terrain_above = terrain 
     if next_ not in reverse_lookup:
       raise ValueError("Terrain lacks reverse_lookup: {}".format(next_))
     terrain = reverse_lookup[next_]
