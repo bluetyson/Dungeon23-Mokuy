@@ -15,6 +15,8 @@ from future_builtins import zip
 
 dx = 100
 dy = 100 * math.sqrt(3)
+
+contrib = ""
 #BW stands for "black & white", i.e. a true value skips background colours.
 log = []
 
