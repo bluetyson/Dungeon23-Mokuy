@@ -1,3 +1,7 @@
+#algorithm by Erin Smale adapted from perl code by Alex Schroeder
+#needs an Australianised version
+#also a Mokuy version - no agriculture or settlements anywhere but one place - known, anyway
+
 import random
 
 class Point:
@@ -65,7 +69,8 @@ primary_dict = {
     "plains": ["bush"],
     "forest": ["forest"],
     "hill": ["trees"],
-    "mountain": ["mountain"]
+    "mountain": ["mountain"],
+    "sand":["sand"]
 }
 
 secondary = {
@@ -402,4 +407,4 @@ def generate_map(bw, width=20, height=10):
                     world[coordinates] = rest[0]
                 else:
                     del world[coordinates]
-    return '\n'.join(f'{coordinates} {world[coordinates]}' for coordinates in sorted(world)) + '\n' + f'include {contrib}/gnomeyland.txt\n'
+    return '\n'.join(f'{coordinates} {world[coordinates]}' for coordinates in sorted(world)) + '\n' + f'include {contrib}gnomeyland.txt\n'
