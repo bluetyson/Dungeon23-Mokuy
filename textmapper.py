@@ -62,17 +62,19 @@ license <text>Public Domain</text>
       self.map = map
       self.process(map.split('\n'))
 
-    def process(self):
+    def process(self, args):
         line_id = 0
         for line in args:
+            print(line)
             if re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line):
                 m = re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line)
                 x = m.group(1)
                 y = m.group(2)
                 z = m.group(3) if m.group(3) else "00"
                 rest = m.group(4)
+                print("rest:",rest)
                 while True:
-                    m = re.search(r"\b([a-z]+)=[""]([^""]+)[""]\s*(\d+)", rest)
+                    m = re.search(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', rest)
                     if not m:
                         break
                     tag = m.group(1)
@@ -82,9 +84,9 @@ license <text>Public Domain</text>
                         region = self.make_region(x=x, y=y, z=z, map=self)
                         region.label(label)
                         region.size(size)
-                    rest = re.sub(r"\b([a-z]+)=[""]([^""]+)[""]\s*(\d+)?", "", rest)
+                    rest = re.sub(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', "", rest)
                 while True:
-                    m = re.search(r"[""([^""]+)[""]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", rest)
+                    m = re.search(r'["“([^"”]+\)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', rest)
                     if not m:
                         break
                     label = m.group(1)
@@ -95,7 +97,7 @@ license <text>Public Domain</text>
                     else:
                         region.label(label)
                         region.size(size)
-                    rest = re.sub(r"[""([^""]+)[""]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)", "", rest)
+                    rest = re.sub(r'["“([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', "", rest)
                 types = rest.split()
                 region.type(types)
                 self.regions.append(region)
@@ -183,6 +185,7 @@ license <text>Public Domain</text>
             else:
                 if line and not line.startswith("#"):
                     print(f"Did not parse {line}")                
+
 
 
     def svg_other(self):
