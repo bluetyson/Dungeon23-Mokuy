@@ -344,3 +344,52 @@ def process(self):
             doc += line.svg(self.offset)
         doc += "  </g>\n"
         return doc
+
+    def svg_regions(self):
+        doc = """  <g id="regions">\n"""
+        attributes = self.attributes.get("default", """fill="none"""")
+        for region in self.regions:
+            doc += region.svg_region(attributes, self.offset)
+        doc += """  </g>\n"""
+        return doc
+
+    def svg_line_labels(self):
+        doc = """  <g id="line_labels">\n"""
+        for line in self.lines:
+            doc += line.svg_label(self.offset)
+        doc += """  </g>\n"""
+        return doc
+
+    def svg_labels(self):
+        doc = """  <g id="labels">\n"""
+        for region in self.regions:
+            doc += region.svg_label(self.url, self.offset)
+        doc += """  </g>\n"""
+        return doc
+
+    def svg(self):
+        doc = self.svg_header()
+        doc += self.svg_defs()
+        doc += self.svg_backgrounds() # opaque backgrounds
+        doc += self.svg_lines()
+        doc += self.svg_things() # icons, lines
+        doc += self.svg_coordinates()
+        doc += self.svg_regions()
+        doc += self.svg_line_labels()
+        doc += self.svg_labels()
+        doc += self.license() or ""
+        doc += self.svg_other()
+
+        # error messages
+        y = 10
+        for msg in self.messages:
+            doc += f"  <text x='0' y='{y}'>{msg}</text>\n"
+            y += 10
+
+        # source code (comments may not include -- for SGML compatibility!)
+        source = self.map()
+        source = source.replace("--", "&#45;&#45;")
+        doc += f"""<!-- Source\n{source}\n-->\n"""
+        doc += """</svg>\n"""
+
+        return doc
