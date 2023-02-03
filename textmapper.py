@@ -1,5 +1,10 @@
 
 #https://www.namecheap.com/support/knowledgebase/article.aspx/9693/29/how-to-install-perl-modules-on-shared-servers/
+#TextMapper has
+#TextMapper-Mapper-Hex
+#TextMapper-Line-Hex #linedir
+#TextMapper-Point-Hex #pointdir
+#TextMapper-Command-Render #pointdir
 
 class Mapper:
   local_files = None
