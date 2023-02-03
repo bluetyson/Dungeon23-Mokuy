@@ -62,7 +62,7 @@ license <text>Public Domain</text>
       self.map = map
       self.process(map.split('\n'))
 
-    def process(self, args):
+def process(self, args):
         line_id = 0
         for line in args:
             print(line)
@@ -71,6 +71,15 @@ license <text>Public Domain</text>
                 x = m.group(1)
                 y = m.group(2)
                 z = m.group(3) if m.group(3) else "00"
+                
+                dictz = {"x":x,"y":y,"z":z}
+                #region = self.make_region(x=x, y=y, z=z, map=self)
+                #region = self.make_region(**dictz)
+                #region = self.make_region(x,y,z)
+                region = self.make_region()
+                region.x = x
+                region.y = y
+                region.z = z
                 rest = m.group(4)
                 print("rest:",rest)
                 while True:
@@ -98,8 +107,11 @@ license <text>Public Domain</text>
                         region.label(label)
                         region.size(size)
                     rest = re.sub(r'["“([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', "", rest)
+                    
+                
                 types = rest.split()
-                region.type(types)
+                
+                region.type = types
                 self.regions.append(region)
                 self.things.append(region)
             elif re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line):
