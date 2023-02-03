@@ -1,16 +1,17 @@
 #test silent_god_function
 
+;TOP
+1,<p>[history]
+
+;history
+1,[global save [explorers] as exp1] [global save explorers as exp2] [global store [explorers] as exp3] [global store explorers as exp4]
+
 ;explorers
 1,foolhardy gold mad
 1,sensible well provisioned
 
-[global save [explorers] as exp1]
-[global save explorers as exp2]
-[global store [explorers] as exp3]
-[global store explorers as exp4]
-
 ;green forest
-1,f1:[exp1] f2:[exp2] f3:[exp3] ff:[exp4]
+1,f1 [same exp1] f2 [same exp2] f3 [same exp3] ff [same exp4]
 
 ;light-grey mountain
 1,banana
