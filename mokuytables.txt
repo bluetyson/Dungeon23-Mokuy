@@ -970,7 +970,6 @@ a [willy-willy] will-willy
 ;falcon stats
 1,AC,5,MV,"1, Fl 36",HD,1-1,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
 ;kookaburra stats
-;seabird stats
 ;lyrebird stats
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
