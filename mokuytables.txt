@@ -684,7 +684,7 @@ a [willy-willy] will-willy
 
 ;trees people
 3,[convicts] **convicts ([convict stats])
-2,a **bushranger**
+2,a **bushranger** ([bushranger stats])
 
 ;trees monsters
 1,a **drop bear** [(drop bear stats)]
