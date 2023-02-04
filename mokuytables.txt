@@ -746,6 +746,7 @@ a [willy-willy] will-willy
 10,[2d6] **wallabies** ([wallaby stats])
 2,a **poisonous snake**
 2,a **python** ([python stats])
+1,a **cassowary ([cassowary stats])
 
 ;forest megafauna
 2,a **giant leech** [(giant leech stats)]
