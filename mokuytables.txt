@@ -964,6 +964,7 @@ a [willy-willy] will-willy
 #birds
 ;bird stats
 ;cassowary stats
+1,AC,8,MV,"10",HD,2+2,Thac0,18,1,NA,DM,1d4,SA,Kick 1d10+2,SD,Nil,SZ,S,ML,7,XP,25
 ;cockatoo stats
 ;eagle stats
 ;emu stats
