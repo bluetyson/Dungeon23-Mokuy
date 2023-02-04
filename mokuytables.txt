@@ -588,7 +588,7 @@ a [willy-willy] will-willy
 1,Crimson
 1,Dancing
 1,Dawn
-1,1,Day
+1,Day
 1,Descending
 1,Dreaming
 1,Dusk
@@ -656,7 +656,7 @@ a [willy-willy] will-willy
 1,Yellow
 
 ;silent_god_function
-[silent_god_adjective] [silent_god_epithet]
+1,[silent_god_adjective] [silent_god_epithet]
 
 ;silent_cult
 1,[silent_cult_group] of The [silent_cult_hue] [silent_cult_object] 
