@@ -188,7 +188,7 @@
 1,**elemental**
 
 ;sand animals
-50,[2d20]**seabirds**
+50,[2d20] **seabirds**
 4,**cane toads** ([cane toad stats])
 5,[1d100]**rats** ([rat stats])
 
@@ -794,8 +794,8 @@ a [willy-willy] will-willy
 10,a **crocodile** ([crocodile stats])
 8,a **snake**
 8,a **water snake** ([water snake stats])
-20,**pelicans**
-40,**seabirds**
+20,[3d6] **pelicans**
+40,[4d10] **seabirds**
 
 ;marsh megafauna
 3,**a giant crocodile** ([giant crocodile stats])
