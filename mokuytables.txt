@@ -872,29 +872,29 @@ a [willy-willy] will-willy
 1,*heading away from you*
 
 ;reaction
-1 Violently hostile
-4 Hostile
-4 Uncertain but negative
-2 Neutral
-4 Uncertain but positive
-4 Friendly
-1 Enthusiastically friendly
+1,Violently hostile
+4,Hostile
+4,Uncertain but negative
+2,Neutral
+4,Uncertain but positive
+4,Friendly
+1,Enthusiastically friendly
 
 ;reaction negative
-2 Violently hostile
-5 Hostile
-5 Uncertain but negative
-2 Neutral
-3 Uncertain but positive
-3 Friendly
+2,Violently hostile
+5,Hostile
+5,Uncertain but negative
+2,Neutral
+3,Uncertain but positive
+3,Friendly
 
 ;reaction positive
-3 Hostile
-3 Uncertain but negative
-2 Neutral
-5 Uncertain but positive
-5 Friendly
-2 Enthusiastically friendly
+3,Hostile
+3,Uncertain but negative
+2,Neutral
+5,Uncertain but positive
+5,Friendly
+2,Enthusiastically friendly
 
 ;city1
 1,*Sydney Town*, a wretched hive of scum and villainy
