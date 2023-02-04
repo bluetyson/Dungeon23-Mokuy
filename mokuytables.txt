@@ -867,9 +867,9 @@ a [willy-willy] will-willy
 1,**sailors** ([sailor stats])
 
 ;heading
-4,*heading towards you*
-1,*waiting*
-1,*heading away from you*
+4,*heading towards you* seemingly [reaction negative]
+1,*waiting* seemingly  [reaction neutral]
+1,*heading away from you* seemingly [reaction positive]
 
 ;reaction
 1,Violently hostile
