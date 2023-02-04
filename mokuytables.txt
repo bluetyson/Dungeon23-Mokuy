@@ -692,8 +692,8 @@ a [willy-willy] will-willy
 ;trees animals
 2,a **goanna**
 10,[3d6] **kangaroos** ([kangaroo stats])
-10,[1d3+1] **koalas**
-1,a **koala**
+10,[1d3+1] **koalas** ([koala stats])
+1,a **koala** ([koala stats])
 2,[2d4] **dingoes** [dingo stats]
 
 ;trees megafauna
@@ -737,7 +737,7 @@ a [willy-willy] will-willy
 1,A kangaroo that walks like a large man and wields weapons like a fearsome warrior
 
 ;forest animals
-10,**koalas**
+10,**koalas** ([koala stats])
 20,**birds**
 2,**leeches ([leech stats])
 2,**brumbies**
