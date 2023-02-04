@@ -341,8 +341,8 @@ a [willy-willy] will-willy
 1,**incubus** ([incubus stats])
 1,serpent people ([serpent people stats])
 
- ;Super Roo
- 1,A great red kangaroo rumoured to be much taller than a person with the strength of ten and unable to be harmed by weapons.
+;Super Roo
+1,A great red kangaroo rumoured to be much taller than a person with the strength of ten and unable to be harmed by weapons.
 
 ;bush animals
 1,a **falcon** ([falcon stats])
