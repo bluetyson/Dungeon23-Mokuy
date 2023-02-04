@@ -1230,6 +1230,7 @@ a [willy-willy] will-willy
 1,The Kinie Ger stalks the bush
 1,The Giant Phantom Cat of the South ate a convict laboring party last year
 1,Lemuria has pygmy-mummies
+1,A man-eating dinosaur has been seen [Burrunjor]
 
 1,academy
 1,brotherhood
