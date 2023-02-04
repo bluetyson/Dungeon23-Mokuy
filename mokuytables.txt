@@ -868,7 +868,7 @@ a [willy-willy] will-willy
 
 ;heading
 4,*heading towards you* seemingly [reaction negative]
-1,*waiting* seemingly  [reaction neutral]
+1,*waiting* seemingly  [reaction]
 1,*heading away from you* seemingly [reaction positive]
 
 ;reaction
