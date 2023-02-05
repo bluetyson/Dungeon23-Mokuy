@@ -400,8 +400,8 @@ a [willy-willy] will-willy
 1,a **Dream Shambler**
 
 ;cultists
-100,**[same silentcult1]** ([cultist stats])
-100,**[same silentcult2]** ([cultist stats])
+100,*[same silentcult1]* ([cultist stats])
+100,*[same silentcult2]* ([cultist stats])
 2,[cac cultists]
 9,**Secret Society of the Ring** ([cultist stats])
 1,an **insane sorcerer** ([cultist stats])
