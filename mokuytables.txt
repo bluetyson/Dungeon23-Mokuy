@@ -330,7 +330,7 @@ a [willy-willy] will-willy
 ;bush people
 4,[convicts] **convicts** ([convict stats])
 2,a **bushranger** ([bushranger stats])
-4,[explorers] **explorers**
+4,[explorers] **explorers** ([explorer stats])
 4,[settlers] **immigrants** ([settler stats])
 8,**Australians** ([Australians stats])
 
@@ -708,6 +708,8 @@ a [willy-willy] will-willy
 ;trees animals
 2,a **goanna** ([goanna stats])
 10,[3d6] **kangaroos** ([kangaroo stats])
+5,[3d6] **wallabies** ([wallaby stats])
+5,[3d6] **wallaroos** ([wallaroo stats])
 10,[1d3+1] **koalas** ([koala stats])
 1,a **koala** ([koala stats])
 2,[2d4] **dingoes** [dingo stats]
@@ -821,7 +823,7 @@ a [willy-willy] will-willy
 8,a **tree snake** ([tree snake stats])
 8,a **water snake** ([water snake stats])
 20,[3d6] **pelicans**
-40,[4d10] **seabirds**
+40,[4d10] **seagulls** ([seagull stats])
 
 ;marsh megafauna
 3,**a giant crocodile** ([giant crocodile stats])
@@ -855,8 +857,10 @@ a [willy-willy] will-willy
 1,a portal to *Lemuria*
 
 ;water people
-49,**pirates**
-50,**sailors**
+49,**pirates** ([pirate stats])
+50,**sailors** ([sailor stats])
+1,**explorers** ([explorer stats])
+5,**cultists** [cultists] ([cultist stats])
 2,**Lemurians**
 1,a **strange unknown vessel**: [unknown vessel]
 
