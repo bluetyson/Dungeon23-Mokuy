@@ -229,16 +229,16 @@ a [willy-willy] will-willy
 1,<b>*Carrack's Dirt Moth*</b>
 
 ;desert animals
-1,**python**
+1,**python** ([python stats])
 1,**a brown snakes** ([brown snake stats])
 1,**a taipan** ([taipan stats])
 1,**a tiger snake** ([tiger snake stats])
 1,**a death adder** ([death adder stats])
-3,[2d4] **dingoes** [dingo stats]
-2,[4d6] **desert scorpions**
+3,[2d4] **dingoes** ([dingo stats])
+2,[4d6] **desert scorpions** ([desert scorpion stats])
 
 ;desert megafauna
-8,a **giant snake**
+8,a **giant tree snake** ([giant tree snake stats])
 8,a **giant desert scorpion** ([giant desert scorpion stats])
 1,a **mega giant worm** ([mega giant worm stats])
 
@@ -286,7 +286,7 @@ a [willy-willy] will-willy
 
 ;mountain people
 1,[convicts] **convicts** ([convict stats])
-1,[explorers] **explorers**
+1,[explorers] **explorers** ([explorer stats])
 2,**Australians ([Australians stats])
 
 ;mountain animals
