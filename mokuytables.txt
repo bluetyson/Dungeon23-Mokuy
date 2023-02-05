@@ -297,7 +297,7 @@ a [willy-willy] will-willy
 1,a **yowie** ([yowie stats])
 1,a **skelleagle**
 1,a **succubus** ([succubus stats])
-1,an **incubus** ([succubus stats])
+1,an **incubus** ([incubus  stats])
 
 ;mountain megafauna
 1,a **giant eagle** ([giant eagle stats])
