@@ -774,7 +774,6 @@ a [willy-willy] will-willy
 1,a **cassowary ([cassowary stats])
 1,a **platypus ([platypus stats]) *if near water else a tree snake*
 
-
 ;forest megafauna
 3,a **giant leech** [(giant leech stats)]
 4,a **giant python** [(giant python stats)]
@@ -826,6 +825,7 @@ a [willy-willy] will-willy
 8,a **water snake** ([water snake stats])
 20,[3d6] **pelicans**
 40,[4d10] **seagulls** ([seagull stats])
+1,a **platypus ([platypus stats])
 
 ;marsh megafauna
 3,**a giant crocodile** ([giant crocodile stats])
@@ -1027,6 +1027,7 @@ a [willy-willy] will-willy
 1,AC,6,MV,Sw 9,HD,6 to 8,Thac0,13 to 12,1,NA,DM,"6HD: 2-8, 7HD: 3-12, 8HD: 4-16",SA,Nil,SD,Nil,SZ,?,ML,9,XP,420/650/975
 ;fish stats
 ;jellyfish stats
+1,AC,10,MV,1,HD,1/4,Thac0,,1,NA,DM,1d2,SA,Poison,SD,Transparent,SZ,S,ML,8-12,XP,25
 ;manta ray stats
 ;stingray stats
 ;octopus stats
