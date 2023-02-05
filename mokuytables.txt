@@ -1283,6 +1283,8 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 
 ;mega crocodile stats
 1,AC,1,MV,"12, Sw 18",HD,14,Thac0,7,2,NA,DM,6-36/4-40,SA,Surprise,SD,Nil,SZ,H (41-60'),ML,13,XP,10000
+;mega moray eel stats
+1,AC,1,MV,Sw 12,HD,10 or more,Thac0,12,1 (2),NA,DM,4-16 or 6-12/2-8,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,H (16-49'),ML,12 or 20,XP,2000
 ;mega sea wombat stats
 ;mega shark stats
 1,AC,2,MV,Sw 24,HD,20 to 30,Thac0,7 to 5,1,NA,DM,20-21 HD: 8-32, 22-23 HD: 10-40, 24-30 HD: 12-48,SA,Nil,SD,Nil,SZ,H,ML,12,XP,15000
@@ -1296,6 +1298,7 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;mega giant crocodile stats
 1,AC,-11,MV,"15, Sw 21",HD,30,Thac0,4,2,NA,DM,12-72/8-80,SA,Surprise,SD,Nil,SZ,H (41-60'),ML,15,XP,20000
 ;mega giant moray eel stats
+1,AC,1,MV,Sw 15,HD,20 or more,Thac0,5,1 (2),NA,DM,8-32 or 12-24/4-16,SA,Jaw lock; Disease; Tail lash,SD,Immune to fear and disease; +4 save vs. enfeeblement,SZ,H (32-80'),ML,12 or 20,XP,5000
 ;mega giant shark stats
 1,AC,-1,MV,Sw 30,HD,40 to 60,Thac0,3,1,NA,DM,40-44 HD: 16-64, 45-48 HD: 20-80, 49-60 HD: 24-96,SA,Nil,SD,Nil,SZ,H,ML,12,XP,40000
 ;mega giant squid stats
