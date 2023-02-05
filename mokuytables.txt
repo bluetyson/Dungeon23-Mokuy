@@ -284,7 +284,7 @@ a [willy-willy] will-willy
 2,**Australians ([Australians stats])
 
 ;mountain animals
-2,an **eagle**
+2,an **eagle** ([eagle stats])
 5,[2d12] **brumbies** ([brumby stats])
 
 ;mountain monsters
