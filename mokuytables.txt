@@ -113,7 +113,8 @@
 4,a **giant albatross**
 4,a **giant sea eagle** ([giant sea eagle stats])
 4,a **giant jellyfish** [(giant jellyfish stats)]
-4,a **giant ray**
+2,a **giant manta ray** [(giant manta ray stats)]
+2,a **giant stingray** [(giant stingray stats)]
 8,a **giant octopus** [(giant octopus stats)]
 4,a **giant whale** [(giant whale stats)]
 2,a **mega whale** [(mega whale stats)]
@@ -884,7 +885,7 @@ a [willy-willy] will-willy
 4,a **mega crocodile**
 2,a **mega giant shark**
 4,a **mega shark**
-3,a **giant turtle**
+3,a **giant turtle** ([giant turtle stats])
 1,a **giant moray eel** ([giant moray eel stats])
 2,a **mega giant moray eel**
 
@@ -1205,7 +1206,10 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 1,AC,9,MV,1,HD,1 to 4,Thac0,19 to 17,1,NA,DM,1-10,SA,Paralysis,SD,Transparent,SZ,S-L (2.5-10'),ML,8-12,XP,65 to 270
 ;giant octopus stats
 1,AC,7,MV,"3, Sw 12",HD,8,Thac0,13,7,NA,DM,1-4(x6)/2-12,SA,Constriction,SD,"Ink, Color Change",SZ,L (9-12'),ML,13,XP,2000
-;giant ray stats
+;giant manta ray stats
+1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
+;giant stingray stats
+1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Sting,SD,Nil,SZ,?,ML,13,XP,3000-6000
 ;giant shark stats
 1,AC,5,MV,Sw 18,HD,10 to 15,Thac0,11 to 5,1,NA,DM,"10-11HD: 4-16, 12-13HD: 5-20, 14-15HD: 6-24",SA,Nil,SD,Nil,SZ,?,ML,11,XP,2000-7000
 ;giant squid stats
