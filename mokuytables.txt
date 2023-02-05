@@ -714,7 +714,7 @@ a [willy-willy] will-willy
 
 ;trees megafauna
 1,a **giant goanna** ([giant goanna stats])
-1,a **giant kangaroo**
+1,a **giant kangaroo** ([giant kangaroo stats])
 1,a **giant owl** ([giant owl stats])
 
 ;forest
