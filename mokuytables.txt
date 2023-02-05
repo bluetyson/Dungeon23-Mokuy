@@ -345,6 +345,9 @@ a [willy-willy] will-willy
 1,A great red kangaroo rumoured to be much taller than a person with the strength of ten and unable to be harmed by weapons.
 
 ;bush animals
+2,[1d6+1] **cockatoos** ([cockatoo stats])
+1,[1d6+1] a **cockatoo** ([cockatoo stats])
+1,a **kookaburra** ([kookaburra stats])
 1,a **falcon** ([falcon stats])
 11,[2d6] **kangaroos** ([kangaroo stats])
 1,**snake**
