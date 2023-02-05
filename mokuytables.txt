@@ -171,7 +171,6 @@
 5,hot
 10,cool
 5,cold
-5,[storm]
 
 ;sand encounter or not
 100,nothing
