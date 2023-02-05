@@ -191,7 +191,7 @@
 ;sand animals
 50,[2d20] **seagulls** ([seagull stats])
 4,**cane toads** ([cane toad stats])
-5,[1d100]**rats** ([rat stats])
+5,[1d100] **rats** ([rat stats])
 
 ;sand megafauna
 2,a **giant sea wombat** ([giant sea wombat stats]) 
