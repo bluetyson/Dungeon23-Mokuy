@@ -706,7 +706,7 @@ a [willy-willy] will-willy
 1,a **drop bear** [(drop bear stats)]
 
 ;trees animals
-2,a **goanna**
+2,a **goanna** ([goanna stats])
 10,[3d6] **kangaroos** ([kangaroo stats])
 10,[1d3+1] **koalas** ([koala stats])
 1,a **koala** ([koala stats])
@@ -1036,6 +1036,7 @@ a [willy-willy] will-willy
 ;crocodile stats
 1,AC,5,MV,"6, Sw 12",HD,3,Thac0,17,2,NA,DM,2-8/1-12,SA,Surprise,SD,Nil,SZ,L (8-15'),ML,9,XP,65
 ;goanna stats
+1,AC,7,MV,"6, Cl 6",HD,1-2,Thac0,20,1,NA,DM,1d2,SA,Nil,SD,Nil,SZ,S,ML,,XP,
 ;komodo dragon stats
 ;python stats
 1,AC,6,MV,9,HD,3+2,Thac0,17,2,NA,DM,1/1-3,SA,Constriction,SD,Nil,SZ,M (10-20'),ML,8,XP,175
