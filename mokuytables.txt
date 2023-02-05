@@ -973,13 +973,14 @@ a [willy-willy] will-willy
 ;cassowary stats
 1,AC,8,MV,"10",HD,2+2,Thac0,18,1,NA,DM,1d4,SA,Kick 1d10+2,SD,Nil,SZ,L,ML,7,XP,25
 ;cockatoo stats
-1,AC,6,MV,"1, Fl 36",HD,1/2,Thac0,,3,NA,DM,1d2/1d2/1d3,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
+1,AC,6,MV,"1, Fl 24",HD,1/2,Thac0,,3,NA,DM,1d2/1d2/1d3,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;eagle stats
+1,AC,8,MV,"1, Fl 30",HD,1-2,Thac0,20,3,NA,DM,1d3/1d3/ad3,SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,20
 ;emu stats
 ;falcon stats
-1,AC,5,MV,"1, Fl 36",HD,1-1,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
+1,AC,5,MV,"1, Fl 36",HD,1/2,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
 ;kookaburra stats
-1,AC,6,MV,"1, Fl 36",HD,1/4,Thac0,,3,NA,DM,1/1/1d2,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
+1,AC,6,MV,"1, Fl 24",HD,1/4,Thac0,,3,NA,DM,1/1/1d2,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;lyrebird stats
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
