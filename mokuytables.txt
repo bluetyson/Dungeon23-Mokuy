@@ -230,6 +230,10 @@ a [willy-willy] will-willy
 ;desert animals
 1,**python**
 1,**a poisonous snake**
+1,**a brown snakes** ([brown snake stats])
+1,**a taipan** ([taipan stats])
+1,**a tiger snake** ([tiger snake stats])
+1,**a desert adder** ([desert adder stats])
 3,[2d4] **dingoes** [dingo stats]
 2,[4d6] **scorpions**
 
@@ -352,8 +356,12 @@ a [willy-willy] will-willy
 1,a **kookaburra** ([kookaburra stats])
 1,a **falcon** ([falcon stats])
 11,[2d6] **kangaroos** ([kangaroo stats])
-1,**tree snake** ([tree snake stats])
-3,**poisonous snake**
+2,**tree snake** ([tree snake stats])
+2,**a carpet python** ([carpet python stats])
+1,**a brown snakes** ([brown snake stats])
+1,**a taipan** ([taipan stats])
+1,**a tiger snake** ([tiger snake stats])
+1,**a desert adder** ([desert adder stats])
 1,a **loaded dog** ([loaded dog stats])
 2,[2d4] **dingoes** [dingo stats]
 1,a **thylacine**
@@ -1024,7 +1032,14 @@ a [willy-willy] will-willy
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Nil,SD,Nil,SZ,S,ML,7,XP,10
 ;carpet python stats
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Constriction,SD,Nil,SZ,S,ML,7,XP,10
-;poisonous snake stats
+;brown snake stats
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
+;death adder stats
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
+;taipan stats
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
+;tiger snake stats
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
 ;water snake stats
 1,AC,8 (4 in water),MV,12,HD,3+3,Thac0,17,1,NA,DM,1-4,SA,Poison,SD,Water blending,SZ,S (3'),ML,8-10,XP,420
 ;turtles stats
