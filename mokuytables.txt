@@ -294,7 +294,7 @@ a [willy-willy] will-willy
 5,[2d12] **brumbies** ([brumby stats])
 
 ;mountain monsters
-1,a **yowie**
+1,a **yowie** ([yowie stats])
 1,a **skelleagle**
 1,a **succubus** ([succubus stats])
 1,an **incubus** ([succubus stats])
@@ -743,6 +743,7 @@ a [willy-willy] will-willy
 1,[1d2+1] **weredingoes** ([weredingo stats])
 1,a **weredingo** ([weredingo stats])
 1,a **werethylacine** ([werethylacine stats])
+1,a **yowie** ([yowie stats])
 0,<b>*Killeroo*</b>: [Killeroo]
 0,<b>*The Eye Empress of Bundaberg*</b>: [Eye Empress of Bundaberg]
 
@@ -1111,6 +1112,7 @@ a [willy-willy] will-willy
 ;werethylacine stats
 1,AC,3,MV,12,HD,6+2,Thac0,15,3,NA,DM,1-4(x2)/1-12,SA,Rake for 2-5/2-5,SD,Silver or +1 to hit,SZ,M or L (6-9'),ML,13-14,XP,975
 ;yowie stats
+1,AC,6,MV,15,HD,4+4,Thac0,15,2,NA,DM,1-6(x2),SA,Sqeeze,SD,"Immune to cold, invisible in the bush",SZ,L (8'),ML,13,XP,420
 
 ;bottersnikes stats
 ;bunyip stats
