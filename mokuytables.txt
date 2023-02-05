@@ -811,7 +811,8 @@ a [willy-willy] will-willy
 1,[soldiers] **soldiers** ([soldier stats])
 
 ;marsh monsters
-1,**bunyip**
+4,**bunyip** ([bunyip stats])
+1,**giant bunyip** ([giant bunyip stats])
 
 ;marsh animals
 2,[1d6+1] **crocodiles** ([crocodile stats])
@@ -880,8 +881,8 @@ a [willy-willy] will-willy
 
 ;water monsters
 2,a **sea serpent** ([sea serpent stats])
-2,a **giant bunyip**
-4,[1d4] **bunyips**
+2,a **giant bunyip** ([giant bunyip stats])
+4,[1d4] **bunyips** ([bunyip stats])
 
 ;forest-mountain tower
 10,**land pirahna**
@@ -1109,7 +1110,9 @@ a [willy-willy] will-willy
 
 ;bottersnikes stats
 ;bunyip stats
+1,AC,5,MV,"12, Sw 12",HD,5,Thac0,15,1,NA,DM,1d6,SA,Roar,sever limb,SD,Nil,SZ,M-L (6-12'),ML,12,XP,650 to 1400
 ;giant bunyip stats
+1,AC,2,MV,"18, Sw 18",HD,10,Thac0,12,1,NA,DM,2d6,SA,Roar,sever limb,SD,Nil,SZ,L (24'),ML,12,XP,3500
 ;drop bear stats
 1,AC,6,MV,15,HD,9,Thac0,12,3,NA,DM,1d6+3/1d6+3/1d8+3,SA,Rend 4d4,SD,Special,SZ,M,ML,10,XP,
 ;elemental stats
