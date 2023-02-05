@@ -5,198 +5,363 @@
 #TextMapper-Line-Hex #linedir
 #TextMapper-Point-Hex #pointdir
 #TextMapper-Command-Render #pointdir
+class Point:
+    def __init__(self):
+        self.x = None
+        self.y = None
+        self.z = None
+        self.type = None
+        self.label = None
+        self.size = None
+        self.map = None
+
+    def equal(self, other):
+        return self.x == other.x and self.y == other.y and self.z == other.z
+        
+    def cmp(a, b):
+        return (a.x - b.x) or (a.y - b.y) or (a.z - b.z)
+
+    def coordinates(self):
+        if self.z is not None:
+            return self.x, self.y, self.z
+        return self.x, self.y
+
+    def coord(x, y, separator=''):
+        usex = x
+        usey = y
+        if x < 0:
+            if len(str(x)) == 2:
+                usex = "-0" + str(x)[1:]
+            else:
+                usex = str(x)
+        else:
+            if len(str(x)) == 1:
+                usex = "0" + str(x)
+            else:
+                usex = str(x)
+        
+        if y < 0:
+            if len(str(y)) == 2:
+                usey = "-0" + str(y)[1:]
+            else:
+                usey = str(y)
+        else:
+            if len(str(y)) == 1:
+                usey = "0" + str(y)
+            else:
+                usey =  str(y)
+            
+                
+        return usex+usey
+
+        
+
+class LineHex(Hex):
+    def __init__(self, *args):
+        super().__init__(*args)
+        
+        
+class Hex(Mapper):
+    def __init__(self, *args):
+        super(Hex, self).__init__(*args)
+        #pass
+   
+    def make_region(self, *args):
+        return Point(*args)
+
+    def make_line(self):
+        return LineHex(*args)
+
+    def shape(self, attributes):
+        points = " ".join([
+            f"{x[0]},{x[1]}" for x in Hex.corners()
+        ])
+        return f"<polygon {attributes} points='{points}' />"
+
+    def viewbox(self, minx, miny, maxx, maxy):
+        dx = 0
+        dy = 0
+        return [int(x) for x in (
+            minx * dx * 3/2 - dx - 60,
+            (miny - 1.5) * dy,
+            maxx * dx * 3/2 + dx + 60,
+            (maxy + 1) * dy
+        )]
+    
+
+class PointHex(Hex):
+    def __init__(self, *args):
+        super(PointHex, self).__init__(*args)
+        
+    @staticmethod
+    def corners():
+        return []
+        
+    def pixels(self, offset, add_x=0, add_y=0):
+        x = self.x
+        y = self.y
+        z = self.z
+        if offset[z] is not None:
+            y += offset[z]
+        return x * dy + add_x, y * dy + add_y
+
+    def svg_region(self, attributes, offset):
+        return '    <rect id="square{}{}{}" x="{:.1f}" y="{:.1f}" width="{:.1f}" height="{:.1f}" {} />\n'.format(
+            self.x, self.y, self.z if self.z != 0 else '', # z 0 is not printed at all for the $id
+            *self.pixels(offset, -0.5 * dy, -0.5 * dy),
+            dy, dy, attributes)
+
+    def svg(self, offset):
+        data = ''
+        for t in self.type:
+            data += '    <use x="{:.1f}" y="{:.1f}" xlink:href="#{}" />\n'.format(*self.pixels(offset), t)
+        return data
+
+    def svg_coordinates(self, offset):
+        x = self.x
+        y = self.y
+        z = self.z
+        y += offset[z]
+        data = '    <text text-anchor="middle"'
+        data += ' x="{:.1f}" y="{:.1f}"'.format(*self.pixels(offset, 0, -0.4 * dy))
+        data += ' ' + (self.map.text_attributes or '')
+        data += '>'
+        data += Game.TextMapper.Point.coord(self.x, self.y, ".") # original
+        data += '</text>\n'
+        return data
+
+    def svg_label(self, url, offset):
+        if not self.label:
+            return ''
+
+        attributes = self.map.label_attributes
+        if self.size:
+            if 'font-size="\d+pt"' in attributes:
+                attributes = re.sub('\bfont-size="\d+pt"', 'font-size="' + str(self.size) + 'pt"', attributes)
+            else:
+                attributes += ' font-size="' + str(self.size) + '"'
+
+        if url:
+            if '%s' in url:
+                url = re.sub('%s', urllib.parse.quote_plus(self.label.encode('utf-8')), url) 
+            else:
+                url += urllib.parse.quote_plus(self.label.encode('utf-8'))
+
+        data = '''    <g><text text-anchor="middle" x="{}" y="{}" {} {}>{}</text>
+        '''.format(self.pixels(offset, 0, 0.4 * dy),
+                    attributes or '',
+                    self.map.glow_attributes or '',
+                    self.label)
+
+        if url:
+            data += '<a xlink:href="{}">'.format(url)
+            data += '''<text text-anchor="middle" x="{}" y="{}" {}>{}</text>
+            '''.format(self.pixels(offset, 0, 0.4 * dy),
+                        attributes or '',
+                        self.label)
+            data += '</a>'
+        data += '</g>\n'
+
+        return data
+        
+        
+
+class LineHex(Hex):
+    def __init__(self, *args):
+        super().__init__(*args)
+
 
 class Mapper:
-  local_files = None
-  dist_dir = None
-  map = None
-  regions = []
-  attributes = {}
-  defs = []
-  path = {}
-  lines = []
-  things = []
-  path_attributes = {}
-  text_attributes = ''
-  glow_attributes = ''
-  label_attributes = ''
-  messages = []
-  seen = {}
-  license = ''
-  other = []
-  url = ''
-  offset = []
+    local_files = None
+    dist_dir = None
+    map = None
+    regions = []
+    attributes = {}
+    defs = []
+    path = {}
+    lines = []
+    things = []
+    path_attributes = {}
+    text_attributes = ''
+    glow_attributes = ''
+    label_attributes = ''
+    messages = []
+    seen = {}
+    license = ''
+    other = []
+    url = ''
+    offset = []
 
-  #log = Game.TextMapper.Log.get()
-  log = []
+    #log = Game.TextMapper.Log.get()
+    log = []
 
-  @classmethod
-  def example(cls):
-      return '''0101 mountain "mountain"
-0102 swamp "swamp"
-0103 hill "hill"
-0104 forest "forest"
-0201 empty pyramid "pyramid"
-0202 tundra "tundra"
-0203 coast "coast"
-0204 empty house "house"
-0301 woodland "woodland"
-0302 wetland "wetland"
-0303 plain "plain"
-0304 sea "sea"
-0401 hill tower "tower"
-0402 sand house "house"
-0403 jungle "jungle"
-0501 mountain cave "cave"
-0502 sand "sand"
-0503 hill castle "castle"
-0205-0103-0202-0303-0402 road
-0101-0203 river
-0401-0303-0403 border
-include default.txt
-license <text>Public Domain</text>
-'''
+    @classmethod
+    def example(cls):
+        return '''0101 mountain "mountain"
+    0102 swamp "swamp"
+    0103 hill "hill"
+    0104 forest "forest"
+    0201 empty pyramid "pyramid"
+    0202 tundra "tundra"
+    0203 coast "coast"
+    0204 empty house "house"
+    0301 woodland "woodland"
+    0302 wetland "wetland"
+    0303 plain "plain"
+    0304 sea "sea"
+    0401 hill tower "tower"
+    0402 sand house "house"
+    0403 jungle "jungle"
+    0501 mountain cave "cave"
+    0502 sand "sand"
+    0503 hill castle "castle"
+    0205-0103-0202-0303-0402 road
+    0101-0203 river
+    0401-0303-0403 border
+    include default.txt
+    license <text>Public Domain</text>
+    '''
 
-  def initialize(self, map):
-      map = map.replace("&#45;", "-")
-      self.map = map
-      self.process(map.split('\n'))
+    def initialize(self, map):
+        map = map.replace("&#45;", "-")
+        self.map = map
+        self.process(map.split('\n'))
 
-def process(self, args):
-        line_id = 0
-        for line in args:
-            print(line)
-            if re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line):
-                m = re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line)
-                x = m.group(1)
-                y = m.group(2)
-                z = m.group(3) if m.group(3) else "00"
-                
-                dictz = {"x":x,"y":y,"z":z}
-                #region = self.make_region(x=x, y=y, z=z, map=self)
-                #region = self.make_region(**dictz)
-                #region = self.make_region(x,y,z)
-                region = self.make_region()
-                region.x = x
-                region.y = y
-                region.z = z
-                rest = m.group(4)
-                print("rest:",rest)
-                while True:
-                    m = re.search(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', rest)
-                    if not m:
-                        break
-                    tag = m.group(1)
-                    label = m.group(2)
-                    size = m.group(3)
-                    if tag == "name":
-                        region = self.make_region(x=x, y=y, z=z, map=self)
-                        region.label(label)
-                        region.size(size)
-                    rest = re.sub(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', "", rest)
-                while True:
-                    m = re.search(r'["“([^"”]+\)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', rest)
-                    if not m:
-                        break
-                    label = m.group(1)
-                    size = m.group(2)
-                    transform = m.group(3)
-                    if transform or region.label:
-                        self.other().append(lambda: self.other_text(region, label, size, transform))
-                    else:
-                        region.label(label)
-                        region.size(size)
-                    rest = re.sub(r'["“([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', "", rest)
+    def process(self, args):
+            line_id = 0
+            for line in args:
+                print(line)
+                if re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line):
+                    m = re.match(r"^(-?\d\d)(-?\d\d)(\d\d)?\s+(.*)", line)
+                    x = m.group(1)
+                    y = m.group(2)
+                    z = m.group(3) if m.group(3) else "00"
                     
-                
-                types = rest.split()
-                
-                region.type = types
-                self.regions.append(region)
-                self.things.append(region)
-            elif re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line):
-                m = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?',line)
+                    dictz = {"x":x,"y":y,"z":z}
+                    #region = self.make_region(x=x, y=y, z=z, map=self)
+                    #region = self.make_region(**dictz)
+                    #region = self.make_region(x,y,z)
+                    region = self.make_region()
+                    region.x = x
+                    region.y = y
+                    region.z = z
+                    rest = m.group(4)
+                    print("rest:",rest)
+                    while True:
+                        m = re.search(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', rest)
+                        if not m:
+                            break
+                        tag = m.group(1)
+                        label = m.group(2)
+                        size = m.group(3)
+                        if tag == "name":
+                            region = self.make_region(x=x, y=y, z=z, map=self)
+                            region.label(label)
+                            region.size(size)
+                        rest = re.sub(r'\b([a-z]+)=["“]([^"”]+)["”]\s*(\d+)', "", rest)
+                    while True:
+                        m = re.search(r'["“([^"”]+\)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', rest)
+                        if not m:
+                            break
+                        label = m.group(1)
+                        size = m.group(2)
+                        transform = m.group(3)
+                        if transform or region.label:
+                            self.other().append(lambda: self.other_text(region, label, size, transform))
+                        else:
+                            region.label(label)
+                            region.size(size)
+                        rest = re.sub(r'["“([^"”]+)["”]\s*(\d+)?((?:\s*[a-z]+\([^\)]+\))*)', "", rest)
+                        
+                    
+                    types = rest.split()
+                    
+                    region.type = types
+                    self.regions.append(region)
+                    self.things.append(region)
+                elif re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line):
+                    m = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?',line)
 
-                line = self.make_line(map=self)
-                #usestr = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(1)
-                usestr = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(1)
-                line.type = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(2)
-                line.label = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(3)
-                line.side = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(4)
-                line.start = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(5)
-                line.id = "line" + str(line_id)
-                line_id += 1
-                points = []
-                while True:
-                    match = re.search(r"\G(-?\d\d)(-?\d\d)(\d\d)?-?", str)
-                    if not match:
-                        break
-                    points.append(Game.TextMapper.Point(x=match.group(1), y=match.group(2), z=match.group(3) or "00"))
-                line.points = points
-                self.lines.append(line)
-            elif re.match(r"^(\S+)\s+attributes\s+(.*)", line):
-                self.attributes[re.match("^(\S+)\s+attributes\s+(.*)", line).group(1)] = re.match("^(\S+)\s+attributes\s+(.*)", line).group(2)
-            elif re.match("^(\S+)\s+lib\s+(.*)", line):
-                self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(2)}</g>")
-            elif re.match("^(\S+)\s+xml\s+(.*)", line):
-                self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(2)}</g>")
-            elif re.match("^(<.*>)", line):
-                self.def1(re.match("^(<.*>)", line).group(1))
-            elif re.match("^(\S+)\s+path\s+attributes\s+(.*)", line):
-                self.path_attributes[re.match(r'(\S+)\s+path\s+attributes\s+(.*)', line).group(1)] = re.match(r'^(\S+)\s+path\s+attributes\s+(.*)', line).group(2)
-            elif re.match("^(\S+)\s+path\s+(.*)", line):
-                self.path[re.match("^(\S+)\s+path\s+(.*)", line).group(1)] = re.match("^(\S+)\s+path\s+(.*)", line).group(2)
-            elif re.match("^text\s+(.*)", line):
-                self.text_attributes(re.match("^text\s+(.*)", line).group(1))
-            elif re.match("^glow\s+(.*)", line):
-                self.glow_attributes(re.match("^glow\s+(.*)", line).group(1))
-            elif re.match("^label\s+(.*)", line):
-                self.label_attributes(re.match("^label\s+(.*)", line).group(1))
-            elif re.match("^license\s+(.*)", line):
-                self.license(re.match("^license\s+(.*)", line).group(1))
-            elif re.match("^other\s+(.*)", line):
-                self.other().append(re.match("^other\s+(.*)", line).group(1))    
-            elif re.match(r"^url\s+(\S+)", line):
-                self.url = (re.match(r"^url\s+(\S+)", line).group(1))
-            elif re.match(r"^include\s+(\S*)", line):
-                if len(self.seen.keys()) > 5:
-                    self.messages.append("Includes are limited to five to prevent loops")
-                elif not self.seen.get(re.match(r"^include\s+(\S*)", line).group(1)):
-                    location = re.match(r"^include\s+(\S*)", line).group(1)
-                    self.seen[location] = 1
-                    path = None
-                    if '/' not in location and os.path.isfile(os.path.join(self.dist_dir, location)):
-                        path = os.path.join(self.dist_dir, location)
-                        print(f"Reading {location}")
-                        self.process("\n".join(path.read().decode("utf-8").splitlines()))
-                    elif self.local_files and os.path.isfile(location):
-                        path = location
-                        print(f"Reading {location}")
-                        self.process("\n".join(path.read().decode("utf-8").splitlines()))
-                    elif re.match(r"^https?:/", location):
-                        print(f"Getting {location}")
-                        response = requests.get(location)
-                        if response.ok:
-                            self.process("\n".join(response.text.splitlines()))
+                    line = self.make_line(map=self)
+                    #usestr = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(1)
+                    usestr = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(1)
+                    line.type = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(2)
+                    line.label = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(3)
+                    line.side = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(4)
+                    line.start = re.match(r'^(-?\d\d-?\d\d(?:\d\d)?(?:--?\d\d-?\d\d(?:\d\d)?)+)\s+(\S+)\s*(?:["“(.+)["”])?\s*(left|right)?\s*(\d+%)?', line).group(5)
+                    line.id = "line" + str(line_id)
+                    line_id += 1
+                    points = []
+                    while True:
+                        match = re.search(r"\G(-?\d\d)(-?\d\d)(\d\d)?-?", str)
+                        if not match:
+                            break
+                        points.append(Game.TextMapper.Point(x=match.group(1), y=match.group(2), z=match.group(3) or "00"))
+                    line.points = points
+                    self.lines.append(line)
+                elif re.match(r"^(\S+)\s+attributes\s+(.*)", line):
+                    self.attributes[re.match("^(\S+)\s+attributes\s+(.*)", line).group(1)] = re.match("^(\S+)\s+attributes\s+(.*)", line).group(2)
+                elif re.match("^(\S+)\s+lib\s+(.*)", line):
+                    self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+lib{chr92}s+(.*)', line).group(2)}</g>")
+                elif re.match("^(\S+)\s+xml\s+(.*)", line):
+                    self.def1(f"<g id='{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(1)}'>{re.match(r'^({chr92}S+){chr92}s+xml{chr92}s+(.*)', line).group(2)}</g>")
+                elif re.match("^(<.*>)", line):
+                    self.def1(re.match("^(<.*>)", line).group(1))
+                elif re.match("^(\S+)\s+path\s+attributes\s+(.*)", line):
+                    self.path_attributes[re.match(r'(\S+)\s+path\s+attributes\s+(.*)', line).group(1)] = re.match(r'^(\S+)\s+path\s+attributes\s+(.*)', line).group(2)
+                elif re.match("^(\S+)\s+path\s+(.*)", line):
+                    self.path[re.match("^(\S+)\s+path\s+(.*)", line).group(1)] = re.match("^(\S+)\s+path\s+(.*)", line).group(2)
+                elif re.match("^text\s+(.*)", line):
+                    self.text_attributes(re.match("^text\s+(.*)", line).group(1))
+                elif re.match("^glow\s+(.*)", line):
+                    self.glow_attributes(re.match("^glow\s+(.*)", line).group(1))
+                elif re.match("^label\s+(.*)", line):
+                    self.label_attributes(re.match("^label\s+(.*)", line).group(1))
+                elif re.match("^license\s+(.*)", line):
+                    self.license(re.match("^license\s+(.*)", line).group(1))
+                elif re.match("^other\s+(.*)", line):
+                    self.other().append(re.match("^other\s+(.*)", line).group(1))    
+                elif re.match(r"^url\s+(\S+)", line):
+                    self.url = (re.match(r"^url\s+(\S+)", line).group(1))
+                elif re.match(r"^include\s+(\S*)", line):
+                    if len(self.seen.keys()) > 5:
+                        self.messages.append("Includes are limited to five to prevent loops")
+                    elif not self.seen.get(re.match(r"^include\s+(\S*)", line).group(1)):
+                        location = re.match(r"^include\s+(\S*)", line).group(1)
+                        self.seen[location] = 1
+                        path = None
+                        if '/' not in location and os.path.isfile(os.path.join(self.dist_dir, location)):
+                            path = os.path.join(self.dist_dir, location)
+                            print(f"Reading {location}")
+                            self.process("\n".join(path.read().decode("utf-8").splitlines()))
+                        elif self.local_files and os.path.isfile(location):
+                            path = location
+                            print(f"Reading {location}")
+                            self.process("\n".join(path.read().decode("utf-8").splitlines()))
+                        elif re.match(r"^https?:/", location):
+                            print(f"Getting {location}")
+                            response = requests.get(location)
+                            if response.ok:
+                                self.process("\n".join(response.text.splitlines()))
+                            else:
+                                self.messages.append(f"Getting {location}: {response.status_code} {response.reason}")
+                        elif re.match(r"^https?:/", self.dist_dir):
+                            url = self.dist_dir
+                            if not url.endswith("/"):
+                                url += "/"
+                            url += location
+                            print(f"Getting {url}")
+                            response = requests.get(url)
+                            if response.ok:
+                                self.process("\n".join(response.text.splitlines()))
+                            else:
+                                self.messages.append(f"Getting {url}: {response.status_code} {response.reason}")
                         else:
-                            self.messages.append(f"Getting {location}: {response.status_code} {response.reason}")
-                    elif re.match(r"^https?:/", self.dist_dir):
-                        url = self.dist_dir
-                        if not url.endswith("/"):
-                            url += "/"
-                        url += location
-                        print(f"Getting {url}")
-                        response = requests.get(url)
-                        if response.ok:
-                            self.process("\n".join(response.text.splitlines()))
-                        else:
-                            self.messages.append(f"Getting {url}: {response.status_code} {response.reason}")
-                    else:
-                        print(f"No library '{location}' in {self.dist_dir}")
-                        self.messages.append(f"Library '{location}' must be an existing file on the server or a HTTP/HTTPS URL")
-            else:
-                if line and not line.startswith("#"):
-                    print(f"Did not parse {line}")                
+                            print(f"No library '{location}' in {self.dist_dir}")
+                            self.messages.append(f"Library '{location}' must be an existing file on the server or a HTTP/HTTPS URL")
+                else:
+                    if line and not line.startswith("#"):
+                        print(f"Did not parse {line}")                
 
 
 
