@@ -193,7 +193,7 @@
 5,[1d100]**rats** ([rat stats])
 
 ;sand megafauna
-2,a **giant sea wombat**
+2,a **giant sea wombat** ([giant sea wombat stats]) 
 1,a **mega sea wombat**
 
 ;desert
@@ -1191,7 +1191,9 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 1,AC,3,MV,3,HD,2 to 4,Thac0,,1,NA,DM,1-4,SA,Blood drain,SD,Nil,SZ,S,ML,,XP,
 
 ;diprotodon stats
-1,AC,5,MV,8,HD,15,Thac0,5,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Nil,SZ,L,ML,7,XP,1500
+1,AC,5,MV,8,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Nil,SZ,L,ML,7,XP,1500
+;giant diprotodon stats
+1,AC,3,MV,12,HD,25,Thac0,7,3,NA,DM,1d8/1d8/1d12,SA,Trample,SD,Nil,SZ,H,ML,9,XP,1500
 ;giant echidna stats
 1,AC,5,MV,6,HD,6,Thac0,,1,NA,DM,2-8,SA,Shoot quills,SD,Quills,SZ,L,ML,,XP,
 ;giant fruit bat stats
@@ -1206,7 +1208,9 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 ;giant turtle stats
 1,AC,2 (5),MV,"1, Sw 15",HD,15,Thac0,5,1,NA,DM,4-16,SA,Upset craft,SD,Hind limbs,SZ,H (50'),ML,15-16,XP,5000
 ;giant sea wombat stats
+1,AC,5/3 rear,MV,6,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
 ;giant wombat stats
+1,AC,5/3 rear,MV,6,6 swim,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
 
 ;mega crocodile stats
 ;mega sea wombat stats
