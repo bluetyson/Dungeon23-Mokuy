@@ -351,6 +351,7 @@ a [willy-willy] will-willy
 1,a **falcon** ([falcon stats])
 11,[2d6] **kangaroos** ([kangaroo stats])
 1,**snake**
+3,**poisonous snake**
 1,a **loaded dog** ([loaded dog stats])
 2,[2d4] **dingoes** [dingo stats]
 1,a **thylacine**
@@ -1012,6 +1013,7 @@ a [willy-willy] will-willy
 ;python stats
 1,AC,6,MV,9,HD,3+2,Thac0,17,2,NA,DM,1/1-3,SA,Constriction,SD,Nil,SZ,M (10-20'),ML,8,XP,"175 (Elder 420, Jaculi 270)"
 ;snake stats
+;poisonous snake stats
 ;water snake stats
 1,AC,8 (4 in water),MV,12,HD,3+3,Thac0,17,1,NA,DM,1-4,SA,Poison,SD,Water blending,SZ,S (3'),ML,8-10,XP,420
 ;turtles stats
