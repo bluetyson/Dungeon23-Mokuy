@@ -755,8 +755,8 @@ a [willy-willy] will-willy
 ;forest megafauna
 2,a **giant leech** [(giant leech stats)]
 2,a **giant python** [(giant python stats)]
-2,q **giant taipan**
-2,a **diprotodon**
+2,q **giant taipan** [(giant taipain stats)]
+2,a **diprotodon** [(diprotodon stats)]
 1,a **giant diprotodon**
 1,[1d6+1] **giant spiders** ([giant spider stats])
 2,a **giant spider** ([giant spider stats])
@@ -1191,7 +1191,7 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 1,AC,3,MV,3,HD,2 to 4,Thac0,,1,NA,DM,1-4,SA,Blood drain,SD,Nil,SZ,S,ML,,XP,
 
 ;diprotodon stats
-1,AC,5 ,MV,8,HD,15,Thac0,5,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Nil,SZ,L,ML,7,XP,1500
+1,AC,5,MV,8,HD,15,Thac0,5,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Nil,SZ,L,ML,7,XP,1500
 ;giant echidna stats
 1,AC,5,MV,6,HD,6,Thac0,,1,NA,DM,2-8,SA,Shoot quills,SD,Quills,SZ,L,ML,,XP,
 ;giant fruit bat stats
