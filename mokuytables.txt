@@ -127,22 +127,22 @@
 1,**merpeople** ([merpeople stats])
 
 ;ocean fish type
-1,bluefin tuna
-1,yellowfin tuna
-1,salmon
-1,cod
-1,bream
-1,marlin
-1,swordfish
-1,mullet
+1,**bluefin tuna**
+1,**yellowfin tuna**
+1,**salmon**
+1,**cod**
+1,**bream**
+1,**marlin**
+1,**swordfish**
+1,**mullet**
 1,**eels** ([eel stats])
-1,bass
-1,whiting
-1,groper
-1,trevallies
-1,flathead
-1,garfish
-1,kingfish
+1,**bass**
+1,**whiting**
+1,**groper**
+1,**trevallies**
+1,**flathead**
+1,**garfish**
+1,**kingfish**
 
 
 ;storm water
