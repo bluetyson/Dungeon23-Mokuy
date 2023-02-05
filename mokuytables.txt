@@ -1251,17 +1251,4 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 1,Lemuria has pygmy-mummies
 1,A man-eating dinosaur has been seen [Burrunjor]
 
-1,academy
-1,brotherhood
-1,chantry
-1,church
-1,circle
-1,compact
-1,creed
-1,fellowship
-1,pact
-1,rite
-1,society
-1,sodality
-
-         
+        
