@@ -94,13 +94,13 @@
 2,**dolphins**
 2,**sharks**
 1,**whale**
-2,**squid**
+2,**squid** ([squid stats])
 1,**manta ray** ([manta ray stats])
 2,**stingray** ([stingray stats])
-2,**birds**
+2,[2d100] **seaguls** ([seagull stats])
 2,[3d8] **ospreys** ([osprey stats])
 1,**turtles**
-1,**jellyfish**
+1,[4d100] **jellyfish** ([jellyfish stats])
 
 ;ocean megafauna
 8,a **giant shark** ([giant shark stats])
@@ -867,12 +867,14 @@ a [willy-willy] will-willy
 1,a **strange unknown vessel**: [unknown vessel]
 
 ;water animals
-100,**fish**
+100,**fish** [ocean fish type]
 2,**dolphins**
 2,**sharks**
 1,**whale**
-2,**squid**
-1,**rays**
+2,**squid** ([squid stats])
+2,**octopus** ([octopus stats])
+1,[2d4] **stingsrays** ([stingray stats])
+1,[2d4] **manta rays** ([manta ray stats])
 2,[2d20] **seagulls** ([seagull stats])
 1,**turtles**
 1,**jellyfish**
@@ -1029,7 +1031,9 @@ a [willy-willy] will-willy
 ;jellyfish stats
 1,AC,10,MV,1,HD,1/4,Thac0,,1,NA,DM,1d2,SA,Poison,SD,Transparent,SZ,S,ML,8-12,XP,25
 ;manta ray stats
+AC,7,MV,Sw 9,HD,1+2,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,M,ML,5,XP,100
 ;stingray stats
+AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;octopus stats
 1,AC,7,MV,"2, Sw 12",HD,1,Thac0,20,7,NA,DM,1/1-2,SA,Poison; Constriction,SD,"Ink, Camouflage",SZ,S,ML,6,XP10
 ;shark stats
