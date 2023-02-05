@@ -764,7 +764,7 @@ a [willy-willy] will-willy
 10,[2d6] **kangaroos** ([kangaroo stats])
 10,[2d6] **wallabies** ([wallaby stats])
 1,**tree snake** ([tree snake stats])
-1,**a brown snakes** ([brown snake stats])
+1,**a brown snakes* ([brown snake stats])
 1,**a taipan** ([taipan stats])
 1,**a tiger snake** ([tiger snake stats])
 1,**a desert adder** ([desert adder stats])
@@ -772,6 +772,8 @@ a [willy-willy] will-willy
 2,a **tree snake** ([tree snake stats])
 2,a **carpet python** ([carpet python stats])
 1,a **cassowary ([cassowary stats])
+1,a **platypus ([platypus stats]) *if near water else a tree snake*
+
 
 ;forest megafauna
 3,a **giant leech** [(giant leech stats)]
@@ -1078,6 +1080,7 @@ a [willy-willy] will-willy
 ;koala stats
 1,AC,9,MV,3, Cl 2,HD,1,Thac0,19,3,NA,DM,1-4/1-4/1-3,SA,Nil,SD,Nil,SZ,S,ML,6,XP,15
 ;platypus stats
+1,AC,8,MV,3,6 swim,HD,1/2,Thac0,,1,NA,DM,1d2,SA,Poison,SD,Burrow,SZ,S,ML,7,XP,50
 ;rat stats
 1,AC,7,MV,15,HD,1/4,Thac0,,1,NA,DM,1,SA,Nil,SD,Nil,SZ,S,ML,,XP,2+1
 ;thylacine stats
@@ -1245,6 +1248,9 @@ a [willy-willy] will-willy
 ;giant kangaroo stats
 1,AC,4,MV,12,,HD,5,Thac0,15,3,NA,DM,1-6/1-6/1-8,SA,Kick for 4d8,SD,Nil,SZ,L,ML,7,XP,25
 ;giant platypus stats
+1,AC,6,MV,6,6 swim,HD,5,Thac0,15,1,NA,DM,1d4,SA,Poison,SD,Burrow,SZ,M,ML,7,XP,500
+;giant wombat stats
+1,AC,5/3 rear,MV,6,6 swim,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
 ;giant rat stats
 1,AC,7,MV,"12, Br 6",HD,1/2,Thac0,,1,NA,DM,1-3,SA,Disease,SD,Nil,SZ,S,ML,,XP,
 ;giant desert scorpion stats
@@ -1254,7 +1260,7 @@ a [willy-willy] will-willy
 ;giant turtle stats
 1,AC,2 (5),MV,"1, Sw 15",HD,15,Thac0,5,1,NA,DM,4-16,SA,Upset craft,SD,Hind limbs,SZ,H (50'),ML,15-16,XP,5000
 ;giant sea wombat stats
-1,AC,5/3 rear,MV,6,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
+1,AC,5/3 rear,MV,6 S6,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
 ;giant wombat stats
 1,AC,5/3 rear,MV,6,6 swim,HD,15,Thac0,8,3,NA,DM,1d4/1d4/1d6,SA,Trample,SD,Burrow,SZ,L,ML,7,XP,1500
 
