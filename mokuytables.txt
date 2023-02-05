@@ -1065,7 +1065,7 @@ a [willy-willy] will-willy
 ;echidna stats
 1,AC,6,MV,9, Cl 2",HD,1-2,Thac0,20,1,NA,DM,1-4,SA,Nil,SD,Nil,SZ,S,ML,2-4,XP,15
 ;kangaroo stats
-1,AC,6,MV,12,,HD,2+2,Thac0,17,3,NA,DM,1-3/1-3/1-4,SA,Kick for 2d8,SD,Nil,SZ,S,ML,7,XP,25
+1,AC,6,MV,12,,HD,2+2,Thac0,17,3,NA,DM,1-3/1-3/1-4,SA,Kick for 2d8,SD,Nil,SZ,M,ML,7,XP,25
 ;tree kangaroo stats
 1,AC,7,MV,6, Cl 2, Jump 1,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Nil,SZ,S,ML,6,XP,15
 ;koala stats
@@ -1230,6 +1230,7 @@ a [willy-willy] will-willy
 1,AC,8,MV,"3, Fl 18",HD,1/2 to 1,Thac0,,1,NA,DM,1-2 or 1-4,SA,Nil,SD,Special,SZ,S,ML,,XP,5+1 to 10+1
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant kangaroo stats
+1,AC,4,MV,12,,HD,5,Thac0,15,3,NA,DM,1-6/1-6/1-8,SA,Kick for 4d8,SD,Nil,SZ,L,ML,7,XP,25
 ;giant platypus stats
 ;giant rat stats
 1,AC,7,MV,"12, Br 6",HD,1/2,Thac0,,1,NA,DM,1-3,SA,Disease,SD,Nil,SZ,S,ML,,XP,
