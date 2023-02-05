@@ -368,6 +368,7 @@ a [willy-willy] will-willy
 11,[2d6] **kangaroos** ([kangaroo stats])
 2,[2d6] **wallaroos** ([wallaroo stats])
 2,[2d6] **wallabies** ([wallaby stats])
+1,a **wombat** ([wombat stats])
 
 ;bush megafauna
 4,a **giant earthworm** [(giant earthworm stats)]
@@ -1099,10 +1100,11 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;thylacine stats
 1,AC,7,MV,15,HD,1+3,Thac0,19,1,NA,DM,1d4,SA,Nil,SD,Nil,SZ,S,ML,,XP,20+2
 ;wallaby stats
-1,AC,7,MV,12,,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d8,SZ,S,ML,6,XP,15
+1,AC,7,MV,12,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d8,SZ,S,ML,6,XP,15
 ;wallaroo stats
-1,AC,7,MV,12,,HD,2-2,Thac0,19,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d12,SZ,S-M,ML,6,XP,15
+1,AC,7,MV,12,HD,2-2,Thac0,19,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d12,SZ,S-M,ML,6,XP,15
 ;wombat stats
+1,AC,8/5 rear,MV,3,1 burrow,HD,2,Thac0,19,3,NA,DM,1d4/1d4/1d3,SA,Nil,SD,Burrow,SZ,S,ML,7,XP,20
 
 #crawlies
 ;leech stats
