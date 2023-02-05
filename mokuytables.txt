@@ -742,7 +742,7 @@ a [willy-willy] will-willy
 
 ;forest animals
 10,**koalas** ([koala stats])
-20,**birds**
+20,**lyrebird** ([lyrebird stats])
 2,**leeches ([leech stats])
 2,**brumbies**
 1,[2d6] **dingoes** ([dingo stats])
