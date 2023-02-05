@@ -865,7 +865,7 @@ a [willy-willy] will-willy
 1,**whale**
 2,**squid**
 1,**rays**
-2,**birds**
+2,[2d20] **seagulls** ([seagull stats])
 1,**turtles**
 1,**jellyfish**
 
