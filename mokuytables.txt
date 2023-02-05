@@ -110,7 +110,7 @@
 4,a **mega squid** ([mega squid stats])
 1,a **mega giant squid**
 4,a **giant albatross**
-4,a **giant sea eagle**
+4,a **giant sea eagle** ([giant sea eagle stats])
 4,a **giant jellyfish** [(giant jellyfish stats)]
 4,a **giant ray**
 8,a **giant octopus** [(giant octopus stats)]
@@ -1130,11 +1130,11 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 ;Wa-tha-gun-darl stats
 
 #Dreamtime
-;Bunyip
-;Diprotodon
-;Giant Kangaroos
-;Megalania
-;Thylacine
+;Bunyip stats
+;Diprotodon stats
+;Giant Kangaroo stats
+;Megalania stats
+;Thylacine stats
 #Totems
 
 #megafauna
@@ -1144,6 +1144,7 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 ;giant owl stats
 1,AC,6,MV,"3, Fl 18",HD,4,Thac0,,3,NA,DM,2-8(x2)/2-5,SA,Surprise on 1-5,SD,Nil,SZ,M,ML,,XP,
 ;giant sea eagle stats
+1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
 ;giant crab stats
 1,AC,3,MV,9,HD,3,Thac0,,2,NA,DM,2-8(x2),SA,Nil,SD,Nil,SZ,L (4'+),ML,,XP
 ;giant crayfish stats
