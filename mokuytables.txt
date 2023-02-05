@@ -110,7 +110,7 @@
 6,a **giant turtle** ([giant turtle stats])
 4,a **mega squid** ([mega squid stats])
 1,a **mega giant squid**
-4,a **giant albatross**
+4,a **giant albatross** ([giant albatross stats])
 4,a **giant sea eagle** ([giant sea eagle stats])
 4,a **giant jellyfish** [(giant jellyfish stats)]
 2,a **giant manta ray** [(giant manta ray stats)]
@@ -888,11 +888,13 @@ a [willy-willy] will-willy
 3,a **giant turtle** ([giant turtle stats])
 1,a **giant moray eel** ([giant moray eel stats])
 2,a **mega giant moray eel**
+8,a **giant albatross** ([giant albatross stats])
 
 ;water monsters
 2,a **sea serpent** ([sea serpent stats])
 2,a **giant bunyip** ([giant bunyip stats])
-4,[1d4] **bunyips** ([bunyip stats])
+4,[1d4+1] **bunyips** ([bunyip stats])
+8,**a bunyip** ([bunyip stats])
 
 ;forest-mountain tower
 10,**land pirahna**
@@ -1190,6 +1192,7 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 
 #megafauna
 ;giant albatross stats
+1,AC,7,MV,"3, Fl 54",HD,6,Thac0,,3,NA,DM,1-8(x2)/2d8,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
 ;giant eagle stats
 1,AC,7,MV,"3, Fl 48",HD,4,Thac0,,3,NA,DM,1-6(x2)/2-12,SA,Special,SD,Special,SZ,M (20'),ML,,XP,
 ;giant owl stats
