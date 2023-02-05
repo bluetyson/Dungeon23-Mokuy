@@ -92,7 +92,7 @@
 ;ocean animals
 100,[ocean fish type]
 2,**dolphins**
-2,**sharks**
+2,**sharks** ([shark stats])
 1,**whale**
 2,**squid** ([squid stats])
 1,**manta ray** ([manta ray stats])
@@ -870,7 +870,7 @@ a [willy-willy] will-willy
 ;water animals
 100,**fish** [ocean fish type]
 2,**dolphins**
-2,**sharks**
+2,**sharks** ([shark stats])
 1,**whale**
 2,**squid** ([squid stats])
 2,**octopus** ([octopus stats])
@@ -881,6 +881,7 @@ a [willy-willy] will-willy
 1,**jellyfish**
 
 ;water megafauna
+8,a **giant shark** ([giant shark stats])
 2,a **mega giant crocodile**
 4,a **mega crocodile**
 2,a **mega giant shark**
@@ -1040,6 +1041,7 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;octopus stats
 1,AC,7,MV,"2, Sw 12",HD,1,Thac0,20,7,NA,DM,1/1-2,SA,Poison; Constriction,SD,"Ink, Camouflage",SZ,S,ML,6,XP10
 ;shark stats
+1,AC,6,MV,Sw 24,HD,3 to 8,Thac0,17 to 13,1,NA,DM,"3-4HD: 2-5, 5-6HD: 2-8, 7-8HD: 3-12",SA,Nil,SD,Nil,SZ,?,ML,10,XP,65-650
 ;squid stats
 1,AC,7,MV,"2, Sw 12",HD,1,Thac0,20,7,NA,DM,1/1-2,SA,Constriction,SD,"Ink, Camouflage",SZ,S,ML,6,XP,10
 ;whale stats
@@ -1128,7 +1130,10 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 1,AC,3,MV,12,HD,6+2,Thac0,15,3,NA,DM,1-4(x2)/1-12,SA,Rake for 2-5/2-5,SD,Silver or +1 to hit,SZ,M or L (6-9'),ML,13-14,XP,975
 ;yowie stats
 1,AC,6,MV,15,HD,4+4,Thac0,15,2,NA,DM,1-6(x2),SA,Sqeeze,SD,"Immune to cold, invisible in the bush",SZ,L (8'),ML,13,XP,420
+;vampire kangaroo stats
+;land pirahna stats
 
+;gumble stats
 ;bottersnikes stats
 ;bunyip stats
 1,AC,5,MV,"12, Sw 12",HD,5,Thac0,15,1,NA,DM,1d6,SA,Roar,sever limb,SD,Nil,SZ,M-L (6-12'),ML,12,XP,650 to 1400
@@ -1140,10 +1145,6 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 
 ;giant bell cockatoo stats
 ;skelleagle stats
-
-;gumble stats
-;vampire kangaroo stats
-;land pirahna stats
 
 ;kraken stats
 1,AC,5/0,MV,"Sw 3, Jet 21",HD,20,Thac0,,2 or 5-7,NA,DM,2-12(x2) or 2-8(x4-6)/5-20,SA,Special,SD,Special,SZ,L,ML,,XP,16900+30
