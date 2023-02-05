@@ -1073,6 +1073,7 @@ a [willy-willy] will-willy
 ;wallaby stats
 1,AC,7,MV,12,,HD,1+1,Thac0,18,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d8,SZ,S,ML,6,XP,15
 ;wallaroo stats
+1,AC,7,MV,12,,HD,2-2,Thac0,19,3,NA,DM,1-2/1-2/1-3,SA,Nil,SD,Kick for 1d12,SZ,S-M,ML,6,XP,15
 ;wombat stats
 
 #crawlies
