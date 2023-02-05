@@ -382,18 +382,18 @@ a [willy-willy] will-willy
 1,a **Dream Shambler**
 
 ;cultists
-100,**[same silentcult1]**
-100,**[same silentcult2]**
+100,**[same silentcult1]** ([cultist stats])
+100,**[same silentcult2]** ([cultist stats])
 2,[cac cultists]
-9,**Secret Society of the Ring**
-1,an **insane sorcerer**
+9,**Secret Society of the Ring** ([cultist stats])
+1,an **insane sorcerer** ([cultist stats])
 
 ;cac cultists
-1,**Sharks Tooth**
-1,**Effigy of Scars and Suffering**
-1,**Industrious Brothers of the New World**
-1,**Outcast Dreamers**
-1,**Bacchanal Club**
+1,**Sharks Tooth** ([cultist stats])
+1,**Effigy of Scars and Suffering** ([cultist stats])
+1,**Industrious Brothers of the New World** ([cultist stats])
+1,**Outcast Dreamers** ([cultist stats])
+1,**Bacchanal Club** ([cultist stats])
 
 ;cac dreaming
 1,**Field of Mars**
@@ -713,7 +713,7 @@ a [willy-willy] will-willy
 
 ;forest people
 2,[convicts] **convicts** ([convict stats])
-1,[explorers] explorers**
+1,[explorers] explorers** ([explorer stats])
 2,[cultists] **cultists**
 0,<b>*The Cassowary*</b>: [The Cassowary]
 
@@ -783,7 +783,7 @@ a [willy-willy] will-willy
 
 ;marsh people
 1,**Australians** ([Australians stats])
-2,[explorers] **explorers**
+2,[explorers] **explorers** ([explorer stats])
 1,[convicts] **convicts** ([convict stats])
 1,[soldiers] **soldiers** ([soldier stats])
 
@@ -947,9 +947,11 @@ a [willy-willy] will-willy
 ;bushranger stats
 1,AC,10 to 8,MV,12,HD,1 to 3,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,Varies,XP,Variable
 ;convict stats
-1,AC,10,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,15
+1,AC,10,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,7,XP,15
 ;cultist stats
+1,AC,10,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,10,XP,15
 ;explorer stats
+1,AC,10,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,10,XP,15
 ;pirate stats
 1,AC,10 to 6,MV,12,HD,1-2,Thac0,20,1,NA,DM,By weapon,SA,Nil,SD,Nil,SZ,M (5-6'),ML,9,XP,15
 ;sailor stats
