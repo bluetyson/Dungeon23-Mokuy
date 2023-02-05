@@ -229,7 +229,6 @@ a [willy-willy] will-willy
 
 ;desert animals
 1,**python**
-1,**a poisonous snake**
 1,**a brown snakes** ([brown snake stats])
 1,**a taipan** ([taipan stats])
 1,**a tiger snake** ([tiger snake stats])
@@ -754,13 +753,18 @@ a [willy-willy] will-willy
 10,**koalas** ([koala stats])
 20,**lyrebird** ([lyrebird stats])
 2,**leeches ([leech stats])
-2,**brumbies**
+2,**brumbies** ([brumby stats])
 1,[2d6] **dingoes** ([dingo stats])
 10,[2d6] **kangaroos** ([kangaroo stats])
 10,[2d6] **wallabies** ([wallaby stats])
 1,**tree snake** ([tree snake stats])
-2,a **poisonous snake**
+1,**a brown snakes** ([brown snake stats])
+1,**a taipan** ([taipan stats])
+1,**a tiger snake** ([tiger snake stats])
+1,**a desert adder** ([desert adder stats])
 2,a **python** ([python stats])
+2,a **tree snake** ([tree snake stats])
+2,a **carpet python** ([carpet python stats])
 1,a **cassowary ([cassowary stats])
 
 ;forest megafauna
