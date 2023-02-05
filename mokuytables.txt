@@ -985,6 +985,9 @@ Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) 
 ;kookaburra stats
 1,AC,6,MV,"1, Fl 24",HD,1/4,Thac0,,3,NA,DM,1/1/1d2,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;lyrebird stats
+1,AC,9,MV,"1, Fl 12",HD,1/2,Thac0,,1,NA,DM,1,SA,Nil,SD,Vocal Mimi,SZ,S,ML,,XP,20
+;raven stats
+1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;osprey stats
 1,AC,6,MV,"1, Fl 33",HD,1,Thac0,,3,NA,DM,1-2(x2)/1,SA,Special,SD,Special,SZ,S (3-4'+),ML,,XP,25+1
 ;owl stats
