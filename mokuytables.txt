@@ -233,7 +233,7 @@ a [willy-willy] will-willy
 1,**a brown snakes** ([brown snake stats])
 1,**a taipan** ([taipan stats])
 1,**a tiger snake** ([tiger snake stats])
-1,**a desert adder** ([desert adder stats])
+1,**a death adder** ([death adder stats])
 3,[2d4] **dingoes** [dingo stats]
 2,[4d6] **desert scorpions**
 
@@ -355,16 +355,18 @@ a [willy-willy] will-willy
 1,[1d6+1] a **cockatoo** ([cockatoo stats])
 1,a **kookaburra** ([kookaburra stats])
 1,a **falcon** ([falcon stats])
-11,[2d6] **kangaroos** ([kangaroo stats])
 2,**tree snake** ([tree snake stats])
 2,**a carpet python** ([carpet python stats])
 1,**a brown snakes** ([brown snake stats])
 1,**a taipan** ([taipan stats])
 1,**a tiger snake** ([tiger snake stats])
-1,**a desert adder** ([desert adder stats])
+1,**a death adder** ([death adder stats])
 1,a **loaded dog** ([loaded dog stats])
 2,[2d4] **dingoes** [dingo stats]
 1,a **thylacine**
+11,[2d6] **kangaroos** ([kangaroo stats])
+2,[2d6] **wallaroos** ([wallaroo stats])
+2,[2d6] **wallabies** ([wallaby stats])
 
 ;bush megafauna
 4,a **giant earthworm** [(giant earthworm stats)]
@@ -1020,8 +1022,10 @@ a [willy-willy] will-willy
 ;manta ray stats
 ;stingray stats
 ;octopus stats
-1,AC,7,MV,"2, Sw 12",HD,3 to 5,Thac0,17 to 15,7,NA,DM,1-2(x6)/1-4,SA,Poison; Constriction,SD,"Ink, Camouflage",SZ,L (4-6'),ML,14,XP,650 or 5000
+1,AC,7,MV,"2, Sw 12",HD,1,Thac0,20,7,NA,DM,1/1-2,SA,Poison; Constriction,SD,"Ink, Camouflage",SZ,S,ML,6,XP10
+;shark stats
 ;squid stats
+1,AC,7,MV,"2, Sw 12",HD,1,Thac0,20,7,NA,DM,1/1-2,SA,Constriction,SD,"Ink, Camouflage",SZ,S,ML,6,XP,10
 ;whale stats
 1,AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Nil,SD,Nil,SZ,?,ML,5,XP,120
 
@@ -1041,14 +1045,14 @@ a [willy-willy] will-willy
 ;brown snake stats
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
 ;death adder stats
-1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,12,XP,50
 ;taipan stats
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
 ;tiger snake stats
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Poison,SD,Nil,SZ,S,ML,7,XP,50
 ;water snake stats
 1,AC,8 (4 in water),MV,12,HD,3+3,Thac0,17,1,NA,DM,1-4,SA,Poison,SD,Water blending,SZ,S (3'),ML,8-10,XP,420
-;turtles stats
+;turtle stats
 
 #mammals
 ;fruit bat stats
@@ -1082,7 +1086,6 @@ a [willy-willy] will-willy
 1,AC,6,MV,Sw 18,HD,8 to 11,Thac0,13 to 9,1,NA,DM,3-12 or 2-20,SA,Nil,SD,Nil,SZ,?,ML,13,XP,3000-6000
 ;scorpion stats
 1,AC,6,MV,"6, Sw 15",HD,3 (2),Thac0,,1,NA,DM,2-5(1-4),SA,Nil,SD,Nil,SZ,L,ML,,XP,???
-;shark stats
 ;spider stats
 ;poisonous spider stats
 ;scorpion stats
