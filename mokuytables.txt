@@ -978,8 +978,6 @@ a [willy-willy] will-willy
 1,AC,8,MV,"1, Fl 30",HD,1-2,Thac0,20,3,NA,DM,1d3/1d3/ad3,SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,20
 ;emu stats
 1,AC,8,MV,"8, Run 20",HD,2+2,Thac0,18,1,NA,DM,1d4,SA,Kick 1d8,SD,Nil,SZ,M,ML,7,XP,25
-Abilities Str 12 (+1), Dex 12 (+1), Con 12 (+1), Int 2 (-4), Wis 10 (+0), Cha 5 (-3)
-Kick. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
 ;falcon stats
 1,AC,5,MV,"1, Fl 36",HD,1/2,Thac0,,3,NA,DM,1(x3),SA,Special,SD,Special,SZ,S (2-3'),ML,,XP,15+1
 ;kookaburra stats
