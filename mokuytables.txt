@@ -758,7 +758,7 @@ a [willy-willy] will-willy
 ;forest megafauna
 3,a **giant leech** [(giant leech stats)]
 4,a **giant python** [(giant python stats)]
-3,q **giant taipan** [(giant taipain stats)]
+3,q **giant taipan** [(giant taipan stats)]
 2,a **diprotodon** [(diprotodon stats)]
 1,a **giant diprotodon** [(giant diprotodon stats)]
 1,[1d6+1] **giant spiders** ([giant spider stats])
@@ -800,7 +800,7 @@ a [willy-willy] will-willy
 ;marsh animals
 2,[1d6+1] **crocodiles** ([crocodile stats])
 10,a **crocodile** ([crocodile stats])
-8,a **snake**
+8,a **tree snake** ([tree snake stats])
 8,a **water snake** ([water snake stats])
 20,[3d6] **pelicans**
 40,[4d10] **seabirds**
@@ -1022,6 +1022,8 @@ a [willy-willy] will-willy
 1,AC,6,MV,9,HD,3+2,Thac0,17,2,NA,DM,1/1-3,SA,Constriction,SD,Nil,SZ,M (10-20'),ML,8,XP,175
 ;tree snake stats
 1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Nil,SD,Nil,SZ,S,ML,7,XP,10
+;carpet python stats
+1,AC,7,MV,6,HD,1/2,Thac0,20,1,NA,DM,1d2,SA,Constriction,SD,Nil,SZ,S,ML,7,XP,10
 ;poisonous snake stats
 ;water snake stats
 1,AC,8 (4 in water),MV,12,HD,3+3,Thac0,17,1,NA,DM,1-4,SA,Poison,SD,Water blending,SZ,S (3'),ML,8-10,XP,420
@@ -1171,9 +1173,10 @@ a [willy-willy] will-willy
 1,AC,7,MV,"3, Sw 9",HD,1 to 3,Thac0,,1,NA,DM,"1-3, 1-6, or 2-8",SA,Special,SD,Nil,SZ,S-M (3-6'),ML,,XP,
 ;giant goanna stats
 1,AC,6,MV,12,HD,6+2,Thac0,15,1,NA,DM,2-8,SA,Swallow whole,SD,Nil,SZ,L (8-10'),ML,8-10,XP,420
-;giant snake stats
+;giant tree snake stats
+1,AC,8,MV,12,HD,3,Thac0,17,1,NA,DM,1-8 ,SA,Nil,SD,Nil,SZ,H (12-24'),ML,15-16,XP,200
 ;giant taipan stats
-1,AC,8,MV,12,HD,3,Thac0,17,1,NA,DM,1-8 ,SA,Poison; Charm,SD,Nil,SZ,H (12-24'),ML,15-16,XP,270 (Elder 975)
+1,AC,8,MV,12,HD,3,Thac0,17,1,NA,DM,1-8 ,SA,Poison,SD,Nil,SZ,H (12-24'),ML,15-16,XP,270
 ;giant python stats
 1,AC,5,MV,"12, Sw 12",HD,8+1,Thac0,,1,NA,DM,1-6,SA,Constriction; Poison,SD,Nil,SZ,L (40-50'),ML,,XP,825+10
 ;giant water snake stats
