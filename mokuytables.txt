@@ -404,14 +404,14 @@ a [willy-willy] will-willy
 100,*[same silentcult2]* ([cultist stats])
 2,[cac cultists]
 9,**Secret Society of the Ring** ([cultist stats])
-1,an **insane sorcerer** ([cultist stats])
+1,an *insane sorcerer* ([cultist stats])
 
 ;cac cultists
-1,**Sharks Tooth** ([cultist stats])
-1,**Effigy of Scars and Suffering** ([cultist stats])
-1,**Industrious Brothers of the New World** ([cultist stats])
-1,**Outcast Dreamers** ([cultist stats])
-1,**Bacchanal Club** ([cultist stats])
+1,*Sharks Tooth* ([cultist stats])
+1,*Effigy of Scars and Suffering* ([cultist stats])
+1,*Industrious Brothers of the New World* ([cultist stats])
+1,*Outcast Dreamers* ([cultist stats])
+1,*Bacchanal Club* ([cultist stats])
 
 ;cac dreaming
 1,**Field of Mars**
