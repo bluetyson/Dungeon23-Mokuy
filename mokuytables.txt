@@ -743,7 +743,8 @@ a [willy-willy] will-willy
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
-2,[1d2] **dropbears**  [(drop bear stats)]
+1,2 **dropbears**  [(drop bear stats)]
+1,a **dropbear**  [(drop bear stats)]
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
 1,[1d2+1] **weredingoes** ([weredingo stats])
