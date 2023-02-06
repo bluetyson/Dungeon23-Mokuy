@@ -335,7 +335,7 @@ a [willy-willy] will-willy
 8,**Australians** ([Australians stats])
 
 ;bush monsters
-2,**drop bear**
+2,**drop bear** ([drop bear stats])
 1,a **vampire kangaroo**
 1,**The Super Roo** [Super Roo]
 1,[cac supernatural]
@@ -743,8 +743,8 @@ a [willy-willy] will-willy
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
-1,2 **dropbears**  [(drop bear stats)]
-1,a **dropbear**  [(drop bear stats)]
+1,2 **drop bears**  [(drop bear stats)]
+1,a **drop bear**  [(drop bear stats)]
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
 1,[1d2+1] **weredingoes** ([weredingo stats])
