@@ -123,8 +123,8 @@
 
 ;ocean monsters
 1,a **kraken** ([kraken stats])
-2,a **sea serpent**
-1,**sirens**
+2,a **sea serpent** ([sea serpent stats])
+1,**sirens** ([siren stats])
 1,**merpeople** ([merpeople stats])
 
 ;ocean fish type
@@ -377,6 +377,7 @@ a [willy-willy] will-willy
 2,a **mega earthworm** [(mega earthworm stats)]
 1,a **mega giant earthworm** [(mega earthworm stats)]
 1,a **diprotodon** [(diprotodon stats)]
+1,a **giant wombat** [(giant wombat stats)]
 
 ;cac supernatural
 2,a **globster**
@@ -1123,9 +1124,11 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;serpent people stats
 1,AC,6 (Base),MV,"9, Sw 18",HD,2,Thac0,19,2,NA,DM,1-3/by weapon,SA,Special,SD,Camouflage,SZ,M (5-6'),ML,5-7,XP,175 to 270
 ;incubus stats
-1,AC,0,MV,"12, Fl 18",HD,6,Thac0,,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
+1,AC,0,MV,"12, Fl 18",HD,6,Thac0,13,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
 ;succubus stats
-1,AC,0,MV,"12, Fl 18",HD,6,Thac0,,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
+1,AC,0,MV,"12, Fl 18",HD,6,Thac0,13,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
+;siren stats
+1,AC,7,MV,"6, Sw 10",HD,6,Thac0,,2,NA,DM,1d6+1/1d6+1,SA,Luring,SD,Shapeshift/Breathe Water,M (6'),ML9,,XP,1000
 ;werecrocodile stats
 1,AC,1,MV,"3, Sw 12",HD,5+5,Thac0,15,2,NA,DM,2-12/1-8,SA,Control 1-3 crocodiles; Infection,SD,+1 or silver to hit,SZ,M-L (5-12'),ML,13-14,XP,650 to 1400
 ;weredingo stats
