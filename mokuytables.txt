@@ -370,6 +370,10 @@ a [willy-willy] will-willy
 2,[2d6] **wallaroos** ([wallaroo stats])
 2,[2d6] **wallabies** ([wallaby stats])
 1,a **wombat** ([wombat stats])
+2,a **an house spider** ([house spider stats])
+2,a **an huntsman** ([huntsman stats])
+1,a **a funnelweb** ([funnelweb stats])
+1,a **a redback** ([redback stats])
 
 ;bush megafauna
 4,a **giant earthworm** [(giant earthworm stats)]
@@ -1119,11 +1123,17 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;leech stats
 1,AC,10,MV,"1, Sw 1",HD,1/8,Thac0,20,1,NA,DM,1-3,SA,Choke,SD,Nil,SZ,"T (1"")",ML,6,XP,35
 ;desert scorpion stats
-1,AC,6,MV,"6, Sw 15",HD,3 (2),Thac0,,1,NA,DM,2-5(1-4),SA,Nil,SD,Nil,SZ,L,ML,,XP,???
+1,AC,7,MV,3,HD,1/4,Thac0,,3,NA,DM,1-2(x2)/1,SA,Poison sting,SD,Nil,SZ,S (2'),ML,8,XP,175
 ;rainforest scorpion stats
-1,AC,6,MV,"6, Sw 15",HD,3 (2),Thac0,,1,NA,DM,2-5(1-4),SA,Nil,SD,Nil,SZ,L,ML,,XP,???
-;spider stats
-;poisonous spider stats
+1,AC,7,MV,3,HD,1/4,Thac0,,3,NA,DM,1-2(x2)/1,SA,Poison sting,SD,Nil,SZ,S (2'),ML,8,XP,175
+;house spider stats
+1,AC,7,MV,"1, Wb 3",HD,1/8,Thac0,,NA,DM,1,SA,Poison,SD,Nil,SZ,S,ML,8,XP,1
+;huntsman stats
+1,AC,7,MV,"1, Wb 3",HD,1/4,Thac0,,NA,DM,1-2,SA,Poison,SD,Nil,SZ,S,ML,8,XP,1
+;redback stats
+1,AC,7,MV,"1, Wb 3",HD,1/8,Thac0,,NA,DM,1,SA,Poison,SD,Nil,SZ,S,ML,8,XP,1
+;funnelweb stats
+1,AC,7,MV,"1, Wb 3",HD,1/8,Thac0,,NA,DM,1,SA,Poison,SD,Nil,SZ,S,ML,8,XP,1
 
 #MONSTERS
 ;emerald bush goblin stats
