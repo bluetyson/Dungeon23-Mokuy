@@ -839,7 +839,7 @@ a [willy-willy] will-willy
 10,a **crocodile** ([crocodile stats])
 8,a **tree snake** ([tree snake stats])
 8,a **water snake** ([water snake stats])
-20,[3d6] **pelicans**
+20,[3d6] **pelicans** ([pelican stats])
 40,[4d10] **seagulls** ([seagull stats])
 1,a **platypus ([platypus stats])
 
@@ -914,7 +914,7 @@ a [willy-willy] will-willy
 8,**a bunyip** ([bunyip stats])
 
 ;forest-mountain tower
-10,**land pirahna**
+10,**land pirahna** ([land pirahna stats])
 1,**pirates** ([pirate stats])
 1,**convicts** ([convict stats])
 1,**soldiers** ([soldier stats])
@@ -1032,6 +1032,8 @@ a [willy-willy] will-willy
 1,AC,6,MV,"1, Fl 24",HD,1/4,Thac0,,3,NA,DM,1/1/1d2,SA,Insult,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;lyrebird stats
 1,AC,9,MV,"1, Fl 12",HD,1/2,Thac0,,1,NA,DM,1,SA,Nil,SD,Vocal Mimi,SZ,S,ML,,XP,20
+;pelican stats
+1,AC,7,MV,"3, Fl 24 (D)",HD,3,Thac0,17,1,NA,DM,1d4+1,SA,Nil,SD,Nil,SZ,?,ML,8-10,XP,75
 ;raven stats
 1,AC,7,MV,"1, Fl 36",HD,1/2,Thac0,,1,NA,DM,1,SA,Eye peck,SD,Nil,SZ,S,ML,,XP,Unlisted
 ;osprey stats
