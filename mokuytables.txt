@@ -112,13 +112,13 @@
 1,a **mega giant squid** ([mega giant squid stats])
 4,a **giant albatross** ([giant albatross stats])
 4,a **giant sea eagle** ([giant sea eagle stats])
-4,a **giant jellyfish** [(giant jellyfish stats)]
-2,a **giant manta ray** [(giant manta ray stats)]
-2,a **giant stingray** [(giant stingray stats)]
-8,a **giant octopus** [(giant octopus stats)]
-4,a **giant whale** [(giant whale stats)]
-2,a **mega whale** [(mega whale stats)]
-1,a **mega giant whale** [(mega giant whale stats)]
+4,a **giant jellyfish** ([giant jellyfish stats])
+2,a **giant manta ray** ([giant manta ray stats])
+2,a **giant stingray** ([giant stingray stats])
+8,a **giant octopus** ([giant octopus stats])
+4,a **giant whale** ([giant whale stats])
+2,a **mega whale** ([mega whale stats])
+1,a **mega giant whale** ([mega giant whale stats])
 
 
 ;ocean monsters
@@ -376,13 +376,13 @@ a [willy-willy] will-willy
 1,a **a redback** ([redback stats])
 
 ;bush megafauna
-4,a **giant earthworm** [(giant earthworm stats)]
-4,a **giant echidna** [(giant echidna stats)]
-4,a **giant owl** [(giant owl stats)]
-2,a **mega earthworm** [(mega earthworm stats)]
-1,a **mega giant earthworm** [(mega earthworm stats)]
-1,a **diprotodon** [(diprotodon stats)]
-1,a **giant wombat** [(giant wombat stats)]
+4,a **giant earthworm** ([giant earthworm stats])
+4,a **giant echidna** ([giant echidna stats])
+4,a **giant owl** ([giant owl stats])
+2,a **mega earthworm** ([mega earthworm stats])
+1,a **mega giant earthworm** ([mega earthworm stats])
+1,a **diprotodon** ([diprotodon stats])
+1,a **giant wombat** ([giant wombat stats])
 
 ;cac supernatural
 2,a **globster**
@@ -712,7 +712,7 @@ a [willy-willy] will-willy
 2,a **bushranger** ([bushranger stats])
 
 ;trees monsters
-1,a **drop bear** [(drop bear stats)]
+1,a **drop bear** ([drop bear stats])
 
 ;trees animals
 2,a **goanna** ([goanna stats])
@@ -748,8 +748,8 @@ a [willy-willy] will-willy
 1,Rumours of an unstoppable vigilante in a fearsome bird mask abound: leaves bodies of those that have committed terrible crimes behind, with claw marked faces
 
 ;forest monsters
-1,2 **drop bears**  [(drop bear stats)]
-1,a **drop bear**  [(drop bear stats)]
+1,2 **drop bears**  ([drop bear stats])
+1,a **drop bear**  ([drop bear stats])
 1,[1d3+1] **vampire kangaroos**
 1,a **vampire kangaroo**
 1,[1d2+1] **weredingoes** ([weredingo stats])
@@ -785,11 +785,11 @@ a [willy-willy] will-willy
 1,a **platypus ([platypus stats]) *if near water else a tree snake*
 
 ;forest megafauna
-3,a **giant leech** [(giant leech stats)]
-4,a **giant python** [(giant python stats)]
-3,q **giant taipan** [(giant taipan stats)]
-2,a **diprotodon** [(diprotodon stats)]
-1,a **giant diprotodon** [(giant diprotodon stats)]
+3,a **giant leech** ([giant leech stats])
+4,a **giant python** ([giant python stats])
+3,q **giant taipan** ([giant taipan stats])
+2,a **diprotodon** ([diprotodon stats])
+1,a **giant diprotodon** ([giant diprotodon stats])
 1,[1d6+1] **giant house spiders** ([giant house spider stats])
 1,[1d3+1] **giant huntsman spiders** ([giant huntsman stats])
 1,[1d3+1] **giant funnelweb spiders** ([giant funnelweb spider stats])
