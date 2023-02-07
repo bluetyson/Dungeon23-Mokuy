@@ -1249,6 +1249,7 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;giant earthworm stats
 1,AC,10,MV,6,HD,1,Thac0,19,1,NA,DM,1-8,SA,Nil,SD,Nil,SZ,S (3'),ML,8-10,XP,35
 ;giant fly stats
+1,AC,5,MV,"6, Fl 27 (D)",HD,6,Thac0,17,1,NA,DM,2-16,SA,Nil,SD,Nil,SZ,?,ML,5-7,XP,270
 ;giant leech stats
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant mosquito stats
