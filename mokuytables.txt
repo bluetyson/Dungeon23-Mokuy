@@ -357,6 +357,9 @@ a [willy-willy] will-willy
 1,[1d6+1] a **cockatoo** ([cockatoo stats])
 1,a **kookaburra** ([kookaburra stats])
 1,a **falcon** ([falcon stats])
+3,[1d2+1] **magpies** ([magpie stats])
+2,[1d2+1] **ravens** ([raven stats])
+1,a **raven** ([raven stats])
 2,**tree snake** ([tree snake stats])
 2,**a carpet python** ([carpet python stats])
 1,**a brown snakes** ([brown snake stats])
@@ -374,6 +377,7 @@ a [willy-willy] will-willy
 2,a **an huntsman** ([huntsman stats])
 1,a **a funnelweb** ([funnelweb stats])
 1,a **a redback** ([redback stats])
+
 
 ;bush megafauna
 4,a **giant earthworm** ([giant earthworm stats])
