@@ -786,8 +786,14 @@ a [willy-willy] will-willy
 3,q **giant taipan** [(giant taipan stats)]
 2,a **diprotodon** [(diprotodon stats)]
 1,a **giant diprotodon** [(giant diprotodon stats)]
-1,[1d6+1] **giant spiders** ([giant spider stats])
-2,a **giant spider** ([giant spider stats])
+1,[1d6+1] **giant house spiders** ([giant house spider stats])
+1,[1d3+1] **giant huntsman spiders** ([giant huntsman stats])
+1,[1d3+1] **giant funnelweb spiders** ([giant funnelweb spider stats])
+1,[1d3+1] **giant redback spiders** ([giant redback stats])
+2,a **giant house spider** ([giant house spider stats])
+2,a **giant huntsman** ([giant huntsman stats])
+1,a **giant funnelweb** ([giant funnelweb stats])
+1,a **giant redback** ([giant redback stats])
 1,a **giant rainforest scorpion ([rainforest scorpion stats])
 
 ;marsh
@@ -1255,9 +1261,13 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 1,AC,9,MV,3,HD,1 to 4,Thac0,,1,NA,DM,1-4,SA,Drain blood,SD,Nil,SZ,S-M,ML,,XP,
 ;giant mosquito stats
 1,AC,5,MV,"6, Fl 15 (B)",HD,6,Thac0,15,2,NA,DM,1-4(x2),SA,Nil,SD,Nil,SZ,M (7'),ML,20,XP,420
-;giant spider stats
+;giant huntsman stats
+1,AC,2,MV,"3, Wb 12",HD,6+6,Thac0,13,1,NA,DM,2d8,SA,Special,SD,Nil,SZ,L (8-12'),ML,13,XP,420 to 975
+;giant house spider stats
 1,AC,4,MV,"3, Wb 12",HD,3+3 or 4+4,Thac0,17 or 15,1,NA,DM,1-8,SA,Special,SD,Nil,SZ,L (8-12'),ML,13,XP,420 to 975
-;giant poisonous spider stats
+;giant funnelweb stats
+1,AC,4,MV,"8, Fl 10",HD,3+3,Thac0,17,1,NA,DM,1-3,SA,Poison,SD,Nil,SZ,L (10'),ML,13,XP,650
+;giant redback stats
 1,AC,4,MV,"8, Fl 10",HD,3+3,Thac0,17,1,NA,DM,1-3,SA,Poison,SD,Nil,SZ,L (10'),ML,13,XP,650
 ;giant tick stats
 1,AC,3,MV,3,HD,2 to 4,Thac0,,1,NA,DM,1-4,SA,Blood drain,SD,Nil,SZ,S,ML,,XP,
