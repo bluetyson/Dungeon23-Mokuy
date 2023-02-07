@@ -241,6 +241,7 @@ a [willy-willy] will-willy
 8,a **giant tree snake** ([giant tree snake stats])
 8,a **giant desert scorpion** ([giant desert scorpion stats])
 1,a **mega giant worm** ([mega giant worm stats])
+12,a **giant fly** ([giant fly stats])
 
 
 ;flies
