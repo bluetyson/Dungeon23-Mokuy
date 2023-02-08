@@ -1159,6 +1159,10 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 1,AC,0,MV,"12, Fl 18",HD,6,Thac0,13,2,NA,DM,1-3(x2),SA,Energy drain,SD,+1 to hit,SZ,M (6'),ML,,XP,
 ;siren stats
 1,AC,7,MV,"6, Sw 10",HD,6,Thac0,,2,NA,DM,1d6+1/1d6+1,SA,Luring,SD,Shapeshift/Breathe Water,M (6'),ML9,,XP,1000
+;skeleton stats
+1,AC,7,MV,12,HD,1,Thac0,19,1,NA,DM,1-6,SA,Nil,SD,Special,SZ,M (6'),ML,Special,XP,65
+;skeleagle stats
+1,AC,7,MV,12, Fl 30,HD,1-1,Thac0,20,3,NA,DM,1d4/1d4/1d4,SA,Special,SD,Special,SZ,M (4-6'),ML,,XP,100
 ;werecrocodile stats
 1,AC,1,MV,"3, Sw 12",HD,5+5,Thac0,15,2,NA,DM,2-12/1-8,SA,Control 1-3 crocodiles; Infection,SD,+1 or silver to hit,SZ,M-L (5-12'),ML,13-14,XP,650 to 1400
 ;weredingo stats
@@ -1182,7 +1186,7 @@ AC,7,MV,Sw 9,HD,1,Thac0,20,1,NA,DM,1-3,SA,Sting,SD,Nil,SZ,M,ML,5,XP,120
 ;elemental stats
 
 ;giant bell cockatoo stats
-;skelleagle stats
+;skeleagle stats
 
 ;kraken stats
 1,AC,5/0,MV,"Sw 3, Jet 21",HD,20,Thac0,,2 or 5-7,NA,DM,2-12(x2) or 2-8(x4-6)/5-20,SA,Special,SD,Special,SZ,L,ML,,XP,16900+30
