@@ -96,7 +96,7 @@
 1,**whale** ([whale stats])
 2,**squid** ([squid stats])
 1,**manta ray** ([manta ray stats])
-2,**stingray** ([stingray stats])
+2,**stingray** ([stingray ray stats])
 2,[2d100] **seaguls** ([seagull stats])
 2,[3d8] **ospreys** ([osprey stats])
 1,**turtles**
@@ -893,7 +893,7 @@ a [willy-willy] will-willy
 1,**whale** ([whale stats])
 2,[2d8] **squid** ([squid stats])
 2,[2d8] **octopus** ([octopus stats])
-1,[2d4] **stingsrays** ([stingray stats])
+1,[2d4] **stingrays** ([stingray stats])
 1,[2d4] **manta rays** ([manta ray stats])
 2,[2d20] **seagulls** ([seagull stats])
 1,**turtles** ([turtle stats])
