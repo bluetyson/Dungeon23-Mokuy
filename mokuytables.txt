@@ -196,7 +196,7 @@
 ;sand megafauna
 2,a **giant sea wombat** ([giant sea wombat stats]) 
 2,a **giant turtle** ([giant sea wombat stats]) 
-1,a **mega sea wombat**
+1,a **mega sea wombat** ([mega sea wombat stats]) 
 
 ;desert
 1,The desert weather is [desert weather] and [desert temp] and you see [desert encounter or not]
