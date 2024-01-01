@@ -28,3 +28,8 @@ InvalidArchiveError('Error with archive C:\\Users\\bloodyerrors\\anaconda3\\pkgs
 
 ### References
 - Terra Australis: https://nla.gov.au/nla.obj-703257590 [circa 1800]
+
+### Hex Describe
+- paste the table from mokuy1.txt into the tables link in hex describe https://campaignwiki.org/hex-describe
+
+- use the raw link of https://raw.githubusercontent.com/bluetyson/Dungeon23-Mokuy/main/mokuytables.txt for the Hex Describe descriptions
